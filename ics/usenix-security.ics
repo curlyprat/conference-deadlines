@@ -1,0 +1,177 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:USENIX Security dates
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:usenix-security-2027-abs-cycle-2-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270120
+SUMMARY:USENIX Security 2027: Cycle 2 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Denver\
+ , USA\, Aug 11–13\, 2027.\nhttps://www.usenix.org/node/315301
+TRANSP:TRANSPARENT
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/node/315301
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security 2027: Cycle 2 · abstract / regis
+ tration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security 2027: Cycle 2 · abstract / regist
+ ration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2027-paper-cycle-2-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:USENIX Security 2027: Cycle 2 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Denver\
+ , USA\, Aug 11–13\, 2027.\nhttps://www.usenix.org/node/315301
+TRANSP:TRANSPARENT
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/node/315301
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security 2027: Cycle 2 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security 2027: Cycle 2 · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2027-rev-cycle-2-round-1-reviews-out-rebuttal-2027@conf
+ erence-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270408
+DTEND;VALUE=DATE:20270409
+SUMMARY:USENIX Security 2027: Cycle 2 · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nConference: Denver\, USA\, Au
+ g 11–13\, 2027.\nhttps://www.usenix.org/node/315301
+TRANSP:TRANSPARENT
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/node/315301
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2027-rev-cycle-2-round-2-final-decisions-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270506
+DTEND;VALUE=DATE:20270507
+SUMMARY:USENIX Security 2027: Cycle 2 · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nConference: Denver\, USA\, Au
+ g 11–13\, 2027.\nhttps://www.usenix.org/node/315301
+TRANSP:TRANSPARENT
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/node/315301
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270710
+DTEND;VALUE=DATE:20270711
+SUMMARY:USENIX Security 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Denver\, USA\,
+  Aug 11–13\, 2027.\nhttps://www.usenix.org/node/315301
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/node/315301
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2028-abs-cycle-1-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270818
+DTEND;VALUE=DATE:20270819
+SUMMARY:USENIX Security 2028: Cycle 1 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Denver\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security 2028: Cycle 1 · abstract / regis
+ tration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security 2028: Cycle 1 · abstract / regist
+ ration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2028-paper-cycle-1-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270825
+DTEND;VALUE=DATE:20270826
+SUMMARY:USENIX Security 2028: Cycle 1 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Denver\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security 2028: Cycle 1 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security 2028: Cycle 1 · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2028-rev-cycle-1-round-1-reviews-out-rebuttal-2027@conf
+ erence-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271105
+DTEND;VALUE=DATE:20271106
+SUMMARY:USENIX Security 2028: Cycle 1 · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Denver\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2028-rev-cycle-1-round-2-final-decisions-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271203
+DTEND;VALUE=DATE:20271204
+SUMMARY:USENIX Security 2028: Cycle 1 · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Denver\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+END:VEVENT
+END:VCALENDAR

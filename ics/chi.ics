@@ -1,0 +1,91 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CHI dates
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:chi-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:CHI 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Pittsbu
+ rgh\, USA\, May 10–14\, 2027.\nhttps://chi2027.acm.org/
+TRANSP:TRANSPARENT
+LOCATION:Pittsburgh\, USA
+URL:https://chi2027.acm.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CHI 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CHI 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2027-rev-posters-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:CHI 2027: Posters · decisions
+DESCRIPTION:Expected review / decision date.\nConference: Pittsburgh\, USA\
+ , May 10–14\, 2027.\nhttps://chi2027.acm.org/
+TRANSP:TRANSPARENT
+LOCATION:Pittsburgh\, USA
+URL:https://chi2027.acm.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2028-paper--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270910
+DTEND;VALUE=DATE:20270911
+SUMMARY:CHI 2028: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Pittsburgh\, U
+ SA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Pittsburgh\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CHI 2028: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CHI 2028: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2028-rev-papers-round-1-reviews-and-revise-and-re-2027@conference-d
+ eadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271105
+DTEND;VALUE=DATE:20271106
+SUMMARY:CHI 2028: Papers · round 1 reviews & revise-and-resubmit decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Pittsburgh\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Pittsburgh\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2028-rev-papers-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271217
+DTEND;VALUE=DATE:20271218
+SUMMARY:CHI 2028: Papers · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Pittsburgh\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Pittsburgh\, USA
+END:VEVENT
+END:VCALENDAR

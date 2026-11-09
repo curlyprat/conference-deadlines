@@ -1,0 +1,2496 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Conference deadlines
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:facct-2027-paper--2026@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:FAccT 2027: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Porto\,
+  Portugal\, Jun 21–24\, 2027.\nhttps://facctconference.org/2027/cfp.html
+TRANSP:TRANSPARENT
+LOCATION:Porto\, Portugal
+URL:https://facctconference.org/2027/cfp.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: FAccT 2027: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: FAccT 2027: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-iui-2027-20
+ 26@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Gary Marsden Travel Awards: Round closes · last round for IUI 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes · last 
+ round for IUI 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes · last r
+ ound for IUI 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2027-abs-cycle-2-2026@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:IEEE S&P 2027: Cycle 2 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Montré
+ al\, Canada\, May 17–20\, 2027.\nhttps://sp2027.ieee-security.org/cfpape
+ rs.html
+TRANSP:TRANSPARENT
+LOCATION:Montréal\, Canada
+URL:https://sp2027.ieee-security.org/cfpapers.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2027: Cycle 2 · abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2027: Cycle 2 · abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2027-poster-posters-and-demos-2026@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:IUI 2027: Posters & Demos
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Helsink
+ i\, Finland\, Feb 8–11\, 2027.\nhttps://iui.acm.org/2027/?p=244208
+TRANSP:TRANSPARENT
+LOCATION:Helsinki\, Finland
+URL:https://iui.acm.org/2027/?p=244208
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IUI 2027: Posters & Demos
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IUI 2027: Posters & Demos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-student-volunteers-vol-lottery-opens-for-chi-2027-2026@conference-d
+ eadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:CHI Student Volunteers: Lottery opens · for CHI 2027
+DESCRIPTION:Applications open.\nLottery on new.chisv.org\; results February
+  8\, 2027.\nhttps://chi2027.acm.org/2026/11/07/call-for-svs/
+TRANSP:TRANSPARENT
+URL:https://chi2027.acm.org/2026/11/07/call-for-svs/
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2027-paper-cycle-2-2026@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:IEEE S&P 2027: Cycle 2 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Montré
+ al\, Canada\, May 17–20\, 2027.\nhttps://sp2027.ieee-security.org/cfpape
+ rs.html
+TRANSP:TRANSPARENT
+LOCATION:Montréal\, Canada
+URL:https://sp2027.ieee-security.org/cfpapers.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2027: Cycle 2 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2027: Cycle 2 · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-student-scholar-and-volunteer-program-vol-opens-for-aaai-27-2026@c
+ onference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:AAAI Student Scholar & Volunteer Program: Opens · for AAAI-27
+DESCRIPTION:Applications open.\nComplimentary registration for student volu
+ nteers at AAAI.\nhttps://aaai.org/conference/aaai/aaai-27/student-scholar-
+ volunteer-program/
+TRANSP:TRANSPARENT
+URL:https://aaai.org/conference/aaai/aaai-27/student-scholar-volunteer-prog
+ ram/
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-student-scholar-and-volunteer-program-vol-closes-for-aaai-27-2026@
+ conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:AAAI Student Scholar & Volunteer Program: Closes · for AAAI-27
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nComplimentary regis
+ tration for student volunteers at AAAI.\nhttps://aaai.org/conference/aaai/
+ aaai-27/student-scholar-volunteer-program/
+TRANSP:TRANSPARENT
+URL:https://aaai.org/conference/aaai/aaai-27/student-scholar-volunteer-prog
+ ram/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: AAAI Student Scholar & Volunteer Program: Closes 
+ · for AAAI-27
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: AAAI Student Scholar & Volunteer Program: Closes 
+ · for AAAI-27
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-student-volunteers-vol-opens-for-iui-2027-2026@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:IUI Student Volunteers: Opens · for IUI 2027
+DESCRIPTION:Applications open.\nPlaceholder based on the 2026 date. Confirm
+  on the official call.\nStudent volunteer call for IUI.\nhttps://iui.acm.o
+ rg/2026/student-volunteers/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://iui.acm.org/2026/student-volunteers/
+END:VEVENT
+BEGIN:VEVENT
+UID:ijcai-2027-abs--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
+SUMMARY:IJCAI 2027: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Kyoto\,
+  Japan\, Aug 7–13\, 2027.\nhttps://2027.ijcai.org/
+TRANSP:TRANSPARENT
+LOCATION:Kyoto\, Japan
+URL:https://2027.ijcai.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IJCAI 2027: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IJCAI 2027: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-abs-cycle-1-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270108
+SUMMARY:CCS 2027: Cycle 1 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Atlanta\, USA\
+ , Oct 11–15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CCS 2027: Cycle 1 · abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CCS 2027: Cycle 1 · abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gary-marsden-travel-awards-fund-round-closes-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270110
+SUMMARY:Gary Marsden Travel Awards: Round closes
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dis-2027-abs-papers-and-pictorials-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:DIS 2027: Papers & pictorials · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Stockho
+ lm\, Sweden\, Jun 28 – Jul 2\, 2027.\nhttps://dis.acm.org/2027/
+TRANSP:TRANSPARENT
+LOCATION:Stockholm\, Sweden
+URL:https://dis.acm.org/2027/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: DIS 2027: Papers & pictorials · abstract / regis
+ tration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: DIS 2027: Papers & pictorials · abstract / regist
+ ration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ijcai-2027-paper--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:IJCAI 2027: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Kyoto\,
+  Japan\, Aug 7–13\, 2027.\nhttps://2027.ijcai.org/
+TRANSP:TRANSPARENT
+LOCATION:Kyoto\, Japan
+URL:https://2027.ijcai.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IJCAI 2027: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IJCAI 2027: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-paper-cycle-1-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:CCS 2027: Cycle 1 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Atlanta\, USA\
+ , Oct 11–15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CCS 2027: Cycle 1 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CCS 2027: Cycle 1 · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dis-2027-paper-papers-and-pictorials-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:DIS 2027: Papers & pictorials · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Stockho
+ lm\, Sweden\, Jun 28 – Jul 2\, 2027.\nhttps://dis.acm.org/2027/
+TRANSP:TRANSPARENT
+LOCATION:Stockholm\, Sweden
+URL:https://dis.acm.org/2027/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: DIS 2027: Papers & pictorials · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: DIS 2027: Papers & pictorials · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2027-abs-cycle-2-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270120
+SUMMARY:USENIX Security 2027: Cycle 2 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Denver\
+ , USA\, Aug 11–13\, 2027.\nhttps://www.usenix.org/node/315301
+TRANSP:TRANSPARENT
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/node/315301
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security 2027: Cycle 2 · abstract / regis
+ tration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security 2027: Cycle 2 · abstract / regist
+ ration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:CHI 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Pittsbu
+ rgh\, USA\, May 10–14\, 2027.\nhttps://chi2027.acm.org/
+TRANSP:TRANSPARENT
+LOCATION:Pittsburgh\, USA
+URL:https://chi2027.acm.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CHI 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CHI 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:icml-2027-abs--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:ICML 2027: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Rio de Janeiro
+ \, Brazil\, Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Rio de Janeiro\, Brazil
+URL:https://icml.cc/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ICML 2027: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ICML 2027: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2027-paper-cycle-2-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:USENIX Security 2027: Cycle 2 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Denver\
+ , USA\, Aug 11–13\, 2027.\nhttps://www.usenix.org/node/315301
+TRANSP:TRANSPARENT
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/node/315301
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security 2027: Cycle 2 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security 2027: Cycle 2 · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:icml-2027-paper--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270129
+SUMMARY:ICML 2027: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Rio de Janeiro
+ \, Brazil\, Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Rio de Janeiro\, Brazil
+URL:https://icml.cc/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ICML 2027: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ICML 2027: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-student-volunteers-vol-closes-for-iui-2027-2027@conference-deadline
+ s
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270129
+SUMMARY:IUI Student Volunteers: Closes · for IUI 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent volunteer call for
+  IUI.\nhttps://iui.acm.org/2026/student-volunteers/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://iui.acm.org/2026/student-volunteers/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IUI Student Volunteers: Closes · for IUI 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IUI Student Volunteers: Closes · for IUI 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-student-volunteers-vol-lottery-closes-for-chi-2027-2027@conference-
+ deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:CHI Student Volunteers: Lottery closes · for CHI 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nLottery on new.chis
+ v.org\; results February 8\, 2027.\nhttps://chi2027.acm.org/2026/11/07/cal
+ l-for-svs/
+TRANSP:TRANSPARENT
+URL:https://chi2027.acm.org/2026/11/07/call-for-svs/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CHI Student Volunteers: Lottery closes · for CHI
+  2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CHI Student Volunteers: Lottery closes · for CHI 
+ 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:xgary-marsden-travel-awards-fund-round-closes-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270209
+DTEND;VALUE=DATE:20270210
+SUMMARY:Gary Marsden Travel Awards: Round closes
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2027-rev-cycle-2-round-1-reviews-out-rebuttal-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:IEEE S&P 2027: Cycle 2 · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nConference: Montréal\, Canad
+ a\, May 17–20\, 2027.\nhttps://sp2027.ieee-security.org/cfpapers.html
+TRANSP:TRANSPARENT
+LOCATION:Montréal\, Canada
+URL:https://sp2027.ieee-security.org/cfpapers.html
+END:VEVENT
+BEGIN:VEVENT
+UID:soups-2027-abs-technical-papers-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:SOUPS 2027: Technical Papers · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Denver\, USA\,
+  Aug 8–10\, 2027.\nhttps://www.usenix.org/conferences/bytopic/security
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/conferences/bytopic/security
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: SOUPS 2027: Technical Papers · abstract / regist
+ ration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: SOUPS 2027: Technical Papers · abstract / registr
+ ation
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dis-2027-poster-provocations-and-works-in-progress-2027@conference-dead
+ lines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:DIS 2027: Provocations & Works-in-Progress
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Stockholm\, Sw
+ eden\, Jun 28 – Jul 2\, 2027.\nhttps://dis.acm.org/2027/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Stockholm\, Sweden
+URL:https://dis.acm.org/2027/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: DIS 2027: Provocations & Works-in-Progress
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: DIS 2027: Provocations & Works-in-Progress
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2027-rev-posters-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:CHI 2027: Posters · decisions
+DESCRIPTION:Expected review / decision date.\nConference: Pittsburgh\, USA\
+ , May 10–14\, 2027.\nhttps://chi2027.acm.org/
+TRANSP:TRANSPARENT
+LOCATION:Pittsburgh\, USA
+URL:https://chi2027.acm.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:soups-2027-paper-technical-papers-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270219
+DTEND;VALUE=DATE:20270220
+SUMMARY:SOUPS 2027: Technical Papers · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Denver\, USA\,
+  Aug 8–10\, 2027.\nhttps://www.usenix.org/conferences/bytopic/security
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/conferences/bytopic/security
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: SOUPS 2027: Technical Papers · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: SOUPS 2027: Technical Papers · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2027-rev-cycle-2-round-2-final-decisions-2027@conference-dea
+ dlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270306
+SUMMARY:IEEE S&P 2027: Cycle 2 · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nConference: Montréal\, Canad
+ a\, May 17–20\, 2027.\nhttps://sp2027.ieee-security.org/cfpapers.html
+TRANSP:TRANSPARENT
+LOCATION:Montréal\, Canada
+URL:https://sp2027.ieee-security.org/cfpapers.html
+END:VEVENT
+BEGIN:VEVENT
+UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-chi-2027-20
+ 27@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270309
+DTEND;VALUE=DATE:20270310
+SUMMARY:Gary Marsden Travel Awards: Round closes · last round for CHI 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes · last 
+ round for CHI 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes · last r
+ ound for CHI 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-rev-cycle-1-round-1-reviews-out-rebuttal-2027@conference-deadl
+ ines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270318
+SUMMARY:CCS 2027: Cycle 1 · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Atlanta\, USA\, Oct 11
+ –15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:dis-2027-rev-papers-and-pictorials-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+SUMMARY:DIS 2027: Papers & pictorials · decisions
+DESCRIPTION:Expected review / decision date.\nConference: Stockholm\, Swede
+ n\, Jun 28 – Jul 2\, 2027.\nhttps://dis.acm.org/2027/
+TRANSP:TRANSPARENT
+LOCATION:Stockholm\, Sweden
+URL:https://dis.acm.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:IEEE S&P 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada\, May 17–20\, 2027.\nhttps://sp2027.ieee-security.org/cfpapers.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+URL:https://sp2027.ieee-security.org/cfpapers.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:facct-2027-rev-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270323
+DTEND;VALUE=DATE:20270324
+SUMMARY:FAccT 2027: Round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nConference: Porto\, Portugal\
+ , Jun 21–24\, 2027.\nhttps://facctconference.org/2027/cfp.html
+TRANSP:TRANSPARENT
+LOCATION:Porto\, Portugal
+URL:https://facctconference.org/2027/cfp.html
+END:VEVENT
+BEGIN:VEVENT
+UID:icml-2027-rev-round-1-reviews-out-rebuttal-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270324
+DTEND;VALUE=DATE:20270325
+SUMMARY:ICML 2027: Round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Rio de Janeiro\, Brazil\
+ , Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Rio de Janeiro\, Brazil
+URL:https://icml.cc/
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-abs--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270324
+DTEND;VALUE=DATE:20270325
+SUMMARY:UIST 2027: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Detroit\, USA.
+ \nhttps://uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: UIST 2027: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: UIST 2027: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-paper--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:UIST 2027: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Detroit\, USA.
+ \nhttps://uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: UIST 2027: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: UIST 2027: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-student-travel-grant-fund-closes-for-ieee-sandp-2027-2027@co
+ nference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270402
+DTEND;VALUE=DATE:20270403
+SUMMARY:IEEE S&P Student Travel Grant: Closes · for IEEE S&P 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent travel grants for 
+ the IEEE Symposium on Security and Privacy.\nhttps://sp2026.ieee-security.
+ org/travel_grants.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://sp2026.ieee-security.org/travel_grants.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P Student Travel Grant: Closes · for IEEE
+  S&P 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P Student Travel Grant: Closes · for IEEE 
+ S&P 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2027-rev-cycle-2-round-1-reviews-out-rebuttal-2027@conf
+ erence-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270408
+DTEND;VALUE=DATE:20270409
+SUMMARY:USENIX Security 2027: Cycle 2 · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nConference: Denver\, USA\, Au
+ g 11–13\, 2027.\nhttps://www.usenix.org/node/315301
+TRANSP:TRANSPARENT
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/node/315301
+END:VEVENT
+BEGIN:VEVENT
+UID:asisandt-2027-paper-papers-panels-and-workshops-2027@conference-deadlin
+ es
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270409
+DTEND;VALUE=DATE:20270410
+SUMMARY:ASIS&T 2027: Papers\, panels & workshops · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Vancouver\, Ca
+ nada\, Nov 19–23\, 2027.\nhttps://www.asist.org/am/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Vancouver\, Canada
+URL:https://www.asist.org/am/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ASIS&T 2027: Papers\, panels & workshops · paper
+  deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ASIS&T 2027: Papers\, panels & workshops · paper 
+ deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-rev-cycle-1-round-2-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270409
+DTEND;VALUE=DATE:20270410
+SUMMARY:CCS 2027: Cycle 1 · round 2 decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Atlanta\, USA\, Oct 11
+ –15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:ijcai-2027-rev-papers-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270421
+DTEND;VALUE=DATE:20270422
+SUMMARY:IJCAI 2027: Papers · decisions
+DESCRIPTION:Expected review / decision date.\nConference: Kyoto\, Japan\, A
+ ug 7–13\, 2027.\nhttps://2027.ijcai.org/
+TRANSP:TRANSPARENT
+LOCATION:Kyoto\, Japan
+URL:https://2027.ijcai.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-2027-paper--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270422
+DTEND;VALUE=DATE:20270423
+SUMMARY:ASSETS 2027: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Porto\, Portug
+ al.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ASSETS 2027: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ASSETS 2027: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-abs-cycle-2-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270422
+DTEND;VALUE=DATE:20270423
+SUMMARY:CCS 2027: Cycle 2 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Atlanta\, USA\
+ , Oct 11–15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CCS 2027: Cycle 2 · abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CCS 2027: Cycle 2 · abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:facct-financial-support-fund-closes-for-facct-2027-2027@conference-dead
+ lines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270427
+DTEND;VALUE=DATE:20270428
+SUMMARY:FAccT Financial Support: Closes · for FAccT 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nRegistration waivers and s
+ upport through FAccT's participant support form.\nhttps://facctconference.
+ org/2026/cfv.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://facctconference.org/2026/cfv.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: FAccT Financial Support: Closes · for FAccT 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: FAccT Financial Support: Closes · for FAccT 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:facct-student-volunteers-vol-closes-for-facct-2027-2027@conference-dead
+ lines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270427
+DTEND;VALUE=DATE:20270428
+SUMMARY:FAccT Student Volunteers: Closes · for FAccT 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nApplied through FAccT's pa
+ rticipant support form.\nhttps://facctconference.org/2026/cfv.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://facctconference.org/2026/cfv.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: FAccT Student Volunteers: Closes · for FAccT 202
+ 7
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: FAccT Student Volunteers: Closes · for FAccT 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-paper-cycle-2-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270430
+SUMMARY:CCS 2027: Cycle 2 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Atlanta\, USA\
+ , Oct 11–15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CCS 2027: Cycle 2 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CCS 2027: Cycle 2 · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:icml-2027-rev-round-2-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:ICML 2027: Round 2 decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Rio de Janeiro\, Brazil\
+ , Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Rio de Janeiro\, Brazil
+URL:https://icml.cc/
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips-2027-abs-main-track-and-position-papers-2027@conference-deadlin
+ es
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270504
+DTEND;VALUE=DATE:20270505
+SUMMARY:NeurIPS 2027: Main track & position papers · abstract / registrati
+ on
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Europe\, city 
+ TBA\, 2026 was Sydney\, Atlanta & Paris.\nhttps://neurips.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Europe\, city TBA
+URL:https://neurips.cc/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: NeurIPS 2027: Main track & position papers · abs
+ tract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: NeurIPS 2027: Main track & position papers · abst
+ ract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips-2027-paper-main-track-and-position-papers-2027@conference-deadl
+ ines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270506
+DTEND;VALUE=DATE:20270507
+SUMMARY:NeurIPS 2027: Main track & position papers · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Europe\, city 
+ TBA\, 2026 was Sydney\, Atlanta & Paris.\nhttps://neurips.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Europe\, city TBA
+URL:https://neurips.cc/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: NeurIPS 2027: Main track & position papers · pap
+ er deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: NeurIPS 2027: Main track & position papers · pape
+ r deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2027-rev-cycle-2-round-2-final-decisions-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270506
+DTEND;VALUE=DATE:20270507
+SUMMARY:USENIX Security 2027: Cycle 2 · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nConference: Denver\, USA\, Au
+ g 11–13\, 2027.\nhttps://www.usenix.org/node/315301
+TRANSP:TRANSPARENT
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/node/315301
+END:VEVENT
+BEGIN:VEVENT
+UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-dis-2027-20
+ 27@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:Gary Marsden Travel Awards: Round closes · last round for DIS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes · last 
+ round for DIS 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes · last r
+ ound for DIS 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aies-2027-abs--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270514
+DTEND;VALUE=DATE:20270515
+SUMMARY:AIES 2027: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Malmö\, Swede
+ n.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Malmö\, Sweden
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: AIES 2027: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: AIES 2027: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:asisandt-2027-rev-papers-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270519
+DTEND;VALUE=DATE:20270520
+SUMMARY:ASIS&T 2027: Papers · decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Vancouver\, Canada\, Nov
+  19–23\, 2027.\nhttps://www.asist.org/am/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Vancouver\, Canada
+URL:https://www.asist.org/am/
+END:VEVENT
+BEGIN:VEVENT
+UID:soups-2027-rev-papers-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270519
+DTEND;VALUE=DATE:20270520
+SUMMARY:SOUPS 2027: Papers · decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Denver\, USA\, Aug 8–1
+ 0\, 2027.\nhttps://www.usenix.org/conferences/bytopic/security
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/conferences/bytopic/security
+END:VEVENT
+BEGIN:VEVENT
+UID:aies-2027-paper--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:AIES 2027: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Malmö\, Swede
+ n.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Malmö\, Sweden
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: AIES 2027: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: AIES 2027: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aies-2027-poster-phd-student-program-poster-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:AIES 2027: PhD Student Program poster
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Malmö\, Swede
+ n.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Malmö\, Sweden
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: AIES 2027: PhD Student Program poster
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: AIES 2027: PhD Student Program poster
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-rev-papers-round-1-reviews-out-rebuttal-2027@conference-deadl
+ ines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270528
+DTEND;VALUE=DATE:20270529
+SUMMARY:UIST 2027: Papers · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Detroit\, USA.\nhttps://
+ uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:cscw-student-volunteers-vol-closes-for-cscw-2027-2027@conference-deadli
+ nes
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270602
+SUMMARY:CSCW Student Volunteers: Closes · for CSCW 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent volunteer call for
+  CSCW.\nhttps://cscw.acm.org/2026/sv.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://cscw.acm.org/2026/sv.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CSCW Student Volunteers: Closes · for CSCW 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CSCW Student Volunteers: Closes · for CSCW 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-2027-rev-papers-round-1-reviews-out-rebuttal-2027@conference-dea
+ dlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270603
+DTEND;VALUE=DATE:20270604
+SUMMARY:ASSETS 2027: Papers · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Porto\, Portugal.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:asisandt-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:ASIS&T 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Vancouver\, Ca
+ nada\, Nov 19–23\, 2027.\nhttps://www.asist.org/am/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Vancouver\, Canada
+URL:https://www.asist.org/am/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ASIS&T 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ASIS&T 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2028-abs-cycle-1-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:IEEE S&P 2028: Cycle 1 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2028: Cycle 1 · abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2028: Cycle 1 · abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2028-paper-cycle-1-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270611
+DTEND;VALUE=DATE:20270612
+SUMMARY:IEEE S&P 2028: Cycle 1 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2028: Cycle 1 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2028: Cycle 1 · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:soups-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270611
+DTEND;VALUE=DATE:20270612
+SUMMARY:SOUPS 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Denver\, USA\,
+  Aug 8–10\, 2027.\nhttps://www.usenix.org/conferences/bytopic/security
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/conferences/bytopic/security
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: SOUPS 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: SOUPS 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-student-volunteers-vol-lottery-opens-for-uist-2027-2027@conference
+ -deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270620
+DTEND;VALUE=DATE:20270621
+SUMMARY:UIST Student Volunteers: Lottery opens · for UIST 2027
+DESCRIPTION:Applications open.\nPlaceholder based on the 2026 date. Confirm
+  on the official call.\nStudent volunteers for UIST are chosen by lottery.
+ \nhttps://uist.acm.org/2026/cfp
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://uist.acm.org/2026/cfp
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-2027-rev-papers-round-2-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270624
+DTEND;VALUE=DATE:20270625
+SUMMARY:ASSETS 2027: Papers · round 2 decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Porto\, Portugal.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-rev-cycle-2-round-1-reviews-out-rebuttal-2027@conference-deadl
+ ines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270629
+DTEND;VALUE=DATE:20270630
+SUMMARY:CCS 2027: Cycle 2 · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Atlanta\, USA\, Oct 11
+ –15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-2027-poster-posters-and-demonstrations-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270702
+SUMMARY:ASSETS 2027: Posters & Demonstrations
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Porto\, Portug
+ al.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ASSETS 2027: Posters & Demonstrations
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ASSETS 2027: Posters & Demonstrations
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-student-grant-fund-closes-for-usenix-security-2027-2027
+ @conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270706
+DTEND;VALUE=DATE:20270707
+SUMMARY:USENIX Security Student Grant: Closes · for USENIX Security 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nUSENIX student grants for 
+ USENIX Security.\nhttps://www.usenix.org/node/319912
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://www.usenix.org/node/319912
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security Student Grant: Closes · for USEN
+ IX Security 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security Student Grant: Closes · for USENI
+ X Security 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:asisandt-2027-rev-posters-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270709
+DTEND;VALUE=DATE:20270710
+SUMMARY:ASIS&T 2027: Posters · decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Vancouver\, Canada\, Nov
+  19–23\, 2027.\nhttps://www.asist.org/am/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Vancouver\, Canada
+URL:https://www.asist.org/am/
+END:VEVENT
+BEGIN:VEVENT
+UID:xxgary-marsden-travel-awards-fund-round-closes-2027@conference-deadline
+ s
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270709
+DTEND;VALUE=DATE:20270710
+SUMMARY:Gary Marsden Travel Awards: Round closes
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-poster-posters-and-demos-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270710
+DTEND;VALUE=DATE:20270711
+SUMMARY:UIST 2027: Posters & Demos
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Detroit\, USA.
+ \nhttps://uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: UIST 2027: Posters & Demos
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: UIST 2027: Posters & Demos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270710
+DTEND;VALUE=DATE:20270711
+SUMMARY:USENIX Security 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Denver\, USA\,
+  Aug 11–13\, 2027.\nhttps://www.usenix.org/node/315301
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/node/315301
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aies-2027-rev-papers-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270716
+DTEND;VALUE=DATE:20270717
+SUMMARY:AIES 2027: Papers · decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Malmö\, Sweden.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Malmö\, Sweden
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-student-volunteers-vol-closes-for-assets-2027-2027@conference-de
+ adlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270716
+DTEND;VALUE=DATE:20270717
+SUMMARY:ASSETS Student Volunteers: Closes · for ASSETS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent volunteer call for
+  ASSETS.\nhttps://assets26.sigaccess.org/volunteer.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://assets26.sigaccess.org/volunteer.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ASSETS Student Volunteers: Closes · for ASSETS 2
+ 027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ASSETS Student Volunteers: Closes · for ASSETS 20
+ 27
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-rev-cycle-2-round-2-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270717
+DTEND;VALUE=DATE:20270718
+SUMMARY:CCS 2027: Cycle 2 · round 2 decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Atlanta\, USA\, Oct 11
+ –15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:sigaccess-travel-scholarship-fund-closes-for-assets-2027-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270720
+DTEND;VALUE=DATE:20270721
+SUMMARY:SIGACCESS Travel Scholarship: Closes · for ASSETS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nACM SIGACCESS travel suppo
+ rt for students attending ASSETS.\nhttps://www.sigaccess.org/awards/sigacc
+ ess-scholarship/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://www.sigaccess.org/awards/sigaccess-scholarship/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: SIGACCESS Travel Scholarship: Closes · for ASSET
+ S 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: SIGACCESS Travel Scholarship: Closes · for ASSETS
+  2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-28-abs--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270721
+DTEND;VALUE=DATE:20270722
+SUMMARY:AAAI-28: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: AAAI-28: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: AAAI-28: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips-2027-rev-round-1-reviews-out-discussion-2027@conference-deadlin
+ es
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270722
+DTEND;VALUE=DATE:20270723
+SUMMARY:NeurIPS 2027: Round 1 reviews out (discussion)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Europe\, city TBA\, 2026
+  was Sydney\, Atlanta & Paris.\nhttps://neurips.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Europe\, city TBA
+URL:https://neurips.cc/
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-poster-posters-both-cycles-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270723
+DTEND;VALUE=DATE:20270724
+SUMMARY:CCS 2027: Posters (both cycles)
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Atlanta\, USA\
+ , Oct 11–15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CCS 2027: Posters (both cycles)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CCS 2027: Posters (both cycles)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-28-paper--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270728
+DTEND;VALUE=DATE:20270729
+SUMMARY:AAAI-28: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: AAAI-28: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: AAAI-28: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-student-volunteers-vol-lottery-closes-for-uist-2027-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270801
+DTEND;VALUE=DATE:20270802
+SUMMARY:UIST Student Volunteers: Lottery closes · for UIST 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent volunteers for UIS
+ T are chosen by lottery.\nhttps://uist.acm.org/2026/cfp
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://uist.acm.org/2026/cfp
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: UIST Student Volunteers: Lottery closes · for UI
+ ST 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: UIST Student Volunteers: Lottery closes · for UIS
+ T 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-rev-papers-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270807
+DTEND;VALUE=DATE:20270808
+SUMMARY:UIST 2027: Papers · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Detroit\, USA.\nhttps://
+ uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-2027-rev-posters-and-demos-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270812
+DTEND;VALUE=DATE:20270813
+SUMMARY:ASSETS 2027: Posters & Demos · decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Porto\, Portugal.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-abs--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270813
+DTEND;VALUE=DATE:20270814
+SUMMARY:IUI 2028: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Helsinki\, Fin
+ land.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IUI 2028: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IUI 2028: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-rev-posters-and-demos-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270814
+DTEND;VALUE=DATE:20270815
+SUMMARY:UIST 2027: Posters & Demos · decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Detroit\, USA.\nhttps://
+ uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2028-abs-cycle-1-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270818
+DTEND;VALUE=DATE:20270819
+SUMMARY:USENIX Security 2028: Cycle 1 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Denver\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security 2028: Cycle 1 · abstract / regis
+ tration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security 2028: Cycle 1 · abstract / regist
+ ration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2028-rev-cycle-1-round-1-reviews-out-rebuttal-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270820
+DTEND;VALUE=DATE:20270821
+SUMMARY:IEEE S&P 2028: Cycle 1 · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Montréal\, Canada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-paper--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270820
+DTEND;VALUE=DATE:20270821
+SUMMARY:IUI 2028: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Helsinki\, Fin
+ land.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IUI 2028: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IUI 2028: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2028-paper-cycle-1-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270825
+DTEND;VALUE=DATE:20270826
+SUMMARY:USENIX Security 2028: Cycle 1 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Denver\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security 2028: Cycle 1 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security 2028: Cycle 1 · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips-financial-assistance-fund-opens-for-neurips-2027-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270907
+DTEND;VALUE=DATE:20270908
+SUMMARY:NeurIPS Financial Assistance: Opens · for NeurIPS 2027
+DESCRIPTION:Applications open.\nPlaceholder based on the 2026 date. Confirm
+  on the official call.\nFinancial assistance for attending NeurIPS.\nhttps
+ ://neurips.cc/Conferences/2026/FinancialAssistance
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://neurips.cc/Conferences/2026/FinancialAssistance
+END:VEVENT
+BEGIN:VEVENT
+UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-uist-2027-2
+ 027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270909
+DTEND;VALUE=DATE:20270910
+SUMMARY:Gary Marsden Travel Awards: Round closes · last round for UIST 202
+ 7
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes · last 
+ round for UIST 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes · last r
+ ound for UIST 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2028-paper--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270910
+DTEND;VALUE=DATE:20270911
+SUMMARY:CHI 2028: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Pittsburgh\, U
+ SA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Pittsburgh\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CHI 2028: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CHI 2028: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2028-rev-cycle-1-round-2-final-decisions-2027@conference-dea
+ dlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270911
+DTEND;VALUE=DATE:20270912
+SUMMARY:IEEE S&P 2028: Cycle 1 · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Montréal\, Canada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-student-travel-grant-fund-closes-for-ccs-2027-2027@conference-deadl
+ ines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270914
+DTEND;VALUE=DATE:20270915
+SUMMARY:CCS Student Travel Grant: Closes · for CCS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent travel grants for 
+ ACM CCS.\nhttps://www.sigsac.org/ccs/CCS2026/attending/conference-grants.h
+ tml
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://www.sigsac.org/ccs/CCS2026/attending/conference-grants.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CCS Student Travel Grant: Closes · for CCS 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CCS Student Travel Grant: Closes · for CCS 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iconference-2028-paper-full-and-short-research-papers-2027@conference-d
+ eadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270915
+DTEND;VALUE=DATE:20270916
+SUMMARY:iConference 2028: Full & short research papers · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Wellington\, N
+ ew Zealand.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Wellington\, New Zealand
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: iConference 2028: Full & short research papers ·
+  paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: iConference 2028: Full & short research papers · 
+ paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iconference-2028-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270915
+DTEND;VALUE=DATE:20270916
+SUMMARY:iConference 2028: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Wellington\, N
+ ew Zealand.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Wellington\, New Zealand
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: iConference 2028: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: iConference 2028: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iclr-2028-abs--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270918
+DTEND;VALUE=DATE:20270919
+SUMMARY:ICLR 2028: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Rio de Janeiro
+ \, Brazil\, ICLR 2027 city TBA.\nhttps://iclr.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Rio de Janeiro\, Brazil
+URL:https://iclr.cc/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ICLR 2028: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ICLR 2028: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-28-rev-round-1-phase-1-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270924
+DTEND;VALUE=DATE:20270925
+SUMMARY:AAAI-28: Round 1 phase 1 decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Montréal\, Canada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips-2027-rev-round-2-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270924
+DTEND;VALUE=DATE:20270925
+SUMMARY:NeurIPS 2027: Round 2 decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Europe\, city TBA\, 2026
+  was Sydney\, Atlanta & Paris.\nhttps://neurips.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Europe\, city TBA
+URL:https://neurips.cc/
+END:VEVENT
+BEGIN:VEVENT
+UID:iclr-2028-paper--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270925
+DTEND;VALUE=DATE:20270926
+SUMMARY:ICLR 2028: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Rio de Janeiro
+ \, Brazil\, ICLR 2027 city TBA.\nhttps://iclr.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Rio de Janeiro\, Brazil
+URL:https://iclr.cc/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ICLR 2028: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ICLR 2028: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips-financial-assistance-fund-closes-for-neurips-2027-2027@conferen
+ ce-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271006
+DTEND;VALUE=DATE:20271007
+SUMMARY:NeurIPS Financial Assistance: Closes · for NeurIPS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nFinancial assistance for a
+ ttending NeurIPS.\nhttps://neurips.cc/Conferences/2026/FinancialAssistance
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://neurips.cc/Conferences/2026/FinancialAssistance
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: NeurIPS Financial Assistance: Closes · for NeurI
+ PS 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: NeurIPS Financial Assistance: Closes · for NeurIP
+ S 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips-volunteers-vol-closes-for-neurips-2027-2027@conference-deadline
+ s
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271006
+DTEND;VALUE=DATE:20271007
+SUMMARY:NeurIPS Volunteers: Closes · for NeurIPS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nVolunteer applications for
+  NeurIPS.\nhttps://blog.neurips.cc/2026/09/16/join-us-at-neurips-2026-fina
+ ncial-assistance-and-volunteer-applications-are-now-open/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://blog.neurips.cc/2026/09/16/join-us-at-neurips-2026-financial-as
+ sistance-and-volunteer-applications-are-now-open/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: NeurIPS Volunteers: Closes · for NeurIPS 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: NeurIPS Volunteers: Closes · for NeurIPS 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-28-rev-reviews-out-author-feedback-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271024
+DTEND;VALUE=DATE:20271025
+SUMMARY:AAAI-28: Reviews out (author feedback)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Montréal\, Canada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+END:VEVENT
+BEGIN:VEVENT
+UID:facct-2028-abs--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271027
+DTEND;VALUE=DATE:20271028
+SUMMARY:FAccT 2028: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Porto\, Portug
+ al.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: FAccT 2028: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: FAccT 2028: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-rev-papers-round-1-initial-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271029
+DTEND;VALUE=DATE:20271030
+SUMMARY:IUI 2028: Papers · round 1 initial decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Helsinki\, Finland.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+END:VEVENT
+BEGIN:VEVENT
+UID:facct-2028-paper--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271103
+DTEND;VALUE=DATE:20271104
+SUMMARY:FAccT 2028: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Porto\, Portug
+ al.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: FAccT 2028: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: FAccT 2028: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2028-rev-papers-round-1-reviews-and-revise-and-re-2027@conference-d
+ eadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271105
+DTEND;VALUE=DATE:20271106
+SUMMARY:CHI 2028: Papers · round 1 reviews & revise-and-resubmit decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Pittsburgh\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Pittsburgh\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:iclr-2028-rev-round-1-reviews-out-discussion-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271105
+DTEND;VALUE=DATE:20271106
+SUMMARY:ICLR 2028: Round 1 reviews out (discussion)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Rio de Janeiro\, Brazil\
+ , ICLR 2027 city TBA.\nhttps://iclr.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Rio de Janeiro\, Brazil
+URL:https://iclr.cc/
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2028-rev-cycle-1-round-1-reviews-out-rebuttal-2027@conf
+ erence-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271105
+DTEND;VALUE=DATE:20271106
+SUMMARY:USENIX Security 2028: Cycle 1 · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Denver\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:xxxgary-marsden-travel-awards-fund-round-closes-2027@conference-deadlin
+ es
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271109
+DTEND;VALUE=DATE:20271110
+SUMMARY:Gary Marsden Travel Awards: Round closes
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2028-abs-cycle-2-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271110
+DTEND;VALUE=DATE:20271111
+SUMMARY:IEEE S&P 2028: Cycle 2 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2028: Cycle 2 · abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2028: Cycle 2 · abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-poster-posters-and-demos-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271110
+DTEND;VALUE=DATE:20271111
+SUMMARY:IUI 2028: Posters & Demos
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Helsinki\, Fin
+ land.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IUI 2028: Posters & Demos
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IUI 2028: Posters & Demos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2028-paper-cycle-2-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271117
+DTEND;VALUE=DATE:20271118
+SUMMARY:IEEE S&P 2028: Cycle 2 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2028: Cycle 2 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2028: Cycle 2 · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iconference-2028-rev-papers-and-posters-decisions-2027@conference-deadl
+ ines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271119
+DTEND;VALUE=DATE:20271120
+SUMMARY:iConference 2028: Papers & posters · decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Wellington\, New Zealand
+ .
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Wellington\, New Zealand
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-rev-papers-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271123
+DTEND;VALUE=DATE:20271124
+SUMMARY:IUI 2028: Papers · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Helsinki\, Finland.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-student-scholar-and-volunteer-program-vol-opens-for-aaai-28-2027@c
+ onference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271130
+DTEND;VALUE=DATE:20271201
+SUMMARY:AAAI Student Scholar & Volunteer Program: Opens · for AAAI-28
+DESCRIPTION:Applications open.\nPlaceholder based on the 2026 date. Confirm
+  on the official call.\nComplimentary registration for student volunteers 
+ at AAAI.\nhttps://aaai.org/conference/aaai/aaai-27/student-scholar-volunte
+ er-program/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://aaai.org/conference/aaai/aaai-27/student-scholar-volunteer-prog
+ ram/
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-28-rev-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271130
+DTEND;VALUE=DATE:20271201
+SUMMARY:AAAI-28: Round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Montréal\, Canada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2028-rev-cycle-1-round-2-final-decisions-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271203
+DTEND;VALUE=DATE:20271204
+SUMMARY:USENIX Security 2028: Cycle 1 · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Denver\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-student-scholar-and-volunteer-program-vol-closes-for-aaai-28-2027@
+ conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271204
+DTEND;VALUE=DATE:20271205
+SUMMARY:AAAI Student Scholar & Volunteer Program: Closes · for AAAI-28
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nComplimentary registration
+  for student volunteers at AAAI.\nhttps://aaai.org/conference/aaai/aaai-27
+ /student-scholar-volunteer-program/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://aaai.org/conference/aaai/aaai-27/student-scholar-volunteer-prog
+ ram/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: AAAI Student Scholar & Volunteer Program: Closes 
+ · for AAAI-28
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: AAAI Student Scholar & Volunteer Program: Closes 
+ · for AAAI-28
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-rev-posters-and-demos-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271214
+DTEND;VALUE=DATE:20271215
+SUMMARY:IUI 2028: Posters & Demos · decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Helsinki\, Finland.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+END:VEVENT
+BEGIN:VEVENT
+UID:iclr-2028-rev-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271216
+DTEND;VALUE=DATE:20271217
+SUMMARY:ICLR 2028: Round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Rio de Janeiro\, Brazil\
+ , ICLR 2027 city TBA.\nhttps://iclr.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Rio de Janeiro\, Brazil
+URL:https://iclr.cc/
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2028-rev-papers-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271217
+DTEND;VALUE=DATE:20271218
+SUMMARY:CHI 2028: Papers · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Pittsburgh\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Pittsburgh\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:facct-2028-rev-round-1-reviews-and-first-decisions-2027@conference-dead
+ lines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271222
+DTEND;VALUE=DATE:20271223
+SUMMARY:FAccT 2028: Round 1 reviews & first decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Porto\, Portugal.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+END:VEVENT
+END:VCALENDAR

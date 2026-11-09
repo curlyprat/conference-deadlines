@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SIGACCESS Travel Scholarship dates
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:sigaccess-travel-scholarship-fund-closes-for-assets-2027-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270720
+DTEND;VALUE=DATE:20270721
+SUMMARY:SIGACCESS Travel Scholarship: Closes · for ASSETS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nACM SIGACCESS travel suppo
+ rt for students attending ASSETS.\nhttps://www.sigaccess.org/awards/sigacc
+ ess-scholarship/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://www.sigaccess.org/awards/sigaccess-scholarship/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: SIGACCESS Travel Scholarship: Closes · for ASSET
+ S 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: SIGACCESS Travel Scholarship: Closes · for ASSETS
+  2027
+END:VALARM
+END:VEVENT
+END:VCALENDAR

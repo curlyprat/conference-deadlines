@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:USENIX Security Student Grant dates
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:usenix-security-student-grant-fund-closes-for-usenix-security-2027-2027
+ @conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270706
+DTEND;VALUE=DATE:20270707
+SUMMARY:USENIX Security Student Grant: Closes · for USENIX Security 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nUSENIX student grants for 
+ USENIX Security.\nhttps://www.usenix.org/node/319912
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://www.usenix.org/node/319912
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security Student Grant: Closes · for USEN
+ IX Security 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security Student Grant: Closes · for USENI
+ X Security 2027
+END:VALARM
+END:VEVENT
+END:VCALENDAR

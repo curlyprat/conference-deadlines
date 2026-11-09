@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CHI Student Volunteers dates
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:chi-student-volunteers-vol-lottery-opens-for-chi-2027-2026@conference-d
+ eadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:CHI Student Volunteers: Lottery opens · for CHI 2027
+DESCRIPTION:Applications open.\nLottery on new.chisv.org\; results February
+  8\, 2027.\nhttps://chi2027.acm.org/2026/11/07/call-for-svs/
+TRANSP:TRANSPARENT
+URL:https://chi2027.acm.org/2026/11/07/call-for-svs/
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-student-volunteers-vol-lottery-closes-for-chi-2027-2027@conference-
+ deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:CHI Student Volunteers: Lottery closes · for CHI 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nLottery on new.chis
+ v.org\; results February 8\, 2027.\nhttps://chi2027.acm.org/2026/11/07/cal
+ l-for-svs/
+TRANSP:TRANSPARENT
+URL:https://chi2027.acm.org/2026/11/07/call-for-svs/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CHI Student Volunteers: Lottery closes · for CHI
+  2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CHI Student Volunteers: Lottery closes · for CHI 
+ 2027
+END:VALARM
+END:VEVENT
+END:VCALENDAR

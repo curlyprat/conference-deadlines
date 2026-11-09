@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ASSETS Student Volunteers dates
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:assets-student-volunteers-vol-closes-for-assets-2027-2027@conference-de
+ adlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270716
+DTEND;VALUE=DATE:20270717
+SUMMARY:ASSETS Student Volunteers: Closes · for ASSETS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent volunteer call for
+  ASSETS.\nhttps://assets26.sigaccess.org/volunteer.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://assets26.sigaccess.org/volunteer.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ASSETS Student Volunteers: Closes · for ASSETS 2
+ 027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ASSETS Student Volunteers: Closes · for ASSETS 20
+ 27
+END:VALARM
+END:VEVENT
+END:VCALENDAR

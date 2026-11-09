@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IEEE S&P Student Travel Grant dates
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:ieee-sandp-student-travel-grant-fund-closes-for-ieee-sandp-2027-2027@co
+ nference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270402
+DTEND;VALUE=DATE:20270403
+SUMMARY:IEEE S&P Student Travel Grant: Closes · for IEEE S&P 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent travel grants for 
+ the IEEE Symposium on Security and Privacy.\nhttps://sp2026.ieee-security.
+ org/travel_grants.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://sp2026.ieee-security.org/travel_grants.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P Student Travel Grant: Closes · for IEEE
+  S&P 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P Student Travel Grant: Closes · for IEEE 
+ S&P 2027
+END:VALARM
+END:VEVENT
+END:VCALENDAR

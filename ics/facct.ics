@@ -1,0 +1,102 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:FAccT dates
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:facct-2027-paper--2026@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:FAccT 2027: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Porto\,
+  Portugal\, Jun 21–24\, 2027.\nhttps://facctconference.org/2027/cfp.html
+TRANSP:TRANSPARENT
+LOCATION:Porto\, Portugal
+URL:https://facctconference.org/2027/cfp.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: FAccT 2027: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: FAccT 2027: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:facct-2027-rev-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270323
+DTEND;VALUE=DATE:20270324
+SUMMARY:FAccT 2027: Round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nConference: Porto\, Portugal\
+ , Jun 21–24\, 2027.\nhttps://facctconference.org/2027/cfp.html
+TRANSP:TRANSPARENT
+LOCATION:Porto\, Portugal
+URL:https://facctconference.org/2027/cfp.html
+END:VEVENT
+BEGIN:VEVENT
+UID:facct-2028-abs--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271027
+DTEND;VALUE=DATE:20271028
+SUMMARY:FAccT 2028: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Porto\, Portug
+ al.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: FAccT 2028: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: FAccT 2028: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:facct-2028-paper--2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271103
+DTEND;VALUE=DATE:20271104
+SUMMARY:FAccT 2028: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Porto\, Portug
+ al.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: FAccT 2028: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: FAccT 2028: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:facct-2028-rev-round-1-reviews-and-first-decisions-2027@conference-dead
+ lines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271222
+DTEND;VALUE=DATE:20271223
+SUMMARY:FAccT 2028: Round 1 reviews & first decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Porto\, Portugal.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+END:VEVENT
+END:VCALENDAR

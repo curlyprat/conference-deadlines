@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UIST Student Volunteers dates
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:uist-student-volunteers-vol-lottery-opens-for-uist-2027-2027@conference
+ -deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270620
+DTEND;VALUE=DATE:20270621
+SUMMARY:UIST Student Volunteers: Lottery opens · for UIST 2027
+DESCRIPTION:Applications open.\nPlaceholder based on the 2026 date. Confirm
+  on the official call.\nStudent volunteers for UIST are chosen by lottery.
+ \nhttps://uist.acm.org/2026/cfp
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://uist.acm.org/2026/cfp
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-student-volunteers-vol-lottery-closes-for-uist-2027-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270801
+DTEND;VALUE=DATE:20270802
+SUMMARY:UIST Student Volunteers: Lottery closes · for UIST 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent volunteers for UIS
+ T are chosen by lottery.\nhttps://uist.acm.org/2026/cfp
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://uist.acm.org/2026/cfp
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: UIST Student Volunteers: Lottery closes · for UI
+ ST 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: UIST Student Volunteers: Lottery closes · for UIS
+ T 2027
+END:VALARM
+END:VEVENT
+END:VCALENDAR

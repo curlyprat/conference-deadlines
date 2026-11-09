@@ -1,0 +1,1470 @@
+<title>Conference Deadline Calendar</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap">
+<style>
+/* Layout: title + stats, next-deadline panel, filter panel, sticky month bar with view switch,
+   then Calendar view (month cards: grid + rows) or List view (agenda grouped by month), venues table, notes.
+   Palette: soft pastels - soft tomato (papers), lemon (posters), baby blue (volunteer) on periwinkle white.
+   Each fill has a deeper --*-edge so dots and cells stay visible on white (3:1 non-text contrast). */
+:root {
+  --bg: #f4f6ff;
+  --surface: #ffffff;
+  --surface-2: #eef1fd;
+  --ink: #33385a;
+  --muted: #5f6689;
+  --line: #dde2f5;
+  --red: #ff8a73;      /* paper deadlines: soft tomato */
+  --red-ink: #3d1408;
+  --red-edge: #d5402f;
+  --yellow: #ffe17d;
+  --yellow-ink: #4a3a00;
+  --yellow-edge: #b88a00;
+  --blue: #efe7fc;      /* volunteer applications: soft lilac (token name kept) */
+  --blue-ink: #34205a;
+  --blue-edge: #9f85cf;
+  --fund: #e3eedb;      /* travel funds: very light sage */
+  --fund-ink: #34472d;
+  --fund-edge: #6f9764;
+  --rev: #ebedf0;
+  --rev-edge: #a3a9c4;
+  --rev-ink: #545b7d;
+  --rev-sec: #c9e6f2; --rev-sec-edge: #4f8fa8;   /* misty teal: security */
+  --rev-hci: #e2f0cb; --rev-hci-edge: #6c9645;   /* sage: HCI */
+  --rev-ai: #e8d9f8;  --rev-ai-edge: #8d6fc0;    /* lilac: AI & ML */
+  --fill-ink: #2b2f4a;
+  --mix-shadow: none;
+  --est-line: rgba(43, 47, 74, 0.55);
+  --soon: #c03a22;
+  --focus: #3b82c9;
+  --star: #e0a400;
+  --shadow: 0 1px 2px rgba(43, 47, 74, 0.05), 0 6px 20px rgba(43, 47, 74, 0.06);
+  --font-display: "M PLUS Rounded 1c", "Nunito", "Arial Rounded MT Bold", sans-serif;
+  --font-body: "Nunito", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1c1f33; --surface: #262a43; --surface-2: #2e3352; --ink: #eef0ff; --muted: #a7acca; --line: #3a3f5e;
+    --red: #ff8f7a; --red-ink: #3d1408; --red-edge: #ff8f7a;
+    --yellow: #ffe48a; --yellow-ink: #3a2e00; --yellow-edge: #ffe48a;
+    --blue: #443a62; --blue-ink: #e6dcfa; --blue-edge: #a993d2;
+    --soon: #ff9a80; --focus: #a9d9ff; --star: #ffd75e;
+    --fund: #344536; --fund-ink: #dbe8d4; --fund-edge: #a7c99c;
+    --fill-ink: #ffffff; --mix-shadow: 0 0 2px #000, 0 0 5px rgba(0,0,0,.8);
+    --rev: #353a58; --rev-edge: #6c7296; --rev-ink: #c3c8e2;
+    --rev-sec: #24485a; --rev-sec-edge: #8cc4da; --rev-hci: #3b4d2a; --rev-hci-edge: #a9cf86; --rev-ai: #45365f; --rev-ai-edge: #b9a0e6;
+    --shadow: 0 1px 2px rgba(0,0,0,.25), 0 8px 24px rgba(0,0,0,.25);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1c1f33; --surface: #262a43; --surface-2: #2e3352; --ink: #eef0ff; --muted: #a7acca; --line: #3a3f5e;
+  --red: #ff8f7a; --red-ink: #3d1408; --red-edge: #ff8f7a;
+  --yellow: #ffe48a; --yellow-ink: #3a2e00; --yellow-edge: #ffe48a;
+  --blue: #443a62; --blue-ink: #e6dcfa; --blue-edge: #a993d2;
+  --soon: #ff9a80; --focus: #a9d9ff; --star: #ffd75e;
+  --fund: #344536; --fund-ink: #dbe8d4; --fund-edge: #a7c99c;
+  --fill-ink: #ffffff; --mix-shadow: 0 0 2px #000, 0 0 5px rgba(0,0,0,.8);
+  --rev: #353a58; --rev-edge: #6c7296; --rev-ink: #c3c8e2;
+  --rev-sec: #24485a; --rev-sec-edge: #8cc4da; --rev-hci: #3b4d2a; --rev-hci-edge: #a9cf86; --rev-ai: #45365f; --rev-ai-edge: #b9a0e6;
+  --shadow: 0 1px 2px rgba(0,0,0,.25), 0 8px 24px rgba(0,0,0,.25);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 72px); }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-block: 28px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+}
+.wrap > * { min-width: 0; }
+
+/* ---------- Header ---------- */
+header { display: grid; gap: 6px; }
+.head-row { display: flex; align-items: center; justify-content: space-between; gap: 10px 16px; flex-wrap: wrap; }
+.head-row h1 { flex: 1 1 auto; min-width: 0; }
+.calbtn.wide {
+  width: auto; height: auto; display: inline-flex; align-items: center; gap: 8px;
+  padding: 9px 16px; border-radius: 999px; font-size: 0.9rem; font-weight: 800;
+  color: var(--ink); background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow);
+}
+.calbtn.wide:hover, .calbtn.wide[aria-expanded="true"] { background: var(--surface-2); }
+.export .calmenu-pop { min-width: 270px; max-width: calc(100vw - 32px); }
+.sheet-tools .calmenu-pop { min-width: 250px; max-width: calc(100vw - 40px); }
+.calmenu-pop.flip { left: 0; right: auto; }
+.menu-note { margin: 4px 12px 6px; font-size: 0.76rem; color: var(--muted); }
+h1 {
+  font-family: var(--font-display);
+  margin: 0;
+  font-size: clamp(1.7rem, 4.8vw, 2.4rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.stats { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.stats b { color: var(--ink); font-weight: 700; }
+.aoe { margin: 0; color: var(--muted); font-size: 0.82rem; }
+
+/* ---------- Panels ---------- */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+.eyebrow {
+  margin: 0;
+  font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+/* Next deadline */
+.next { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); }
+.next-hero { padding: 20px; display: grid; gap: 10px; align-content: start; border-right: 1px solid var(--line); }
+.next-when { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.next-when .big { font-family: var(--font-display); font-size: clamp(1.8rem, 5vw, 2.4rem); font-weight: 800; line-height: 1.05; color: var(--soon); }
+.next-when .date { color: var(--muted); font-weight: 600; }
+.next-hero ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.next-hero li { display: grid; grid-template-columns: 14px 1fr; gap: 10px; align-items: start; font-size: 1.02rem; }
+.next-later { padding: 20px; display: grid; gap: 8px; align-content: start; }
+.next-later ol { list-style: none; margin: 0; padding: 0; display: grid; }
+.next-later li { display: grid; grid-template-columns: 52px 12px 1fr auto; gap: 10px; align-items: start; padding: 7px 0; border-top: 1px solid var(--line); font-size: 0.9rem; }
+.next-later li:first-child { border-top: 0; }
+.next-later .when { font-weight: 700; font-variant-numeric: tabular-nums; }
+.next-later .left { color: var(--muted); font-size: 0.8rem; white-space: nowrap; padding-top: 1px; font-variant-numeric: tabular-nums; }
+
+/* Filters */
+.filters { padding: 16px 20px; display: grid; gap: 12px; }
+.search { position: relative; }
+.search svg { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
+.search input {
+  width: 100%;
+  font: inherit; font-size: 1rem;
+  padding: 11px 40px 11px 42px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  color: var(--ink);
+}
+.search input::placeholder { color: var(--muted); }
+.search input:focus { outline: 2px solid var(--focus); outline-offset: 0; border-color: transparent; }
+.search .clear {
+  position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+  width: 28px; height: 28px; border-radius: 50%; border: 0; background: transparent; color: var(--muted); cursor: pointer;
+}
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.row-label { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); width: 56px; }
+.chip {
+  font-size: 0.86rem; font-weight: 700;
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 6px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  cursor: pointer;
+  min-height: 34px;
+}
+.chip.has-sw { padding-left: 10px; }
+.chip:hover { background: var(--surface-2); }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.chip[aria-pressed="true"] .sw { box-shadow: 0 0 0 1.5px var(--bg); }
+.chip .star-ico { color: var(--star); }
+.chip[aria-pressed="true"] .star-ico { color: var(--star); }
+.filters-foot { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 16px; padding-top: 2px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 0.8rem; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.fx summary {
+  list-style: none; cursor: pointer; display: none;
+  align-items: center; gap: 8px; width: fit-content;
+  font-weight: 800; font-size: 0.9rem; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface);
+}
+.fx summary::-webkit-details-marker { display: none; }
+.fx[open] summary .chev { transform: rotate(180deg); }
+.fx-n { background: var(--ink); color: var(--bg); border-radius: 999px; font-size: 0.72rem; padding: 0 7px; line-height: 1.6; }
+.fx-n:empty { display: none; }
+.fx-body { display: grid; gap: 12px; }
+@media (max-width: 480px) { .fx summary { display: inline-flex; } .fx[open] .fx-body { padding-top: 12px; } }
+.calpop { position: relative; align-self: start; }
+.callink { width: 32px; height: 32px; border-radius: 10px; display: grid; place-items: center; color: var(--muted); border: 1px solid transparent; align-self: start; }
+.callink:hover { background: var(--surface-2); border-color: var(--line); color: var(--ink); }
+.calbtn {
+  width: 32px; height: 32px; border-radius: 10px; display: grid; place-items: center; cursor: pointer;
+  border: 1px solid transparent; background: transparent; color: var(--muted);
+}
+.calbtn:hover, .calbtn[aria-expanded="true"] { background: var(--surface-2); border-color: var(--line); color: var(--ink); }
+.calbtn-space { width: 32px; }
+.calmenu-pop {
+  position: absolute; right: 0; top: calc(100% + 4px); z-index: 8; min-width: 180px;
+  display: grid; padding: 6px; border-radius: 14px;
+  background: var(--surface); border: 1px solid var(--line); box-shadow: 0 10px 30px rgba(20, 23, 40, 0.16);
+}
+.calmenu-pop a, .calmenu-pop button {
+  font: inherit; font-size: 0.86rem; font-weight: 700; color: var(--ink); text-decoration: none; text-align: left;
+  padding: 9px 12px; border-radius: 10px; border: 0; background: transparent; cursor: pointer;
+}
+.calmenu-pop a:hover, .calmenu-pop button:hover, .calmenu-pop a:focus-visible, .calmenu-pop button:focus-visible { background: var(--surface-2); }
+.no-dl .dl-only { display: none !important; }
+.toast {
+  position: fixed; left: 50%; transform: translateX(-50%); z-index: 30;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 20px);
+  max-width: min(440px, calc(100% - 32px));
+  background: var(--ink); color: var(--bg); font-weight: 700; font-size: 0.88rem;
+  padding: 10px 16px; border-radius: 14px; box-shadow: var(--shadow);
+}
+.linkbtn { border: 0; background: none; padding: 4px 2px; color: var(--focus); font-weight: 700; font-size: 0.86rem; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Swatches and markers */
+.sw { width: 14px; height: 14px; border-radius: 50%; display: inline-block; flex: none; }
+.mk { width: 10px; height: 10px; border-radius: 50%; margin-top: 6px; flex: none; display: inline-block; }
+.paper-c { background: var(--red); box-shadow: inset 0 0 0 1.5px var(--red-edge); }
+.poster-c { background: var(--yellow); box-shadow: inset 0 0 0 1.5px var(--yellow-edge); }
+.vol-c { background: var(--blue); box-shadow: inset 0 0 0 1.5px var(--blue-edge); }
+.rev-c { background: var(--rev); box-shadow: inset 0 0 0 1.5px var(--rev-edge); }
+.fund-c { background: var(--fund); box-shadow: inset 0 0 0 1.5px var(--fund-edge); }
+.rev-sec-c { background: var(--rev-sec); box-shadow: inset 0 0 0 1.5px var(--rev-sec-edge); }
+.rev-hci-c { background: var(--rev-hci); box-shadow: inset 0 0 0 1.5px var(--rev-hci-edge); }
+.rev-ai-c { background: var(--rev-ai); box-shadow: inset 0 0 0 1.5px var(--rev-ai-edge); }
+.ev.rev .t, .ev.rev .t strong { color: var(--rev-ink); font-weight: 600; }
+.ev.rev .t { font-size: 0.86rem; }
+.day.rev-only { font-weight: 700; color: var(--rev-ink); }
+.day.has-label { min-width: 0; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0; line-height: 1.05; }
+.day .dl {
+  font-size: 0.5rem; font-weight: 800; letter-spacing: 0.01em;
+  max-width: 100%; padding: 0 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  opacity: 0.9;
+}
+.day .dl.long { font-size: 0.43rem; letter-spacing: -0.02em; padding: 0 1px; }
+.day.linked { box-shadow: inset 0 0 0 1.5px var(--edge, transparent), 0 0 0 2px var(--surface), 0 0 0 4px color-mix(in srgb, var(--focus) 75%, transparent); }
+.ev.linked { background: color-mix(in srgb, var(--surface-2) 70%, transparent); }
+.vlink {
+  border: 0; background: none; padding: 0; margin: 0; cursor: pointer;
+  font: inherit; font-weight: 800; color: inherit; text-align: left;
+  text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 30%, transparent); text-underline-offset: 3px;
+}
+.vlink:hover { text-decoration-color: currentColor; }
+.ev.rev .vlink { font-weight: 700; }
+
+/* Link banner (inside the sticky bar) */
+.linkbar {
+  flex-basis: 100%;
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  font-size: 0.84rem; font-weight: 700;
+  padding: 7px 12px; border-radius: 14px;
+  background: var(--surface); border: 1px solid var(--line);
+}
+.linkbar .lb-text { flex: 1; min-width: 0; }
+.linkbar button { border: 0; background: none; cursor: pointer; font-weight: 800; font-size: 0.84rem; color: var(--focus); padding: 2px 4px; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Conference sheet */
+.sheet-back {
+  position: fixed; inset: 0; z-index: 20;
+  background: rgba(20, 23, 40, 0.42);
+  display: flex; justify-content: flex-end;
+}
+.sheet {
+  width: min(480px, 100%); height: 100%;
+  background: var(--surface); color: var(--ink);
+  box-shadow: -10px 0 40px rgba(0,0,0,.18);
+  overflow-y: auto; overscroll-behavior: contain;
+  padding: calc(env(safe-area-inset-top, 0px) + 20px) max(20px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 28px) 20px;
+  display: grid; align-content: start; gap: 16px;
+}
+.sheet-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.sheet-head h2 { margin: 0; font-family: var(--font-display); font-size: 1.7rem; font-weight: 800; letter-spacing: -0.01em; }
+.sheet-head p { margin: 2px 0 0; color: var(--muted); font-size: 0.86rem; font-weight: 600; }
+.sheet-head p.full { color: var(--ink); font-size: 0.98rem; font-weight: 700; line-height: 1.3; margin-top: 4px; text-wrap: balance; }
+.sheet-close { flex: none; width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); cursor: pointer; display: grid; place-items: center; }
+.sheet-tools { display: flex; gap: 8px; flex-wrap: wrap; }
+.eds { display: grid; gap: 8px; }
+.ed { border: 1px solid var(--line); border-radius: 16px; padding: 12px 14px; display: grid; gap: 2px; }
+.ed strong { font-weight: 800; }
+.ed span { color: var(--muted); font-size: 0.86rem; }
+.ed a { color: var(--focus); font-weight: 700; font-size: 0.84rem; text-underline-offset: 3px; width: fit-content; }
+.tl { list-style: none; margin: 0; padding: 0; display: grid; }
+.tl li { display: grid; grid-template-columns: 92px 12px minmax(0, 1fr) auto; gap: 10px; padding: 9px 0; border-top: 1px solid var(--line); align-items: start; }
+.tl li:first-child { border-top: 0; }
+.tl .when { font-weight: 800; font-size: 0.86rem; font-variant-numeric: tabular-nums; }
+.tl .when small { display: block; color: var(--muted); font-weight: 600; font-size: 0.76rem; }
+.tl .what { font-size: 0.9rem; min-width: 0; }
+.tl .what .meta { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-top: 2px; font-size: 0.78rem; color: var(--muted); font-weight: 700; }
+.tl .what .meta .soon { color: var(--soon); }
+.tl .what .meta a { color: var(--muted); display: inline-flex; gap: 5px; align-items: center; text-decoration: none; }
+.tl .what .meta a:hover { color: var(--ink); }
+.tl li.past { opacity: 0.5; }
+.tl li.rev .what { color: var(--rev-ink); }
+.tl li.nowline { display: flex; align-items: center; gap: 8px; padding: 6px 0; border-top: 0; color: var(--soon); font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; }
+.tl li.nowline::after { content: ""; flex: 1; height: 1.5px; background: var(--soon); opacity: .5; }
+.tl li.nowline + li { border-top: 0; }
+.sheet-note { margin: 0; font-size: 0.78rem; color: var(--muted); }
+@media (max-width: 560px) {
+  .sheet-back { align-items: flex-end; }
+  .sheet { width: 100%; height: auto; max-height: 90%; border-radius: 22px 22px 0 0; box-shadow: 0 -10px 40px rgba(0,0,0,.2); padding-top: 20px; padding-left: max(18px, env(safe-area-inset-left, 0px)); padding-right: max(18px, env(safe-area-inset-right, 0px)); }
+  .tl li { grid-template-columns: 76px 12px minmax(0, 1fr) auto; }
+}
+.sw.est { outline: 1.5px dashed var(--est-line); outline-offset: -4px; }
+.mk.est { outline: 1px dashed var(--est-line); outline-offset: -3px; }
+.sw.today { background: transparent; box-shadow: inset 0 0 0 2px var(--ink); }
+
+/* Sticky month bar */
+.bar {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 5;
+  margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px))) calc(-1 * max(16px, env(safe-area-inset-right, 0px)));
+  padding: 10px max(16px, env(safe-area-inset-right, 0px)) 10px max(16px, env(safe-area-inset-left, 0px));
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+}
+.seg { display: inline-flex; padding: 3px; gap: 2px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); flex: none; }
+.seg button { border: 0; background: transparent; padding: 6px 12px; border-radius: 999px; font-size: 0.84rem; font-weight: 800; color: var(--muted); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.jump { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; min-width: 0; flex: 1; padding: 2px; }
+.jump::-webkit-scrollbar { display: none; }
+.jump button {
+  flex: none; border: 1px solid var(--line); background: var(--surface); border-radius: 999px;
+  padding: 5px 11px; font-size: 0.8rem; font-weight: 700; cursor: pointer; white-space: nowrap;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.jump button:hover { background: var(--surface-2); }
+.jump .n { color: var(--muted); font-weight: 600; font-variant-numeric: tabular-nums; }
+.jump .cur { width: 6px; height: 6px; border-radius: 50%; background: var(--soon); }
+
+/* ---------- Calendar view ---------- */
+.months {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  gap: 16px;
+  align-items: start;
+}
+.month { padding: 18px; display: grid; gap: 12px; scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 72px); }
+.month-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.month-head h3 { margin: 0; font-family: var(--font-display); font-size: 1.2rem; font-weight: 800; letter-spacing: -0.01em; }
+.month-head .count { font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 4px;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
+}
+.dow { text-align: center; color: var(--muted); font-size: 0.7rem; font-weight: 700; padding-bottom: 2px; }
+.day {
+  aspect-ratio: 1.12;
+  max-width: 100%;
+  display: grid; place-items: center;
+  border-radius: 12px;
+  border: 0; padding: 0; background: transparent;
+  color: var(--ink);
+  font-size: 0.85rem; font-weight: 600;
+}
+.day.empty { visibility: hidden; }
+.day.hit { font-weight: 800; cursor: pointer; box-shadow: inset 0 0 0 1.5px var(--edge, transparent); transition: transform .12s ease; }
+.day.hit:hover { transform: translateY(-1px); }
+.day.est { outline: 1.5px dashed var(--est-line); outline-offset: -4px; }
+.day.mixed { color: var(--fill-ink); text-shadow: var(--mix-shadow); }
+.day.past { opacity: 0.4; }
+.day.today { box-shadow: inset 0 0 0 1.5px var(--edge, transparent), 0 0 0 2px var(--surface), 0 0 0 4px var(--ink); }
+.day[aria-pressed="true"] { box-shadow: inset 0 0 0 1.5px var(--edge, transparent), 0 0 0 2px var(--surface), 0 0 0 4px var(--focus); transform: translateY(-1px); }
+
+/* ---------- Deadline rows (shared by both views) ---------- */
+.evs { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.ev {
+  display: grid;
+  grid-template-columns: 30px 12px minmax(0, 1fr) auto;
+  gap: 4px 9px;
+  align-items: start;
+  padding: 7px 8px;
+  margin-inline: -8px;
+  border-radius: 12px;
+  transition: background-color .2s ease;
+  position: relative;
+}
+.ev .d { font-weight: 800; font-variant-numeric: tabular-nums; color: var(--muted); font-size: 0.85rem; padding-top: 1px; }
+.ev .t { min-width: 0; font-size: 0.92rem; }
+.ev .t strong { font-weight: 800; }
+.kind { color: var(--muted); }
+.more { display: none; font-size: 0.8rem; color: var(--muted); margin-top: 3px; line-height: 1.4; }
+.ev.sel .more { display: block; }
+.agenda .ev.has-more { cursor: pointer; }
+.loc { display: block; font-size: 0.8rem; color: var(--muted); margin-top: 1px; }
+.acts { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 4px; align-items: center; }
+.act {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 0.78rem; font-weight: 700; color: var(--muted);
+  border: 0; background: none; padding: 2px 0; cursor: pointer; text-decoration: none;
+}
+.act:hover { color: var(--ink); }
+.act.on { color: var(--star); }
+.act.on .lbl { color: var(--ink); }
+.ev.sel { background: var(--surface-2); box-shadow: inset 0 0 0 1.5px var(--focus); }
+.months .ev { cursor: pointer; }
+.months .ev .acts { display: none; }
+.months .ev.sel .acts, .months .ev:focus-within .acts { display: flex; }
+.ev.past { opacity: 0.5; }
+.ev .left { font-size: 0.8rem; color: var(--muted); font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.ev .left.soon { color: var(--soon); }
+.none { margin: 0; font-size: 0.88rem; color: var(--muted); }
+
+/* ---------- List view ---------- */
+.agenda { display: grid; gap: 16px; }
+.agenda-month { padding: 8px 20px 14px; scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 72px); }
+.agenda-month h3 {
+  margin: 0; padding: 12px 0 8px;
+  font-family: var(--font-display); font-size: 1.2rem; font-weight: 800;
+  display: flex; justify-content: space-between; align-items: baseline;
+  border-bottom: 1px solid var(--line);
+}
+.agenda-month h3 span { font-family: var(--font-body); font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+.agenda .evs { gap: 0; }
+.agenda .ev {
+  grid-template-columns: 52px 12px minmax(0, 1fr) auto auto;
+  padding: 12px 8px;
+  border-radius: 0;
+  border-bottom: 1px solid var(--line);
+}
+.agenda .ev:last-child { border-bottom: 0; }
+.agenda .ev .left { padding-top: 7px; }
+.agenda .ev .d { font-size: 1.15rem; color: var(--ink); line-height: 1.1; }
+.agenda .ev .d small { display: block; font-size: 0.72rem; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+
+/* Empty state */
+.empty-state { padding: 36px 20px; text-align: center; display: grid; gap: 8px; justify-items: center; }
+.empty-state p { margin: 0; color: var(--muted); }
+.empty-state strong { font-family: var(--font-display); font-size: 1.1rem; }
+
+/* Venues table */
+.venues { padding: 18px 20px; display: grid; gap: 10px; }
+.table-wrap { overflow-x: auto; position: relative; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.venues table { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-width: 520px; }
+.venues th, .venues td { text-align: left; padding: 9px 12px 9px 0; border-top: 1px solid var(--line); vertical-align: top; }
+.venues th { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); border-top: 0; }
+.venues td:first-child { font-weight: 800; white-space: nowrap; }
+.venues td.dt { color: var(--muted); font-variant-numeric: tabular-nums; }
+.venues a { color: var(--focus); font-weight: 700; text-underline-offset: 3px; }
+
+.notes { font-size: 0.82rem; color: var(--muted); display: grid; gap: 4px; max-width: 82ch; }
+.notes p { margin: 0; }
+
+@media (max-width: 760px) {
+  .next { grid-template-columns: 1fr; }
+  .next-hero { border-right: 0; border-bottom: 1px solid var(--line); }
+}
+@media (max-width: 480px) {
+  .row-label { width: 100%; }
+  .seg button .lbl { display: none; }
+  .agenda-month { padding-inline: 14px; }
+  .agenda .ev { grid-template-columns: 44px 12px minmax(0, 1fr) auto; }
+  .agenda .ev .left { grid-column: 3; grid-row: 2; }
+  .agenda .ev .callink, .agenda .ev .calbtn-space { grid-column: 4; grid-row: 1; }
+  .next-later li { grid-template-columns: 48px 12px 1fr; }
+  .next-later .left { grid-column: 3; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="head-row">
+      <h1>Conference Deadline Calendar</h1>
+      <button type="button" class="calbtn wide dl-only" id="export-btn" data-export="csv" data-scope="view" title="Saves a .csv file that Google Calendar imports"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/></svg>Export to Google Calendar</button>
+    </div>
+    <p class="aoe">Deadlines are 11:59 pm AoE (Anywhere on Earth) unless a venue says otherwise. That's 6:59 am Central the next morning.</p>
+  </header>
+
+  <section class="panel next" aria-label="Next deadlines" id="next"></section>
+
+  <section class="panel filters" aria-label="Filters">
+    <div class="search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Search venues, tracks or cities" autocomplete="off" aria-label="Search deadlines">
+      <button type="button" class="clear" id="q-clear" aria-label="Clear search" hidden>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <details class="fx" id="fx">
+    <summary><span>Filters</span><span class="fx-n" id="fx-n"></span><svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+    <div class="fx-body">
+    <div class="row" role="group" aria-label="Deadline type">
+      <span class="row-label">Type</span>
+      <button type="button" class="chip" id="t-all" data-filter="type" data-value="all">All</button>
+      <button type="button" class="chip has-sw" id="t-paper" data-filter="type" data-value="paper"><i class="sw paper-c"></i>Paper</button>
+      <button type="button" class="chip has-sw" id="t-poster" data-filter="type" data-value="poster"><i class="sw poster-c"></i>Poster</button>
+      <button type="button" class="chip has-sw" id="t-vol" data-filter="type" data-value="vol"><i class="sw vol-c"></i>Volunteer application</button>
+      <button type="button" class="chip has-sw" id="t-fund" data-filter="type" data-value="fund"><i class="sw fund-c"></i>Travel funds</button>
+      <button type="button" class="chip has-sw" id="t-rev" data-filter="type" data-value="rev"><i class="sw rev-c"></i>Review</button>
+    </div>
+    <div class="row" role="group" aria-label="Field">
+      <span class="row-label">Field</span>
+      <button type="button" class="chip" id="f-all" data-filter="field" data-value="all">All</button>
+      <button type="button" class="chip" id="f-sec" data-filter="field" data-value="sec">Security &amp; privacy</button>
+      <button type="button" class="chip" id="f-hci" data-filter="field" data-value="hci">HCI</button>
+      <button type="button" class="chip" id="f-info" data-filter="field" data-value="info">Information science</button>
+      <button type="button" class="chip" id="f-ai" data-filter="field" data-value="ai">AI &amp; ML</button>
+    </div>
+    <div class="row" role="group" aria-label="Show">
+      <span class="row-label">Show</span>
+      <button type="button" class="chip" id="e-all" data-filter="show" data-value="all">All</button>
+      <button type="button" class="chip" id="s-only" data-filter="starred" data-value="on">
+        <svg class="star-ico" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg>My venues
+      </button>
+      <button type="button" class="chip" id="e-conf" data-filter="est" data-value="confirmed">Confirmed</button>
+      <button type="button" class="chip" id="e-tba" data-filter="est" data-value="tba">TBA</button>
+    </div>
+    <div class="filters-foot">
+      <div class="legend" aria-label="Legend">
+        <span><i class="sw paper-c est"></i>Dashed: TBA (2026 date shown until announced)</span>
+        <span><i class="sw today"></i>Today</span>
+        <span><i class="sw rev-c"></i>Review dates: I = round 1, II = round 2</span>
+      </div>
+      <div class="row" style="gap:6px 14px">
+        <button type="button" class="linkbtn" id="reset" hidden>Clear filters</button>
+      </div>
+    </div>
+    </div>
+    </details>
+  </section>
+
+  <div class="bar" role="toolbar" aria-label="View and month">
+    <div class="seg" role="group" aria-label="View">
+      <button type="button" id="v-calendar" data-view="calendar" aria-pressed="true">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span class="lbl">Calendar</span>
+      </button>
+      <button type="button" id="v-list" data-view="list" aria-pressed="false">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/></svg><span class="lbl">List</span>
+      </button>
+    </div>
+    <nav class="jump" id="jump" aria-label="Jump to month"></nav>
+    <div class="linkbar" id="linkbar" hidden role="status"><span class="lb-text" id="lb-text"></span><button type="button" id="lb-open">Open conference</button><button type="button" id="lb-clear">Clear</button></div>
+  </div>
+
+  <main id="view"></main>
+
+  <section class="panel venues" aria-labelledby="venues-h">
+    <h2 class="eyebrow" id="venues-h">Where each edition is held</h2>
+    <div class="table-wrap"><table id="venue-table"></table></div>
+  </section>
+
+  <footer class="notes">
+    <p>Soft-tinted days are review and decision dates (round 1: reviews or first decisions; round 2: final decisions), labeled with the venue and round (for example CHI-I and CHI-II). They aren't deadlines, so the "Next deadline" panel skips them.</p>
+    <p>Tap any colored day or row to light up that conference's whole cycle across the calendar. Tap a conference name to open its page with every date. Use the calendar icon on any date to add it to Google Calendar, or Export to Google Calendar at the top to save the dates you're viewing as a .csv file (in Google Calendar: Settings, then Import &amp; export).</p>
+    <p>Tap a colored day to highlight its deadlines. Stars and filters are saved in this browser only.</p>
+    <p>† Location not announced yet; showing where the previous edition was held.</p>
+    <p>Placeholder dates repeat the 2026 cycle one year later, so weekdays may not match the real call. Replace them as each venue posts its CFP.</p>
+    <p>Soft lilac marks volunteer applications and very light sage marks travel funds; each program has its own page. Travel funds: GMTA (SIGCHI's Gary Marsden Travel Awards, rolling, for CHI, DIS, IUI, UIST and CSCW), the SIGACCESS Travel Scholarship (ASSETS), NeurIPS Financial Assistance, FAccT Financial Support, and the CCS, IEEE S&amp;P and USENIX Security student grants. Most funds don't publish an opening date; where one exists it's shown as "opens".</p>
+    <p>iConference 2027 (Wellington, Apr 5–9, 2027) has already closed submissions, so only its 2028 placeholders appear as dates; the 2027 edition is listed on its conference page and in the venues table.</p>
+    <p>Not shown: iConference travel funding and volunteer dates (none found), ASIS&amp;T, DIS and SOUPS volunteer dates (no recent call found), ICLR and ICML volunteer dates (not announced), and CSCW papers, which are reviewed on a rolling basis with no fixed deadline.</p>
+    <p>FAccT has no standalone poster track. CCS has one poster deadline shared by both paper cycles. NeurIPS, ICLR, ICML, AAAI and IJCAI have no separate poster submission.</p>
+  </footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<div class="sheet-back" id="sheet" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" id="sheet-panel"></div>
+</div>
+
+<script>
+// [date, venue, detail, type, status, field]
+// type: abs | paper | poster | vol     status: c = confirmed for this cycle, p = placeholder from the 2026 date
+const RAW = [
+  // ---------- Security & privacy ----------
+  ["2026-11-10", "IEEE S&P 2027", "Cycle 2", "abs", "c", "sec"],
+  ["2026-11-17", "IEEE S&P 2027", "Cycle 2", "paper", "c", "sec"],
+  ["2027-03-20", "IEEE S&P 2027", "Posters", "poster", "p", "sec"],
+  ["2027-04-02", "IEEE S&P Student Travel Grant", "Closes · for IEEE S&P 2027", "fund", "p", "sec"],
+  ["2027-06-04", "IEEE S&P 2028", "Cycle 1", "abs", "p", "sec"],
+  ["2027-06-11", "IEEE S&P 2028", "Cycle 1", "paper", "p", "sec"],
+  ["2027-11-10", "IEEE S&P 2028", "Cycle 2", "abs", "p", "sec"],
+  ["2027-11-17", "IEEE S&P 2028", "Cycle 2", "paper", "p", "sec"],
+
+  ["2027-01-19", "USENIX Security 2027", "Cycle 2", "abs", "c", "sec"],
+  ["2027-01-26", "USENIX Security 2027", "Cycle 2", "paper", "c", "sec"],
+  ["2027-07-06", "USENIX Security Student Grant", "Closes · for USENIX Security 2027", "fund", "p", "sec"],
+  ["2027-07-10", "USENIX Security 2027", "Posters", "poster", "p", "sec"],
+  ["2027-08-18", "USENIX Security 2028", "Cycle 1", "abs", "p", "sec"],
+  ["2027-08-25", "USENIX Security 2028", "Cycle 1", "paper", "p", "sec"],
+
+  ["2027-01-07", "CCS 2027", "Cycle 1", "abs", "p", "sec"],
+  ["2027-01-14", "CCS 2027", "Cycle 1", "paper", "p", "sec"],
+  ["2027-04-22", "CCS 2027", "Cycle 2", "abs", "p", "sec"],
+  ["2027-04-29", "CCS 2027", "Cycle 2", "paper", "p", "sec"],
+  ["2027-07-23", "CCS 2027", "Posters (both cycles)", "poster", "p", "sec"],
+  ["2027-09-14", "CCS Student Travel Grant", "Closes · for CCS 2027", "fund", "p", "sec"],
+
+  ["2027-02-12", "SOUPS 2027", "Technical Papers", "abs", "p", "sec"],
+  ["2027-02-19", "SOUPS 2027", "Technical Papers", "paper", "p", "sec"],
+  ["2027-06-11", "SOUPS 2027", "Posters", "poster", "p", "sec"],
+
+  // ---------- HCI ----------
+  ["2027-01-21", "CHI 2027", "Posters", "poster", "c", "hci"],
+  ["2026-11-12", "CHI Student Volunteers", "Lottery opens · for CHI 2027", "vol", "c", "hci"],
+  ["2027-02-01", "CHI Student Volunteers", "Lottery closes · for CHI 2027", "vol", "c", "hci"],
+  ["2027-09-10", "CHI 2028", "", "paper", "p", "hci"],
+
+  ["2027-01-11", "DIS 2027", "Papers & pictorials", "abs", "c", "hci"],
+  ["2027-01-18", "DIS 2027", "Papers & pictorials", "paper", "c", "hci"],
+  ["2027-02-13", "DIS 2027", "Provocations & Works-in-Progress", "poster", "p", "hci"],
+
+  ["2026-11-10", "IUI 2027", "Posters & Demos", "poster", "c", "hci"],
+  ["2026-12-12", "IUI Student Volunteers", "Opens · for IUI 2027", "vol", "p", "hci"],
+  ["2027-01-28", "IUI Student Volunteers", "Closes · for IUI 2027", "vol", "p", "hci"],
+  ["2027-08-13", "IUI 2028", "", "abs", "p", "hci"],
+  ["2027-08-20", "IUI 2028", "", "paper", "p", "hci"],
+  ["2027-11-10", "IUI 2028", "Posters & Demos", "poster", "p", "hci"],
+
+  ["2027-03-24", "UIST 2027", "", "abs", "p", "hci"],
+  ["2027-03-31", "UIST 2027", "", "paper", "p", "hci"],
+  ["2027-07-10", "UIST 2027", "Posters & Demos", "poster", "p", "hci"],
+  ["2027-06-20", "UIST Student Volunteers", "Lottery opens · for UIST 2027", "vol", "p", "hci"],
+  ["2027-08-01", "UIST Student Volunteers", "Lottery closes · for UIST 2027", "vol", "p", "hci"],
+
+  ["2027-04-22", "ASSETS 2027", "", "paper", "p", "hci"],
+  ["2027-07-01", "ASSETS 2027", "Posters & Demonstrations", "poster", "p", "hci"],
+  ["2027-07-16", "ASSETS Student Volunteers", "Closes · for ASSETS 2027", "vol", "p", "hci"],
+  ["2027-07-20", "SIGACCESS Travel Scholarship", "Closes · for ASSETS 2027", "fund", "p", "hci"],
+
+  ["2027-06-01", "CSCW Student Volunteers", "Closes · for CSCW 2027", "vol", "p", "hci"],
+
+  // GMTA = SIGCHI Gary Marsden Travel Awards: rolling, rounds close on the 9th of Jan, Feb, Mar, May, Jul, Sep, Nov.
+  // Apply to a round more than one month before your conference starts.
+  ["2026-11-09", "Gary Marsden Travel Awards", "Round closes · last round for IUI 2027", "fund", "c", "hci", null, "Also fits CHI, DIS, UIST & CSCW 2027."],
+  ["2027-01-09", "Gary Marsden Travel Awards", "Round closes", "fund", "c", "hci", null, "Fits CHI, DIS, UIST & CSCW 2027."],
+  ["2027-02-09", "Gary Marsden Travel Awards", "Round closes", "fund", "c", "hci", null, "Fits CHI, DIS, UIST & CSCW 2027."],
+  ["2027-03-09", "Gary Marsden Travel Awards", "Round closes · last round for CHI 2027", "fund", "c", "hci", null, "Also fits DIS, UIST & CSCW 2027."],
+  ["2027-05-09", "Gary Marsden Travel Awards", "Round closes · last round for DIS 2027", "fund", "c", "hci", null, "Also fits UIST & CSCW 2027."],
+  ["2027-07-09", "Gary Marsden Travel Awards", "Round closes", "fund", "c", "hci", null, "Fits UIST & CSCW 2027."],
+  ["2027-09-09", "Gary Marsden Travel Awards", "Round closes · last round for UIST 2027", "fund", "c", "hci", null, "Also fits CHI 2028; check CSCW 2027's dates (apply more than a month before it starts)."],
+  ["2027-11-09", "Gary Marsden Travel Awards", "Round closes", "fund", "c", "hci", null, "Fits CHI 2028."],
+
+  ["2027-04-09", "ASIS&T 2027", "Papers, panels & workshops", "paper", "p", "info"],
+  ["2027-06-04", "ASIS&T 2027", "Posters", "poster", "p", "info"],
+
+  ["2027-09-15", "iConference 2028", "Full & short research papers", "paper", "p", "info"],
+  ["2027-09-15", "iConference 2028", "Posters", "poster", "p", "info"],
+
+  // ---------- AI & ML ----------
+  ["2026-11-03", "FAccT 2027", "", "paper", "c", "ai"],
+  ["2027-04-27", "FAccT Student Volunteers", "Closes · for FAccT 2027", "vol", "p", "ai"],
+  ["2027-04-27", "FAccT Financial Support", "Closes · for FAccT 2027", "fund", "p", "ai"],
+  ["2027-10-27", "FAccT 2028", "", "abs", "p", "ai"],
+  ["2027-11-03", "FAccT 2028", "", "paper", "p", "ai"],
+
+  ["2027-05-14", "AIES 2027", "", "abs", "p", "ai"],
+  ["2027-05-21", "AIES 2027", "", "paper", "p", "ai"],
+  ["2027-05-21", "AIES 2027", "PhD Student Program poster", "poster", "p", "ai"],
+
+  ["2027-05-04", "NeurIPS 2027", "Main track & position papers", "abs", "p", "ai"],
+  ["2027-05-06", "NeurIPS 2027", "Main track & position papers", "paper", "p", "ai"],
+  ["2027-10-06", "NeurIPS Volunteers", "Closes · for NeurIPS 2027", "vol", "p", "ai"],
+  ["2027-09-07", "NeurIPS Financial Assistance", "Opens · for NeurIPS 2027", "fund", "p", "ai"],
+  ["2027-10-06", "NeurIPS Financial Assistance", "Closes · for NeurIPS 2027", "fund", "p", "ai"],
+
+  ["2027-09-18", "ICLR 2028", "", "abs", "p", "ai"],
+  ["2027-09-25", "ICLR 2028", "", "paper", "p", "ai"],
+
+  ["2027-01-23", "ICML 2027", "", "abs", "p", "ai"],
+  ["2027-01-28", "ICML 2027", "", "paper", "p", "ai"],
+
+  ["2026-11-30", "AAAI Student Scholar & Volunteer Program", "Opens · for AAAI-27", "vol", "c", "ai"],
+  ["2026-12-04", "AAAI Student Scholar & Volunteer Program", "Closes · for AAAI-27", "vol", "c", "ai"],
+  ["2027-07-21", "AAAI-28", "", "abs", "p", "ai"],
+  ["2027-07-28", "AAAI-28", "", "paper", "p", "ai"],
+  ["2027-11-30", "AAAI Student Scholar & Volunteer Program", "Opens · for AAAI-28", "vol", "p", "ai"],
+  ["2027-12-04", "AAAI Student Scholar & Volunteer Program", "Closes · for AAAI-28", "vol", "p", "ai"],
+
+  ["2027-01-04", "IJCAI 2027", "", "abs", "c", "ai"],
+  ["2027-01-11", "IJCAI 2027", "", "paper", "c", "ai"],
+  // ---------- Reviews & decisions (round 1 = reviews out / first decisions, round 2 = final decisions) ----------
+  ["2027-02-18", "CHI 2027", "Posters · decisions", "rev", "c", "hci"],
+  ["2027-11-05", "CHI 2028", "Papers · round 1 reviews & revise-and-resubmit decisions", "rev", "p", "hci"],
+  ["2027-12-17", "CHI 2028", "Papers · round 2 final decisions", "rev", "p", "hci"],
+
+  ["2027-10-29", "IUI 2028", "Papers · round 1 initial decisions", "rev", "p", "hci"],
+  ["2027-11-23", "IUI 2028", "Papers · round 2 final decisions", "rev", "p", "hci"],
+  ["2027-12-14", "IUI 2028", "Posters & Demos · decisions", "rev", "p", "hci"],
+
+  ["2027-03-19", "DIS 2027", "Papers & pictorials · decisions", "rev", "c", "hci"],
+
+  ["2027-05-28", "UIST 2027", "Papers · round 1 reviews out (rebuttal)", "rev", "p", "hci"],
+  ["2027-08-07", "UIST 2027", "Papers · round 2 final decisions", "rev", "p", "hci"],
+  ["2027-08-14", "UIST 2027", "Posters & Demos · decisions", "rev", "p", "hci"],
+
+  ["2027-06-03", "ASSETS 2027", "Papers · round 1 reviews out (rebuttal)", "rev", "p", "hci"],
+  ["2027-06-24", "ASSETS 2027", "Papers · round 2 decisions", "rev", "p", "hci"],
+  ["2027-08-12", "ASSETS 2027", "Posters & Demos · decisions", "rev", "p", "hci"],
+
+  ["2027-05-19", "ASIS&T 2027", "Papers · decisions", "rev", "p", "info"],
+  ["2027-07-09", "ASIS&T 2027", "Posters · decisions", "rev", "p", "info"],
+
+  ["2027-02-11", "IEEE S&P 2027", "Cycle 2 · round 1 reviews out (rebuttal)", "rev", "c", "sec"],
+  ["2027-03-05", "IEEE S&P 2027", "Cycle 2 · round 2 final decisions", "rev", "c", "sec"],
+  ["2027-08-20", "IEEE S&P 2028", "Cycle 1 · round 1 reviews out (rebuttal)", "rev", "p", "sec"],
+  ["2027-09-11", "IEEE S&P 2028", "Cycle 1 · round 2 final decisions", "rev", "p", "sec"],
+
+  ["2027-04-08", "USENIX Security 2027", "Cycle 2 · round 1 reviews out (rebuttal)", "rev", "c", "sec"],
+  ["2027-05-06", "USENIX Security 2027", "Cycle 2 · round 2 final decisions", "rev", "c", "sec"],
+  ["2027-11-05", "USENIX Security 2028", "Cycle 1 · round 1 reviews out (rebuttal)", "rev", "p", "sec"],
+  ["2027-12-03", "USENIX Security 2028", "Cycle 1 · round 2 final decisions", "rev", "p", "sec"],
+
+  ["2027-03-17", "CCS 2027", "Cycle 1 · round 1 reviews out (rebuttal)", "rev", "p", "sec"],
+  ["2027-04-09", "CCS 2027", "Cycle 1 · round 2 decisions", "rev", "p", "sec"],
+  ["2027-06-29", "CCS 2027", "Cycle 2 · round 1 reviews out (rebuttal)", "rev", "p", "sec"],
+  ["2027-07-17", "CCS 2027", "Cycle 2 · round 2 decisions", "rev", "p", "sec"],
+
+  ["2027-05-19", "SOUPS 2027", "Papers · decisions", "rev", "p", "sec"],
+
+  ["2027-03-23", "FAccT 2027", "Round 2 final decisions", "rev", "c", "ai"],
+  ["2027-12-22", "FAccT 2028", "Round 1 reviews & first decisions", "rev", "p", "ai"],
+
+  ["2027-07-16", "AIES 2027", "Papers · decisions", "rev", "p", "ai"],
+
+  ["2027-07-22", "NeurIPS 2027", "Round 1 reviews out (discussion)", "rev", "p", "ai"],
+  ["2027-09-24", "NeurIPS 2027", "Round 2 decisions", "rev", "p", "ai"],
+
+  ["2027-03-24", "ICML 2027", "Round 1 reviews out (rebuttal)", "rev", "p", "ai"],
+  ["2027-04-30", "ICML 2027", "Round 2 decisions", "rev", "p", "ai"],
+
+  ["2027-11-05", "ICLR 2028", "Round 1 reviews out (discussion)", "rev", "p", "ai"],
+  ["2027-12-16", "ICLR 2028", "Round 2 final decisions", "rev", "p", "ai"],
+
+  ["2027-09-24", "AAAI-28", "Round 1 phase 1 decisions", "rev", "p", "ai"],
+  ["2027-10-24", "AAAI-28", "Reviews out (author feedback)", "rev", "p", "ai"],
+  ["2027-11-30", "AAAI-28", "Round 2 final decisions", "rev", "p", "ai"],
+
+  ["2027-04-21", "IJCAI 2027", "Papers · decisions", "rev", "c", "ai"],
+
+  ["2027-11-19", "iConference 2028", "Papers & posters · decisions", "rev", "p", "info"],
+];
+
+// Where each edition is held. prev: true = not announced yet, showing the previous edition's location.
+const VENUES = {
+  "IEEE S&P 2027": { loc: "Montréal, Canada", dates: "May 17–20, 2027" },
+  "IEEE S&P 2028": { loc: "Montréal, Canada", prev: true },
+  "USENIX Security 2027": { loc: "Denver, USA", dates: "Aug 11–13, 2027" },
+  "USENIX Security 2028": { loc: "Denver, USA", prev: true },
+  "CCS 2027": { loc: "Atlanta, USA", dates: "Oct 11–15, 2027 · not yet official" },
+  "SOUPS 2027": { loc: "Denver, USA", dates: "Aug 8–10, 2027" },
+  "CHI 2027": { loc: "Pittsburgh, USA", dates: "May 10–14, 2027" },
+  "CHI 2028": { loc: "Pittsburgh, USA", prev: true },
+  "DIS 2027": { loc: "Stockholm, Sweden", dates: "Jun 28 – Jul 2, 2027" },
+  "IUI 2027": { loc: "Helsinki, Finland", dates: "Feb 8–11, 2027" },
+  "IUI 2028": { loc: "Helsinki, Finland", prev: true },
+  "UIST 2027": { loc: "Detroit, USA", prev: true },
+  "ASSETS 2027": { loc: "Porto, Portugal", prev: true },
+  "CSCW 2027": { loc: "Philadelphia, USA", dates: "Oct 2027", field: "hci" },
+  "ASIS&T 2027": { loc: "Vancouver, Canada", dates: "Nov 19–23, 2027" },
+  "iConference 2027": { loc: "Wellington, New Zealand", dates: "Apr 5–9, 2027 (online Mar 22–25)", field: "info" },
+  "CHI Student Volunteers": { loc: "", vol: true, blurb: "Lottery on new.chisv.org; results February 8, 2027.", note: "Student volunteers help run CHI in exchange for free registration. For CHI 2027 the lottery opens November 12, 2026 on the CHISV site (new.chisv.org), recommendation forms are due January 15, 2027, the lottery closes February 1, 2027, and results come out February 8, 2027." },
+  "IUI Student Volunteers": { loc: "", vol: true, blurb: "Student volunteer call for IUI.", note: "Student volunteers for IUI. In 2026 applications opened December 12, 2025 and closed January 28, 2026, with notification on February 6. The 2027 dates shown are TBA placeholders." },
+  "UIST Student Volunteers": { loc: "", vol: true, blurb: "Student volunteers for UIST are chosen by lottery.", note: "Student volunteers for UIST are chosen by lottery. In 2026 the lottery opened June 20 and closed August 1, with acceptances on August 7. The 2027 dates shown are TBA placeholders." },
+  "ASSETS Student Volunteers": { loc: "", vol: true, blurb: "Student volunteer call for ASSETS.", note: "Student volunteers for ASSETS. In 2026 applications closed July 16, with notifications on July 30. The 2027 date shown is a TBA placeholder." },
+  "CSCW Student Volunteers": { loc: "", vol: true, blurb: "Student volunteer call for CSCW.", note: "Student volunteers for CSCW. In 2026 applications closed June 1, with notifications around June 15. The 2027 date shown is a TBA placeholder." },
+  "FAccT Student Volunteers": { loc: "", vol: true, blurb: "Applied through FAccT's participant support form.", note: "Student volunteers for FAccT apply through the participant support form (the same form as financial support). In 2026 it closed April 27, with notifications expected May 6. The 2027 date shown is a TBA placeholder." },
+  "NeurIPS Volunteers": { loc: "", vol: true, blurb: "Volunteer applications for NeurIPS.", note: "Volunteers for NeurIPS. In 2026 volunteer applications closed October 6, with decisions by October 20; volunteering was offered at the Sydney and Atlanta sites. The 2027 date shown is a TBA placeholder." },
+  "AAAI Student Scholar & Volunteer Program": { loc: "", vol: true, blurb: "Complimentary registration for student volunteers at AAAI.", note: "AAAI's Student Scholar & Volunteer Program offers students complimentary registration in exchange for volunteering. For AAAI-27 (Montréal, Feb 16–23, 2027) applications are open November 30 to December 4, 2026. AAAI-28 dates are TBA placeholders." },
+  "SIGACCESS Travel Scholarship": { loc: "", fund: true, blurb: "ACM SIGACCESS travel support for students attending ASSETS.", note: "Travel support from ACM SIGACCESS for students attending ASSETS. In 2026 applications closed July 20 (extended to July 24 for NSF-eligible students) and decisions came by August 7. The 2027 date shown is a TBA placeholder." },
+  "CCS Student Travel Grant": { loc: "", fund: true, blurb: "Student travel grants for ACM CCS.", note: "Student travel grants for ACM CCS. In 2026 applications closed September 14 and notifications went out September 22. The 2027 date shown is a TBA placeholder." },
+  "IEEE S&P Student Travel Grant": { loc: "", fund: true, blurb: "Student travel grants for the IEEE Symposium on Security and Privacy.", note: "Student travel grants for IEEE S&P. In 2026 applications closed April 2, students were notified by April 10, and recipients had to register before the early-registration deadline. The 2027 date shown is a TBA placeholder." },
+  "USENIX Security Student Grant": { loc: "", fund: true, blurb: "USENIX student grants for USENIX Security.", note: "USENIX student grants for USENIX Security. In 2026 applications closed July 6, and recipients were expected to attend all three days. The 2027 date shown is a TBA placeholder." },
+  "NeurIPS Financial Assistance": { loc: "", fund: true, blurb: "Financial assistance for attending NeurIPS.", note: "Financial assistance for attending NeurIPS. In 2026 applications opened September 7 and closed October 6, with decisions by October 15. The 2027 dates shown are TBA placeholders." },
+  "FAccT Financial Support": { loc: "", fund: true, blurb: "Registration waivers and support through FAccT's participant support form.", note: "Registration waivers and support through FAccT's participant support form (the same form as student volunteering). In 2026 it closed April 27. The 2027 date shown is a TBA placeholder." },
+  "Gary Marsden Travel Awards": { loc: "", fund: true, blurb: "SIGCHI travel fund for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan, Feb, Mar, May, Jul, Sep, Nov", note: "Rolling SIGCHI travel fund for students and early-career researchers attending any SIGCHI conference (CHI, DIS, IUI, UIST, CSCW and more). Rounds close on the 9th of Jan, Feb, Mar, May, Jul, Sep and Nov; apply to a round more than one month before your conference starts." },
+  "iConference 2028": { loc: "Wellington, New Zealand", prev: true },
+  "FAccT 2027": { loc: "Porto, Portugal", dates: "Jun 21–24, 2027" },
+  "FAccT 2028": { loc: "Porto, Portugal", prev: true },
+  "AIES 2027": { loc: "Malmö, Sweden", prev: true },
+  "NeurIPS 2027": { loc: "Europe, city TBA", dates: "2026 was Sydney, Atlanta & Paris" },
+  "ICML 2027": { loc: "Rio de Janeiro, Brazil", dates: "Jul 31 – Aug 6, 2027" },
+  "ICLR 2028": { loc: "Rio de Janeiro, Brazil", prev: true, dates: "ICLR 2027 city TBA" },
+  "AAAI-27": { loc: "Montréal, Canada", dates: "Feb 16–23, 2027", field: "ai" },
+  "AAAI-28": { loc: "Montréal, Canada", prev: true },
+  "IJCAI 2027": { loc: "Kyoto, Japan", dates: "Aug 7–13, 2027" },
+};
+
+// Official pages seen while researching (edition-specific where available)
+const SITE = {
+  "IEEE S&P 2027": "https://sp2027.ieee-security.org/cfpapers.html",
+  "USENIX Security 2027": "https://www.usenix.org/node/315301",
+  "SOUPS 2027": "https://www.usenix.org/conferences/bytopic/security",
+  "CHI 2027": "https://chi2027.acm.org/",
+  "DIS 2027": "https://dis.acm.org/2027/",
+  "IUI 2027": "https://iui.acm.org/2027/?p=244208",
+  "UIST 2027": "https://uist.acm.org/",
+  "CSCW 2027": "https://cscw.acm.org/",
+  "ASIS&T 2027": "https://www.asist.org/am/",
+  "iConference 2027": "https://www.ischools.org/post/iconference-2027-call-for-papers",
+  "Gary Marsden Travel Awards": "https://sigchi.org/resources/gary-marsden-travel-awards",
+  "SIGACCESS Travel Scholarship": "https://www.sigaccess.org/awards/sigaccess-scholarship/",
+  "CHI Student Volunteers": "https://chi2027.acm.org/2026/11/07/call-for-svs/",
+  "IUI Student Volunteers": "https://iui.acm.org/2026/student-volunteers/",
+  "UIST Student Volunteers": "https://uist.acm.org/2026/cfp",
+  "ASSETS Student Volunteers": "https://assets26.sigaccess.org/volunteer.html",
+  "CSCW Student Volunteers": "https://cscw.acm.org/2026/sv.html",
+  "FAccT Student Volunteers": "https://facctconference.org/2026/cfv.html",
+  "NeurIPS Volunteers": "https://blog.neurips.cc/2026/09/16/join-us-at-neurips-2026-financial-assistance-and-volunteer-applications-are-now-open/",
+  "AAAI Student Scholar & Volunteer Program": "https://aaai.org/conference/aaai/aaai-27/student-scholar-volunteer-program/",
+  "CCS Student Travel Grant": "https://www.sigsac.org/ccs/CCS2026/attending/conference-grants.html",
+  "IEEE S&P Student Travel Grant": "https://sp2026.ieee-security.org/travel_grants.html",
+  "USENIX Security Student Grant": "https://www.usenix.org/node/319912",
+  "NeurIPS Financial Assistance": "https://neurips.cc/Conferences/2026/FinancialAssistance",
+  "FAccT Financial Support": "https://facctconference.org/2026/cfv.html",
+  "FAccT 2027": "https://facctconference.org/2027/cfp.html",
+  "NeurIPS 2027": "https://neurips.cc/",
+  "ICLR 2028": "https://iclr.cc/",
+  "ICML 2027": "https://icml.cc/",
+  "AAAI-27": "https://aaai.org/conference/aaai/aaai-27/student-scholar-volunteer-program/",
+  "IJCAI 2027": "https://2027.ijcai.org/",
+};
+
+const EVENTS = RAW.map(([d, venue, detail, type, status, field, url, more], i) => {
+  const [y, m, day] = d.split("-").map(Number);
+  return { url: url || undefined, more, id: i, iso: d, date: new Date(y, m - 1, day), y, m: m - 1, day, venue, detail, type, est: status === "p", field,
+           series: venue.replace(/[\s-](\d{2}|\d{4})$/, "").trim() };
+}).sort((a, b) => a.date - b.date || a.venue.localeCompare(b.venue));
+
+const COLOR = { abs: "paper", paper: "paper", poster: "poster", vol: "vol", fund: "fund", rev: "rev" };
+const FILL = { paper: "var(--red)", poster: "var(--yellow)", vol: "var(--blue)", fund: "var(--fund)", rev: "var(--rev)" };
+const INK = { paper: "var(--red-ink)", poster: "var(--yellow-ink)", vol: "var(--blue-ink)", fund: "var(--fund-ink)", rev: "var(--rev-ink)" };
+const EDGE = { paper: "var(--red-edge)", poster: "var(--yellow-edge)", vol: "var(--blue-edge)", fund: "var(--fund-edge)", rev: "transparent" };   // review days: fill only, no outline
+const KIND = { abs: "abstract / registration", paper: "paper deadline", poster: "poster deadline", vol: "volunteer", fund: "travel fund", rev: "decisions" };
+const FIELD_NAME = { sec: "Security", hci: "HCI", info: "Information science", ai: "AI & ML" };
+const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const SHORT = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const WD = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+const START = { y: 2026, m: 10 }, MONTH_COUNT = 14;   // Nov 2026 – Dec 2027
+const now = new Date();
+const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+const reduceMotion = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+const DEFAULTS = { type: "all", field: "all", est: "all", starred: "off", q: "" };
+const state = { ...DEFAULTS, view: "calendar" };
+let stars = new Set();
+
+const ICON = {
+  star: '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg>',
+  starO: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg>',
+  cal: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/></svg>',
+  out: '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/></svg>',
+};
+
+/* ---------- helpers ---------- */
+function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;"); }
+function kindText(e) {
+  if (e.type === "poster" || e.type === "vol" || e.type === "fund" || e.type === "rev") return e.detail || KIND[e.type];
+  return (e.detail ? e.detail + " · " : "") + KIND[e.type];
+}
+function daysUntil(e) { return Math.round((e.date - today) / 86400000); }
+function leftText(n) {
+  if (n < 0) return "passed";
+  if (n === 0) return "today";
+  if (n === 1) return "tomorrow";
+  return `${n} days`;
+}
+function locText(v) {
+  const info = VENUES[v];
+  if (!info) return "";
+  return `${esc(info.loc)}${info.prev ? "†" : ""}${info.dates ? " · " + esc(info.dates) : ""}`;
+}
+function ymd(d) { return `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}`; }
+function calText(e) {
+  const info = VENUES[e.venue];
+  return {
+    title: `${e.venue}: ${kindText(e)}`,
+    body: [
+      e.type === "rev" ? "Expected review / decision date." : /\bopens\b/i.test(e.detail) ? "Applications open." : "Deadline 11:59 pm AoE (Anywhere on Earth).",
+      e.est ? "Placeholder based on the 2026 date. Confirm on the official call." : "",
+      info && info.loc ? `Conference: ${info.loc}${info.dates ? ", " + info.dates : ""}.` : info && info.blurb ? info.blurb : "",
+      SITE[e.venue] || "",
+    ].filter(Boolean).join("\n"),
+  };
+}
+function isoDay(d) { return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; }
+function moreText(e) { return [e.more, VENUES[e.venue] && VENUES[e.venue].blurb].filter(Boolean).join(" "); }
+function calBtn(e) {
+  const label = `Add ${e.venue}: ${kindText(e)} to Google Calendar`;
+  return `<a class="callink" href="${esc(gcalUrl(e))}" target="_blank" rel="noopener" aria-label="${esc(label)}" title="Add to Google Calendar">${ICON.cal}</a>`;
+}
+let downloadsApi = null;
+function toast(msg) {
+  const t = document.getElementById("toast");
+  t.textContent = msg; t.hidden = false;
+  clearTimeout(toast._h); toast._h = setTimeout(() => { t.hidden = true; }, 4200);
+}
+function slugOf(t) { return String(t).toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
+function csvCell(v) { v = String(v ?? ""); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }
+function mdy(d) { return `${String(d.getMonth() + 1).padStart(2, "0")}/${String(d.getDate()).padStart(2, "0")}/${d.getFullYear()}`; }
+function buildCsv(evs) {
+  // Google Calendar import format (Settings > Import & export); all-day events
+  const rows = [["Subject", "Start Date", "End Date", "All Day Event", "Description", "Location", "Private"]];
+  for (const e of evs) {
+    const { title, body } = calText(e);
+    rows.push([title, mdy(e.date), mdy(e.date), "True", body, VENUES[e.venue] ? VENUES[e.venue].loc : "", "False"]);
+  }
+  return rows.map(r => r.map(csvCell).join(",")).join("\r\n") + "\r\n";
+}
+async function exportFile(kind, evs, baseName, calName) {
+  if (!downloadsApi) { toast("Calendar export isn't available in this view."); return; }
+  const upcoming = evs.filter(e => daysUntil(e) >= 0);
+  if (!upcoming.length) { toast("No upcoming dates to export."); return; }
+  const slug = baseName.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  try {
+    await downloadsApi.save({ filename: `${slug}.csv`, data: buildCsv(upcoming) });
+    toast(`Saved ${upcoming.length} ${upcoming.length === 1 ? "date" : "dates"}. In Google Calendar, open Settings, then Import & export, and import this file.`);
+  } catch (err) {
+    const code = err && err.code;
+    if (code === "declined") return;
+    if (code === "rate_limited") toast("A save prompt is already open. Try again in a moment.");
+    else toast("Calendar export isn't available in this view.");
+  }
+}
+function gcalUrl(e) {
+  const next = new Date(e.date); next.setDate(next.getDate() + 1);
+  const { title, body } = calText(e);
+  const q = new URLSearchParams({ action: "TEMPLATE", text: title, dates: `${ymd(e.date)}/${ymd(next)}`, details: body });
+  if (VENUES[e.venue] && VENUES[e.venue].loc) q.set("location", VENUES[e.venue].loc);
+  return "https://calendar.google.com/calendar/render?" + q.toString();
+}
+function mkClass(e) { return `${COLOR[e.type]}-c`; }
+function marker(e) { return `<i class="mk ${mkClass(e)}${e.est ? " est" : ""}" aria-hidden="true"></i>`; }
+const FULL_NAME = {
+  "IEEE S&P": "IEEE Symposium on Security and Privacy",
+  "USENIX Security": "USENIX Security Symposium",
+  "CCS": "ACM Conference on Computer and Communications Security",
+  "SOUPS": "Symposium on Usable Privacy and Security",
+  "CHI": "ACM CHI Conference on Human Factors in Computing Systems",
+  "DIS": "ACM Designing Interactive Systems Conference",
+  "IUI": "ACM Conference on Intelligent User Interfaces",
+  "UIST": "ACM Symposium on User Interface Software and Technology",
+  "ASSETS": "ACM SIGACCESS Conference on Computers and Accessibility",
+  "CSCW": "ACM Conference on Computer-Supported Cooperative Work and Social Computing",
+  "ASIS&T": "Annual Meeting of the Association for Information Science and Technology",
+  "iConference": "iConference, the annual conference of the iSchools organization",
+  "Gary Marsden Travel Awards": "ACM SIGCHI Gary Marsden Travel Awards",
+  "SIGACCESS Travel Scholarship": "ACM SIGACCESS Travel Scholarship",
+  "CHI Student Volunteers": "ACM CHI Student Volunteer Program",
+  "IUI Student Volunteers": "ACM IUI Student Volunteer Program",
+  "UIST Student Volunteers": "ACM UIST Student Volunteer Program",
+  "ASSETS Student Volunteers": "ACM ASSETS Student Volunteer Program",
+  "CSCW Student Volunteers": "ACM CSCW Student Volunteer Program",
+  "FAccT Student Volunteers": "ACM FAccT Student Volunteers",
+  "NeurIPS Volunteers": "NeurIPS Volunteer Program",
+  "AAAI Student Scholar & Volunteer Program": "AAAI Student Scholar & Volunteer Program",
+  "CCS Student Travel Grant": "ACM CCS Student Travel Grant",
+  "IEEE S&P Student Travel Grant": "IEEE Symposium on Security and Privacy Student Travel Grant",
+  "USENIX Security Student Grant": "USENIX Security Symposium Student Grant",
+  "NeurIPS Financial Assistance": "NeurIPS Financial Assistance",
+  "FAccT Financial Support": "ACM FAccT Participant Financial Support",
+  "FAccT": "ACM Conference on Fairness, Accountability, and Transparency",
+  "AIES": "AAAI/ACM Conference on AI, Ethics, and Society",
+  "NeurIPS": "Conference on Neural Information Processing Systems",
+  "ICLR": "International Conference on Learning Representations",
+  "ICML": "International Conference on Machine Learning",
+  "AAAI": "AAAI Conference on Artificial Intelligence",
+  "IJCAI": "International Joint Conference on Artificial Intelligence",
+};
+const ABBR = { "IEEE S&P": "S&P", "USENIX Security": "USENIX", "NeurIPS": "NeurIPS", "iConference": "iConf", "Gary Marsden Travel Awards": "GMTA",
+  "SIGACCESS Travel Scholarship": "SIGACCESS", "CCS Student Travel Grant": "CCS", "IEEE S&P Student Travel Grant": "S&P",
+  "USENIX Security Student Grant": "USENIX", "NeurIPS Financial Assistance": "NeurIPS", "FAccT Financial Support": "FAccT",
+  "CHI Student Volunteers": "CHI SV", "IUI Student Volunteers": "IUI SV", "UIST Student Volunteers": "UIST SV", "ASSETS Student Volunteers": "ASSETS SV",
+  "CSCW Student Volunteers": "CSCW SV", "FAccT Student Volunteers": "FAccT SV", "NeurIPS Volunteers": "NeurIPS SV", "AAAI Student Scholar & Volunteer Program": "AAAI SV" };
+function abbr(series) { return ABBR[series] || series; }
+function revTag(e) { const r = /round\s*(\d)/i.exec(e.detail); return abbr(e.series) + (r ? "-" + (["", "I", "II", "III"][+r[1]] || r[1]) : ""); }
+function vlink(e) { return `<button type="button" class="vlink" data-conf="${esc(e.series)}">${esc(e.venue)}</button>`; }
+function typeLabel(e) { return { paper: "Paper", poster: "Poster", vol: "Volunteer", fund: "Travel fund", rev: "Review date" }[COLOR[e.type]] + (e.est ? ", placeholder" : ""); }
+
+function passes(e) {
+  if (state.type !== "all" && COLOR[e.type] !== state.type) return false;
+  if (state.field !== "all" && e.field !== state.field) return false;
+  if (state.est === "confirmed" && e.est) return false;
+  if (state.est === "tba" && !e.est) return false;
+  if (state.starred === "on" && !stars.has(e.series)) return false;
+  if (state.q) {
+    const hay = `${e.venue} ${e.series} ${kindText(e)} ${VENUES[e.venue]?.loc || ""} ${FIELD_NAME[e.field]}`.toLowerCase();
+    if (!state.q.toLowerCase().split(/\s+/).filter(Boolean).every(w => hay.includes(w))) return false;
+  }
+  return true;
+}
+function filtersActive() { return Object.keys(DEFAULTS).some(k => state[k] !== DEFAULTS[k]); }
+function visible() { return EVENTS.filter(passes); }
+
+function rowHTML(e, mode) {
+  const n = daysUntil(e);
+  const starred = stars.has(e.series);
+  const site = e.url || SITE[e.venue];
+  const siteLabel = e.type === "fund" ? "Fund details" : e.type === "vol" ? "Volunteer details" : e.url ? "Details" : "Website";
+  const d = mode === "list"
+    ? `<span class="d">${e.day}<small>${WD[e.date.getDay()]}</small></span>`
+    : `<span class="d">${e.day}</span>`;
+  const left = mode === "list" ? `<span class="left${n >= 0 && n <= 7 ? " soon" : ""}">${leftText(n)}</span>` : "";
+  return `<li class="ev${n < 0 ? " past" : ""}${e.type === "rev" ? " rev" : ""}${moreText(e) ? " has-more" : ""}" data-iso="${e.iso}" data-venue="${esc(e.venue)}"${mode === "cal" ? ' tabindex="0"' : ""}>
+    ${d}${marker(e)}
+    <div class="t">
+      <span class="sr">${typeLabel(e)}: </span>
+      ${vlink(e)} <span class="kind">${esc(kindText(e))}</span>
+      ${locText(e.venue) ? `<span class="loc">${locText(e.venue)}</span>` : ""}
+      ${moreText(e) ? `<span class="more">${esc(moreText(e))}</span>` : ""}
+      <div class="acts">
+        <button type="button" class="act star${starred ? " on" : ""}" data-series="${esc(e.series)}" aria-pressed="${starred}" aria-label="${starred ? "Remove" : "Add"} ${esc(e.series)} ${starred ? "from" : "to"} my venues">${starred ? ICON.star : ICON.starO}<span class="lbl">${starred ? "Starred" : "Star"}</span></button>
+        ${site ? `<a class="act" href="${esc(site)}" target="_blank" rel="noopener">${ICON.out}${siteLabel}</a>` : ""}
+      </div>
+    </div>
+    ${left}
+    ${n >= 0 ? calBtn(e) : `<span class="calbtn-space" aria-hidden="true"></span>`}
+  </li>`;
+}
+
+/* ---------- renderers ---------- */
+function renderStats() {
+  const ev = visible();
+  const upcoming = ev.filter(e => daysUntil(e) >= 0);
+  const confirmed = ev.filter(e => !e.est).length;
+  const venues = new Set(ev.map(e => e.series)).size;
+  const next = upcoming[0];
+  document.getElementById("stats").innerHTML = ev.length
+    ? `<b>${ev.length}</b> deadlines across <b>${venues}</b> conferences · <b>${confirmed}</b> confirmed${next ? ` · next ${leftText(daysUntil(next)) === "tomorrow" || leftText(daysUntil(next)) === "today" ? leftText(daysUntil(next)) : "in " + leftText(daysUntil(next))}` : ""}`
+    : "No deadlines match these filters.";
+}
+
+function renderNext() {
+  const el = document.getElementById("next");
+  const upcoming = visible().filter(e => daysUntil(e) >= 0 && e.type !== "rev");
+  if (!upcoming.length) {
+    el.innerHTML = `<div class="next-hero"><p class="eyebrow">Next deadline</p><p class="none">Nothing upcoming for these filters.</p></div>`;
+    return;
+  }
+  const first = upcoming[0];
+  const sameDay = upcoming.filter(e => e.iso === first.iso);
+  const later = upcoming.filter(e => e.iso !== first.iso).slice(0, 5);
+  const n = daysUntil(first);
+  const big = n === 0 ? "Today" : n === 1 ? "Tomorrow" : `In ${n} days`;
+  el.innerHTML = `
+    <div class="next-hero">
+      <p class="eyebrow">Next deadline</p>
+      <div class="next-when"><span class="big">${big}</span><span class="date">${WD[first.date.getDay()]}, ${SHORT[first.m]} ${first.day}, ${first.y}</span></div>
+      <ul>${sameDay.map(e => `<li>${marker(e)}<div>${vlink(e)} <span class="kind">${esc(kindText(e))}</span>${locText(e.venue) ? `<span class="loc">${locText(e.venue)}</span>` : ""}
+        ${(e.url || SITE[e.venue]) ? `<div class="acts"><a class="act" href="${esc(e.url || SITE[e.venue])}" target="_blank" rel="noopener">${ICON.out}${e.type === "fund" ? "Fund details" : e.type === "vol" ? "Volunteer details" : e.url ? "Details" : "Website"}</a></div>` : ""}</div></li>`).join("")}</ul>
+    </div>
+    <div class="next-later">
+      <p class="eyebrow">After that</p>
+      ${later.length ? `<ol>${later.map(e => `<li><span class="when">${SHORT[e.m]} ${e.day}</span>${marker(e)}<span>${vlink(e)} <span class="kind">${esc(kindText(e))}</span></span><span class="left">${leftText(daysUntil(e))}</span></li>`).join("")}</ol>` : `<p class="none">Nothing else upcoming for these filters.</p>`}
+    </div>`;
+}
+
+function monthList() {
+  const out = [];
+  for (let i = 0; i < MONTH_COUNT; i++) out.push({ y: START.y + Math.floor((START.m + i) / 12), m: (START.m + i) % 12 });
+  return out;
+}
+
+function dayStyle(evs) {
+  let colors = ["paper", "poster", "vol", "fund"].filter(c => evs.some(e => COLOR[e.type] === c));
+  let cls = "hit", style, label = "";
+  if (colors.length === 1 && (colors[0] === "fund" || colors[0] === "vol")) {
+    const t = colors[0];
+    const fe = evs.filter(e => COLOR[e.type] === t);
+    const tags = [...new Set(fe.map(e => abbr(e.series)))];
+    label = tags[0] + (tags.length > 1 ? "+" + (tags.length - 1) : "");
+    style = `background:${FILL[t]};color:${INK[t]};--edge:${EDGE[t]}`;
+    cls += ` ${t}-only has-label`;
+    if (fe.every(e => e.est)) cls += " est";
+    return { cls, style, label };
+  }
+  if (!colors.length) {
+    style = "background:var(--rev)";
+    const tags = [...new Set(evs.map(revTag))];
+    label = tags[0] + (tags.length > 1 ? "+" + (tags.length - 1) : "");
+    cls += " rev-only has-label";
+    if (evs.every(e => e.est)) cls += " est";
+    return { cls, style, label };
+  }
+  if (colors.length === 1) {
+    style = `background:${FILL[colors[0]]};color:${INK[colors[0]]};--edge:${EDGE[colors[0]]}`;
+  } else {
+    const step = 100 / colors.length;
+    style = `background:linear-gradient(135deg,${colors.map((c, i) => `${FILL[c]} ${i * step}% ${(i + 1) * step}%`).join(",")})`;
+    cls += " mixed";
+  }
+  const main = evs.some(e => e.type !== "rev") ? evs.filter(e => e.type !== "rev") : evs;
+  if (main.every(e => e.est)) cls += " est";
+  return { cls, style, label };
+}
+
+function emptyState() {
+  return `<div class="panel empty-state"><strong>No deadlines match</strong><p>${state.starred === "on" && !stars.size ? "Star a venue to build your list, or show all venues." : "Try a different search or clear the filters."}</p><button type="button" class="chip" data-reset>Clear filters</button></div>`;
+}
+
+function countText(evs) {
+  const d = evs.filter(e => e.type !== "rev").length, r = evs.length - d;
+  const parts = [];
+  if (d) parts.push(d + (d === 1 ? " deadline" : " deadlines"));
+  if (r) parts.push(r + (r === 1 ? " review date" : " review dates"));
+  return parts.join(" · ");
+}
+
+function renderCalendar(ev, months) {
+  return `<div class="months">${months.map(({ y, m }) => {
+    const evs = ev.filter(e => e.y === y && e.m === m);
+    const first = new Date(y, m, 1).getDay();
+    const len = new Date(y, m + 1, 0).getDate();
+    let cells = WD.map(d => `<div class="dow" aria-hidden="true">${d[0]}</div>`).join("");
+    for (let b = 0; b < first; b++) cells += `<div class="day empty"></div>`;
+    for (let d = 1; d <= len; d++) {
+      const dayEvs = evs.filter(e => e.day === d);
+      const isToday = y === today.getFullYear() && m === today.getMonth() && d === today.getDate();
+      const isPast = new Date(y, m, d) < today;
+      if (!dayEvs.length) { cells += `<div class="day${isToday ? " today" : ""}"${isToday ? ' aria-label="Today"' : ""}>${d}</div>`; continue; }
+      const { cls, style, label: tag } = dayStyle(dayEvs);
+      const iso = dayEvs[0].iso;
+      const venues = [...new Set(dayEvs.map(e => e.venue))].join("|");
+      const label = `${SHORT[m]} ${d}: ` + dayEvs.map(e => `${e.venue} ${kindText(e)}${e.est ? " (placeholder)" : ""}`).join("; ");
+      cells += `<button type="button" class="day ${cls}${isToday ? " today" : ""}${isPast ? " past" : ""}" style="${style}" data-iso="${iso}" data-venues="${esc(venues)}" aria-pressed="false" aria-label="${esc(label)}" title="${esc(label)}">${tag ? `<span class="dn">${d}</span><span class="dl${tag.length > 6 ? " long" : ""}" aria-hidden="true">${esc(tag)}</span>` : d}</button>`;
+    }
+    return `<article class="panel month" id="m-${y}-${m + 1}">
+      <div class="month-head"><h3>${MONTHS[m]} ${y}</h3><span class="count">${countText(evs)}</span></div>
+      <div class="grid">${cells}</div>
+      ${evs.length ? `<ul class="evs">${evs.map(e => rowHTML(e, "cal")).join("")}</ul>` : `<p class="none">No deadlines this month.</p>`}
+    </article>`;
+  }).join("")}</div>`;
+}
+
+function renderList(ev, months) {
+  return `<div class="agenda">${months.map(({ y, m }) => {
+    const evs = ev.filter(e => e.y === y && e.m === m);
+    return `<section class="panel agenda-month" id="m-${y}-${m + 1}">
+      <h3>${MONTHS[m]} ${y}<span>${countText(evs)}</span></h3>
+      <ul class="evs">${evs.map(e => rowHTML(e, "list")).join("")}</ul>
+    </section>`;
+  }).join("")}</div>`;
+}
+
+function renderView() {
+  const ev = visible();
+  const all = monthList();
+  const months = filtersActive() || state.view === "list" ? all.filter(({ y, m }) => ev.some(e => e.y === y && e.m === m)) : all;
+  const view = document.getElementById("view");
+  view.innerHTML = !ev.length ? emptyState() : state.view === "list" ? renderList(ev, months) : renderCalendar(ev, months);
+  document.getElementById("jump").innerHTML = months.map(({ y, m }) => {
+    const inMonth = ev.filter(e => e.y === y && e.m === m);
+    const n = inMonth.filter(e => e.type !== "rev").length || inMonth.length;
+    const cur = y === today.getFullYear() && m === today.getMonth();
+    return `<button type="button" data-jump="m-${y}-${m + 1}">${cur ? '<i class="cur" aria-hidden="true"></i>' : ""}${SHORT[m]}${y !== START.y || m === START.m ? " ’" + String(y).slice(2) : ""} <span class="n">${n}</span></button>`;
+  }).join("");
+}
+
+function renderVenues() {
+  const fieldOf = {};
+  EVENTS.forEach(e => { fieldOf[e.venue] = e.field; });
+  const rows = Object.keys(VENUES)
+    .filter(v => { fieldOf[v] = fieldOf[v] || VENUES[v].field; return VENUES[v].loc && (state.field === "all" || fieldOf[v] === state.field); })
+    .sort((a, b) => (fieldOf[a] + a).localeCompare(fieldOf[b] + b))
+    .map(v => {
+      const i = VENUES[v];
+      const series = v.replace(/[\s-](\d{2}|\d{4})$/, "").trim();
+      return `<tr><td><button type="button" class="vlink" data-conf="${esc(series)}">${esc(v)}</button></td><td>${esc(i.loc)}${i.prev ? "†" : ""}</td><td class="dt">${esc(i.dates || "TBA")}</td><td class="dt">${FIELD_NAME[fieldOf[v]]}</td><td>${SITE[v] ? `<a href="${esc(SITE[v])}" target="_blank" rel="noopener">Website</a>` : ""}</td></tr>`;
+    });
+  document.getElementById("venue-table").innerHTML =
+    `<thead><tr><th>Conference</th><th>Location</th><th>Conference dates</th><th>Field</th><th><span class="sr">Link</span></th></tr></thead><tbody>${rows.join("")}</tbody>`;
+}
+
+function syncControls() {
+  document.querySelectorAll(".chip[data-filter]").forEach(b => b.setAttribute("aria-pressed",
+    b.dataset.filter === "show" ? (state.est === "all" && state.starred === "off") : state[b.dataset.filter] === b.dataset.value));
+  document.querySelectorAll(".seg button").forEach(b => b.setAttribute("aria-pressed", state.view === b.dataset.view));
+  document.getElementById("reset").hidden = !filtersActive();
+  const nActive = ["type", "field", "est", "starred"].filter(k => state[k] !== DEFAULTS[k]).length;
+  document.getElementById("fx-n").textContent = nActive ? String(nActive) : "";
+  document.getElementById("q-clear").hidden = !state.q;
+}
+
+function save() {
+  try {
+    localStorage.setItem("deadline-prefs-v5", JSON.stringify({ type: state.type, field: state.field, est: state.est, starred: state.starred }));
+    localStorage.setItem("deadline-stars", JSON.stringify([...stars]));
+  } catch (e) {}
+}
+
+function render() {
+  syncControls(); renderNext(); renderView(); renderVenues(); save();
+  if (linkedVenues) applyLinks(linkedVenues);
+}
+
+/* ---------- cycle linking ---------- */
+let linkedVenues = null;
+function clearLinks() {
+  linkedVenues = null;
+  document.querySelectorAll(".day.linked, .ev.linked").forEach(el => el.classList.remove("linked"));
+  document.querySelectorAll(".day[aria-pressed='true']").forEach(d => d.setAttribute("aria-pressed", "false"));
+  document.querySelectorAll(".ev.sel").forEach(r => r.classList.remove("sel"));
+  document.getElementById("linkbar").hidden = true;
+}
+function applyLinks(venues) {
+  linkedVenues = venues;
+  document.querySelectorAll(".day.hit").forEach(d => {
+    const vs = (d.dataset.venues || "").split("|");
+    d.classList.toggle("linked", vs.some(v => venues.includes(v)));
+  });
+  document.querySelectorAll(".ev").forEach(r => r.classList.toggle("linked", venues.includes(r.dataset.venue)));
+  const bar = document.getElementById("linkbar");
+  bar.hidden = false;
+  bar.dataset.conf = EVENTS.find(e => e.venue === venues[0])?.series || "";
+  document.getElementById("lb-text").textContent = `Showing every ${venues.join(" & ")} date (outlined)`;
+}
+function selectDay(card, iso, venues) {
+  const pressed = card.querySelector(`.day.hit[data-iso="${iso}"]`);
+  const already = pressed && pressed.getAttribute("aria-pressed") === "true";
+  clearLinks();
+  if (already) return;
+  if (pressed) pressed.setAttribute("aria-pressed", "true");
+  const rows = card.querySelectorAll(`.ev[data-iso="${iso}"]`);
+  rows.forEach(r => r.classList.add("sel"));
+  applyLinks(venues);
+  return rows;
+}
+
+/* ---------- conference sheet ---------- */
+let lastFocus = null;
+function fmtDate(e) { return `${SHORT[e.m]} ${e.day}, ${e.y}`; }
+function openConf(series) {
+  const evs = EVENTS.filter(e => e.series === series);
+  const seriesOf = v => v.replace(/[\s-](\d{2}|\d{4})$/, "").trim();
+  if (!evs.length && !Object.keys(VENUES).some(v => seriesOf(v) === series)) return;
+  const editions = [...new Set([...evs.map(e => e.venue), ...Object.keys(VENUES).filter(v => seriesOf(v) === series)])].sort();
+  const starred = stars.has(series);
+  const vField = (Object.keys(VENUES).find(v => seriesOf(v) === series && VENUES[v].field) || "");
+  const field = FIELD_NAME[evs.length ? evs[0].field : (VENUES[vField] || {}).field] || "";
+  const firstUpcoming = evs.findIndex(e => daysUntil(e) >= 0);
+  const items = evs.map((e, i) => {
+    const n = daysUntil(e);
+    const now = i === firstUpcoming && firstUpcoming > 0 ? `<li class="nowline">Today</li>` : "";
+    return now + `<li class="${n < 0 ? "past" : ""}${e.type === "rev" ? " rev" : ""}">
+      <span class="when">${SHORT[e.m]} ${e.day}<small>${WD[e.date.getDay()]} ${e.y}</small></span>
+      ${marker(e)}
+      <div class="what">
+        <span class="sr">${typeLabel(e)}: </span>${new Set(evs.map(x => x.venue)).size > 1 || editions.length > 1 ? `<strong>${esc(e.venue)}</strong> ` : ""}${esc(kindText(e))}${e.more ? `<span class="loc">${esc(e.more)}</span>` : ""}
+        <div class="meta"><span class="${n >= 0 && n <= 7 ? "soon" : ""}">${leftText(n)}</span>${e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${ICON.out}${e.type === "fund" ? "Fund details" : "Details"}</a>` : ""}</div>
+      </div>
+      ${n >= 0 ? calBtn(e) : `<span class="calbtn-space" aria-hidden="true"></span>`}
+    </li>`;
+  }).join("");
+  const eds = editions.map(v => {
+    const i = VENUES[v];
+    return `<div class="ed"><strong>${esc(v)}</strong>${i && i.loc ? `<span>${esc(i.loc)}${i.prev ? "† (previous edition's location)" : ""}${i.dates ? " · " + esc(i.dates) : ""}</span>` : ""}${i && i.note ? `<span>${esc(i.note)}</span>` : ""}${SITE[v] ? `<a href="${esc(SITE[v])}" target="_blank" rel="noopener">${i && i.fund ? "Fund details" : i && i.vol ? "Volunteer details" : "Website"}</a>` : ""}</div>`;
+  }).join("");
+  const panel = document.getElementById("sheet-panel");
+  panel.innerHTML = `
+    <div class="sheet-head">
+      <div><h2 id="sheet-title">${esc(series)}</h2>${FULL_NAME[series] ? `<p class="full">${esc(FULL_NAME[series])}</p>` : ""}<p>${field} · ${evs.length} ${evs.length === 1 ? "date" : "dates"} · ${evs.filter(e => !e.est).length} confirmed</p></div>
+      <button type="button" class="sheet-close" id="sheet-close" aria-label="Close">${'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>'}</button>
+    </div>
+    <div class="sheet-tools">
+      <button type="button" class="chip" id="sheet-star" data-series="${esc(series)}" aria-pressed="${starred}">${starred ? ICON.star : ICON.starO}${starred ? "In my venues" : "Add to my venues"}</button>
+      <button type="button" class="chip calbtn wide dl-only" data-export="csv" data-scope="series" data-series="${esc(series)}" title="Saves a .csv file with every upcoming ${esc(series)} date">${ICON.cal}Add to Google Calendar</button>
+    </div>
+    <div class="eds">${eds}</div>
+    <div><p class="eyebrow" style="margin-bottom:6px">Every date</p>${items ? `<ol class="tl">${items}</ol>` : `<p class="none">No dates in this calendar's window. Check the volunteer and grant pages for related dates.</p>`}</div>
+    <p class="sheet-note">Dashed markers are placeholders carried over from the 2026 cycle. Gray rows are review and decision dates.</p>`;
+  lastFocus = document.activeElement;
+  document.getElementById("sheet").hidden = false;
+  document.documentElement.style.overflow = "hidden";
+  document.getElementById("sheet-close").focus();
+}
+function closeConf() {
+  const sh = document.getElementById("sheet");
+  if (sh.hidden) return;
+  sh.hidden = true;
+  document.documentElement.style.overflow = "";
+  if (lastFocus && document.contains(lastFocus)) lastFocus.focus();
+}
+document.getElementById("sheet").addEventListener("click", ev => {
+  if (ev.target.id === "sheet") { closeConf(); return; }
+  if (ev.target.closest("#sheet-close")) { closeConf(); return; }
+  const st = ev.target.closest("#sheet-star");
+  if (st) {
+    const s = st.dataset.series;
+    stars.has(s) ? stars.delete(s) : stars.add(s);
+    const y = window.scrollY; render(); window.scrollTo(0, y);
+    openConf(s);
+    return;
+  }
+  const sh = ev.target.closest("#sheet-show");
+  if (sh) {
+    const venues = [...new Set(EVENTS.filter(e => e.series === sh.dataset.series).map(e => e.venue))];
+    closeConf();
+    if (state.view !== "calendar") setView("calendar", true);
+    clearLinks();
+    applyLinks(venues);
+    const firstDay = [...document.querySelectorAll(".day.linked")].find(d => !d.classList.contains("past")) || document.querySelector(".day.linked");
+    if (firstDay) firstDay.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "center" });
+  }
+});
+document.addEventListener("keydown", ev => {
+  if (ev.key === "Enter" && ev.target.matches && ev.target.matches(".months .ev")) { ev.target.click(); return; }
+  if (ev.key === "Escape") {
+    if (!document.getElementById("sheet").hidden) closeConf();
+    else if (linkedVenues) clearLinks();
+  }
+  if (ev.key === "Tab" && !document.getElementById("sheet").hidden) {
+    const f = [...document.querySelectorAll("#sheet-panel button, #sheet-panel a")];
+    if (!f.length) return;
+    if (ev.shiftKey && document.activeElement === f[0]) { ev.preventDefault(); f[f.length - 1].focus(); }
+    else if (!ev.shiftKey && document.activeElement === f[f.length - 1]) { ev.preventDefault(); f[0].focus(); }
+  }
+});
+document.getElementById("lb-clear").addEventListener("click", clearLinks);
+document.getElementById("lb-open").addEventListener("click", () => { const c = document.getElementById("linkbar").dataset.conf; if (c) openConf(c); });
+
+/* ---------- events ---------- */
+document.querySelectorAll(".chip[data-filter]").forEach(b => b.addEventListener("click", () => {
+  const f = b.dataset.filter, v = b.dataset.value;
+  if (f === "show") { state.est = "all"; state.starred = "off"; }
+  else if (f === "starred") state.starred = state.starred === "on" ? "off" : "on";
+  else if (f === "est") state.est = state.est === v ? "all" : v;
+  else state[f] = (state[f] === v && v !== "all" && f !== "est") ? "all" : v;
+  render();
+}));
+const qEl = document.getElementById("q");
+qEl.addEventListener("input", () => { state.q = qEl.value.trim(); render(); });
+document.getElementById("q-clear").addEventListener("click", () => { qEl.value = ""; state.q = ""; render(); qEl.focus(); });
+function resetFilters() { Object.assign(state, DEFAULTS); qEl.value = ""; render(); }
+document.getElementById("reset").addEventListener("click", resetFilters);
+
+function setView(v, push) {
+  state.view = v;
+  if (push && location.hash !== "#" + v) { try { history.replaceState(null, "", "#" + v); } catch (e) { location.hash = v; } }
+  render();
+}
+document.querySelectorAll(".seg button").forEach(b => b.addEventListener("click", () => setView(b.dataset.view, true)));
+window.addEventListener("hashchange", () => { const h = location.hash.slice(1); if (h === "list" || h === "calendar") setView(h, false); });
+
+document.addEventListener("click", ev => {
+  const vb = ev.target.closest(".vlink[data-conf]");
+  if (vb) { openConf(vb.dataset.conf); return; }
+  const arow = ev.target.closest(".agenda .ev.has-more");
+  if (arow && !ev.target.closest("a, button, .calpop")) { arow.classList.toggle("sel"); return; }
+  const row = ev.target.closest(".months .ev");
+  if (row && !ev.target.closest("a, button, summary, details, .calpop")) {
+    const card = row.closest(".month");
+    if (row.classList.contains("sel")) { clearLinks(); return; }
+    clearLinks();
+    row.classList.add("sel");
+    card.querySelectorAll(".day.hit").forEach(d => d.setAttribute("aria-pressed", d.dataset.iso === row.dataset.iso ? "true" : "false"));
+    applyLinks([row.dataset.venue]);
+    return;
+  }
+  const t = ev.target.closest("[data-reset], .act.star, .day.hit, [data-jump]");
+  if (!t) return;
+  if (t.matches("[data-reset]")) { resetFilters(); return; }
+  if (t.matches("[data-jump]")) {
+    const target = document.getElementById(t.dataset.jump);
+    if (target) target.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+    return;
+  }
+  if (t.matches(".act.star")) {
+    const s = t.dataset.series;
+    stars.has(s) ? stars.delete(s) : stars.add(s);
+    const y = window.scrollY;
+    const selIso = [...document.querySelectorAll(".months .ev.sel")].map(r => r.dataset.iso);
+    render();
+    selIso.forEach(iso => document.querySelectorAll(`.months .ev[data-iso="${iso}"]`).forEach(r => r.classList.add("sel")));
+    window.scrollTo(0, y);
+    return;
+  }
+  if (t.matches(".day.hit")) {
+    const rows = selectDay(t.closest(".month"), t.dataset.iso, (t.dataset.venues || "").split("|").filter(Boolean));
+    if (rows && rows[0]) rows[0].scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "nearest" });
+  }
+});
+
+document.addEventListener("click", ev => {
+  const ex = ev.target.closest("[data-export]");
+  if (ex) {
+    if (ex.dataset.scope === "series") {
+      const s = ex.dataset.series;
+      exportFile(ex.dataset.export, EVENTS.filter(e => e.series === s), `${s} dates`, `${s} dates`);
+    } else {
+      exportFile(ex.dataset.export, visible(), filtersActive() ? "conference-deadlines-filtered" : "conference-deadlines", "Conference deadlines");
+    }
+  }
+});
+// calendar popover: one open at a time; closes on outside click or Esc
+function closeCalMenus(except) {
+  document.querySelectorAll(".calbtn[aria-expanded='true']").forEach(b => {
+    if (b === except) return;
+    b.setAttribute("aria-expanded", "false");
+    b.nextElementSibling.hidden = true;
+  });
+}
+document.addEventListener("click", ev => {
+  const btn = ev.target.closest(".calbtn[aria-haspopup]");
+  if (btn) {
+    const open = btn.getAttribute("aria-expanded") !== "true";
+    closeCalMenus(btn);
+    btn.setAttribute("aria-expanded", String(open));
+    const menu = btn.nextElementSibling;
+    menu.hidden = !open;
+    if (open) {
+      // keep the menu on screen: open toward whichever side has room
+      menu.classList.remove("flip");
+      if (menu.getBoundingClientRect().left < 8) menu.classList.add("flip");
+    }
+    if (open) { const first = btn.nextElementSibling.querySelector("a, button:not([hidden])"); if (first) first.focus({ preventScroll: true }); }
+    return;
+  }
+  if (ev.target.closest(".calmenu-pop a, .calmenu-pop button")) { setTimeout(() => closeCalMenus(), 0); return; }
+  if (!ev.target.closest(".calmenu-pop")) closeCalMenus();
+}, true);
+document.addEventListener("keydown", ev => {
+  if (ev.key === "Escape" && document.querySelector(".calbtn[aria-expanded='true']")) {
+    const open = document.querySelector(".calbtn[aria-expanded='true']");
+    closeCalMenus(); open.focus(); ev.stopImmediatePropagation();
+  }
+}, true);
+// file exports appear only where this view can save files
+document.documentElement.classList.add("no-dl");
+if (window.claude && typeof window.claude.use === "function") {
+  window.claude.use("downloads").then(api => {
+    if (api) { downloadsApi = api; document.documentElement.classList.remove("no-dl"); }
+  }).catch(() => {});
+}
+
+/* ---------- boot ---------- */
+try {
+  const p = JSON.parse(localStorage.getItem("deadline-prefs-v5") || "null");
+  const ok = { type: ["all", "paper", "poster", "vol", "fund", "rev"], field: ["all", "sec", "hci", "info", "ai"], est: ["all", "confirmed", "tba"], starred: ["on", "off"] };
+  if (p) for (const k in ok) if (ok[k].includes(p[k])) state[k] = p[k];
+  const s = JSON.parse(localStorage.getItem("deadline-stars") || "[]");
+  if (Array.isArray(s)) stars = new Set(s.filter(x => typeof x === "string"));
+} catch (e) {}
+const fx = document.getElementById("fx");
+const phoneMQ = window.matchMedia ? matchMedia("(max-width: 480px)") : { matches: false };
+fx.open = !phoneMQ.matches;
+if (phoneMQ.addEventListener) phoneMQ.addEventListener("change", e => { if (!e.matches) fx.open = true; });
+const h = location.hash.slice(1);
+if (h === "list" || h === "calendar") state.view = h;
+else if (window.matchMedia && matchMedia("(max-width: 480px)").matches) state.view = "list";
+render();
+</script>

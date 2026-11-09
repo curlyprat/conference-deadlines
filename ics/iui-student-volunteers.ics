@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IUI Student Volunteers dates
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:iui-student-volunteers-vol-opens-for-iui-2027-2026@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:IUI Student Volunteers: Opens · for IUI 2027
+DESCRIPTION:Applications open.\nPlaceholder based on the 2026 date. Confirm
+  on the official call.\nStudent volunteer call for IUI.\nhttps://iui.acm.o
+ rg/2026/student-volunteers/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://iui.acm.org/2026/student-volunteers/
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-student-volunteers-vol-closes-for-iui-2027-2027@conference-deadline
+ s
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270129
+SUMMARY:IUI Student Volunteers: Closes · for IUI 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent volunteer call for
+  IUI.\nhttps://iui.acm.org/2026/student-volunteers/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://iui.acm.org/2026/student-volunteers/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IUI Student Volunteers: Closes · for IUI 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IUI Student Volunteers: Closes · for IUI 2027
+END:VALARM
+END:VEVENT
+END:VCALENDAR

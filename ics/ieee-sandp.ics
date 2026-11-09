@@ -1,0 +1,223 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IEEE S&P dates
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:ieee-sandp-2027-abs-cycle-2-2026@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:IEEE S&P 2027: Cycle 2 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Montré
+ al\, Canada\, May 17–20\, 2027.\nhttps://sp2027.ieee-security.org/cfpape
+ rs.html
+TRANSP:TRANSPARENT
+LOCATION:Montréal\, Canada
+URL:https://sp2027.ieee-security.org/cfpapers.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2027: Cycle 2 · abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2027: Cycle 2 · abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2027-paper-cycle-2-2026@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:IEEE S&P 2027: Cycle 2 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Montré
+ al\, Canada\, May 17–20\, 2027.\nhttps://sp2027.ieee-security.org/cfpape
+ rs.html
+TRANSP:TRANSPARENT
+LOCATION:Montréal\, Canada
+URL:https://sp2027.ieee-security.org/cfpapers.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2027: Cycle 2 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2027: Cycle 2 · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2027-rev-cycle-2-round-1-reviews-out-rebuttal-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:IEEE S&P 2027: Cycle 2 · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nConference: Montréal\, Canad
+ a\, May 17–20\, 2027.\nhttps://sp2027.ieee-security.org/cfpapers.html
+TRANSP:TRANSPARENT
+LOCATION:Montréal\, Canada
+URL:https://sp2027.ieee-security.org/cfpapers.html
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2027-rev-cycle-2-round-2-final-decisions-2027@conference-dea
+ dlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270306
+SUMMARY:IEEE S&P 2027: Cycle 2 · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nConference: Montréal\, Canad
+ a\, May 17–20\, 2027.\nhttps://sp2027.ieee-security.org/cfpapers.html
+TRANSP:TRANSPARENT
+LOCATION:Montréal\, Canada
+URL:https://sp2027.ieee-security.org/cfpapers.html
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:IEEE S&P 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada\, May 17–20\, 2027.\nhttps://sp2027.ieee-security.org/cfpapers.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+URL:https://sp2027.ieee-security.org/cfpapers.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2028-abs-cycle-1-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:IEEE S&P 2028: Cycle 1 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2028: Cycle 1 · abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2028: Cycle 1 · abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2028-paper-cycle-1-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270611
+DTEND;VALUE=DATE:20270612
+SUMMARY:IEEE S&P 2028: Cycle 1 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2028: Cycle 1 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2028: Cycle 1 · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2028-rev-cycle-1-round-1-reviews-out-rebuttal-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270820
+DTEND;VALUE=DATE:20270821
+SUMMARY:IEEE S&P 2028: Cycle 1 · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Montréal\, Canada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2028-rev-cycle-1-round-2-final-decisions-2027@conference-dea
+ dlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270911
+DTEND;VALUE=DATE:20270912
+SUMMARY:IEEE S&P 2028: Cycle 1 · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Montréal\, Canada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2028-abs-cycle-2-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271110
+DTEND;VALUE=DATE:20271111
+SUMMARY:IEEE S&P 2028: Cycle 2 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2028: Cycle 2 · abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2028: Cycle 2 · abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2028-paper-cycle-2-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20271117
+DTEND;VALUE=DATE:20271118
+SUMMARY:IEEE S&P 2028: Cycle 2 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2028: Cycle 2 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2028: Cycle 2 · paper deadline
+END:VALARM
+END:VEVENT
+END:VCALENDAR

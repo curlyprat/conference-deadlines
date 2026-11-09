@@ -1,0 +1,88 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ASIS&T dates
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:asisandt-2027-paper-papers-panels-and-workshops-2027@conference-deadlin
+ es
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270409
+DTEND;VALUE=DATE:20270410
+SUMMARY:ASIS&T 2027: Papers\, panels & workshops · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Vancouver\, Ca
+ nada\, Nov 19–23\, 2027.\nhttps://www.asist.org/am/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Vancouver\, Canada
+URL:https://www.asist.org/am/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ASIS&T 2027: Papers\, panels & workshops · paper
+  deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ASIS&T 2027: Papers\, panels & workshops · paper 
+ deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:asisandt-2027-rev-papers-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270519
+DTEND;VALUE=DATE:20270520
+SUMMARY:ASIS&T 2027: Papers · decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Vancouver\, Canada\, Nov
+  19–23\, 2027.\nhttps://www.asist.org/am/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Vancouver\, Canada
+URL:https://www.asist.org/am/
+END:VEVENT
+BEGIN:VEVENT
+UID:asisandt-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:ASIS&T 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Vancouver\, Ca
+ nada\, Nov 19–23\, 2027.\nhttps://www.asist.org/am/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Vancouver\, Canada
+URL:https://www.asist.org/am/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ASIS&T 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ASIS&T 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:asisandt-2027-rev-posters-decisions-2027@conference-deadlines
+DTSTAMP:20261109T233704Z
+DTSTART;VALUE=DATE:20270709
+DTEND;VALUE=DATE:20270710
+SUMMARY:ASIS&T 2027: Posters · decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Vancouver\, Canada\, Nov
+  19–23\, 2027.\nhttps://www.asist.org/am/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Vancouver\, Canada
+URL:https://www.asist.org/am/
+END:VEVENT
+END:VCALENDAR

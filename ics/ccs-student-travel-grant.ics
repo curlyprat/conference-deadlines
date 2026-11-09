@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CCS Student Travel Grant dates
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:ccs-student-travel-grant-fund-closes-for-ccs-2027-2027@conference-deadl
+ ines
+DTSTAMP:20261109T233705Z
+DTSTART;VALUE=DATE:20270914
+DTEND;VALUE=DATE:20270915
+SUMMARY:CCS Student Travel Grant: Closes · for CCS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent travel grants for 
+ ACM CCS.\nhttps://www.sigsac.org/ccs/CCS2026/attending/conference-grants.h
+ tml
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://www.sigsac.org/ccs/CCS2026/attending/conference-grants.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CCS Student Travel Grant: Closes · for CCS 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CCS Student Travel Grant: Closes · for CCS 2027
+END:VALARM
+END:VEVENT
+END:VCALENDAR
