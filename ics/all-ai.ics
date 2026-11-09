@@ -1,0 +1,757 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Conference deadlines (filtered)
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:facct-2027-paper--2026@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:FAccT 2027: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Porto\,
+  Portugal\, Jun 21–24\, 2027.\nhttps://facctconference.org/2027/cfp.html
+TRANSP:TRANSPARENT
+LOCATION:Porto\, Portugal
+URL:https://facctconference.org/2027/cfp.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: FAccT 2027: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: FAccT 2027: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-student-scholar-and-volunteer-program-vol-opens-for-aaai-27-2026@c
+ onference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:AAAI Student Scholar & Volunteer Program: Opens · for AAAI-27
+DESCRIPTION:Applications open.\nComplimentary registration for student volu
+ nteers at AAAI.\nhttps://aaai.org/conference/aaai/aaai-27/student-scholar-
+ volunteer-program/
+TRANSP:TRANSPARENT
+URL:https://aaai.org/conference/aaai/aaai-27/student-scholar-volunteer-prog
+ ram/
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-student-scholar-and-volunteer-program-vol-closes-for-aaai-27-2026@
+ conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:AAAI Student Scholar & Volunteer Program: Closes · for AAAI-27
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nComplimentary regis
+ tration for student volunteers at AAAI.\nhttps://aaai.org/conference/aaai/
+ aaai-27/student-scholar-volunteer-program/
+TRANSP:TRANSPARENT
+URL:https://aaai.org/conference/aaai/aaai-27/student-scholar-volunteer-prog
+ ram/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: AAAI Student Scholar & Volunteer Program: Closes 
+ · for AAAI-27
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: AAAI Student Scholar & Volunteer Program: Closes 
+ · for AAAI-27
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ijcai-2027-abs--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
+SUMMARY:IJCAI 2027: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Kyoto\,
+  Japan\, Aug 7–13\, 2027.\nhttps://2027.ijcai.org/
+TRANSP:TRANSPARENT
+LOCATION:Kyoto\, Japan
+URL:https://2027.ijcai.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IJCAI 2027: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IJCAI 2027: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ijcai-2027-paper--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:IJCAI 2027: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Kyoto\,
+  Japan\, Aug 7–13\, 2027.\nhttps://2027.ijcai.org/
+TRANSP:TRANSPARENT
+LOCATION:Kyoto\, Japan
+URL:https://2027.ijcai.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IJCAI 2027: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IJCAI 2027: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:icml-2027-abs--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:ICML 2027: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Rio de Janeiro
+ \, Brazil\, Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Rio de Janeiro\, Brazil
+URL:https://icml.cc/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ICML 2027: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ICML 2027: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:icml-2027-paper--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270129
+SUMMARY:ICML 2027: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Rio de Janeiro
+ \, Brazil\, Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Rio de Janeiro\, Brazil
+URL:https://icml.cc/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ICML 2027: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ICML 2027: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:facct-2027-rev-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270323
+DTEND;VALUE=DATE:20270324
+SUMMARY:FAccT 2027: Round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nConference: Porto\, Portugal\
+ , Jun 21–24\, 2027.\nhttps://facctconference.org/2027/cfp.html
+TRANSP:TRANSPARENT
+LOCATION:Porto\, Portugal
+URL:https://facctconference.org/2027/cfp.html
+END:VEVENT
+BEGIN:VEVENT
+UID:icml-2027-rev-round-1-reviews-out-rebuttal-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270324
+DTEND;VALUE=DATE:20270325
+SUMMARY:ICML 2027: Round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Rio de Janeiro\, Brazil\
+ , Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Rio de Janeiro\, Brazil
+URL:https://icml.cc/
+END:VEVENT
+BEGIN:VEVENT
+UID:ijcai-2027-rev-papers-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270421
+DTEND;VALUE=DATE:20270422
+SUMMARY:IJCAI 2027: Papers · decisions
+DESCRIPTION:Expected review / decision date.\nConference: Kyoto\, Japan\, A
+ ug 7–13\, 2027.\nhttps://2027.ijcai.org/
+TRANSP:TRANSPARENT
+LOCATION:Kyoto\, Japan
+URL:https://2027.ijcai.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:facct-financial-support-fund-closes-for-facct-2027-2027@conference-dead
+ lines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270427
+DTEND;VALUE=DATE:20270428
+SUMMARY:FAccT Financial Support: Closes · for FAccT 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nRegistration waivers and s
+ upport through FAccT's participant support form.\nhttps://facctconference.
+ org/2026/cfv.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://facctconference.org/2026/cfv.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: FAccT Financial Support: Closes · for FAccT 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: FAccT Financial Support: Closes · for FAccT 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:facct-student-volunteers-vol-closes-for-facct-2027-2027@conference-dead
+ lines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270427
+DTEND;VALUE=DATE:20270428
+SUMMARY:FAccT Student Volunteers: Closes · for FAccT 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nApplied through FAccT's pa
+ rticipant support form.\nhttps://facctconference.org/2026/cfv.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://facctconference.org/2026/cfv.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: FAccT Student Volunteers: Closes · for FAccT 202
+ 7
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: FAccT Student Volunteers: Closes · for FAccT 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:icml-2027-rev-round-2-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:ICML 2027: Round 2 decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Rio de Janeiro\, Brazil\
+ , Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Rio de Janeiro\, Brazil
+URL:https://icml.cc/
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips-2027-abs-main-track-and-position-papers-2027@conference-deadlin
+ es
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270504
+DTEND;VALUE=DATE:20270505
+SUMMARY:NeurIPS 2027: Main track & position papers · abstract / registrati
+ on
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Europe\, city 
+ TBA\, 2026 was Sydney\, Atlanta & Paris.\nhttps://neurips.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Europe\, city TBA
+URL:https://neurips.cc/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: NeurIPS 2027: Main track & position papers · abs
+ tract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: NeurIPS 2027: Main track & position papers · abst
+ ract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips-2027-paper-main-track-and-position-papers-2027@conference-deadl
+ ines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270506
+DTEND;VALUE=DATE:20270507
+SUMMARY:NeurIPS 2027: Main track & position papers · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Europe\, city 
+ TBA\, 2026 was Sydney\, Atlanta & Paris.\nhttps://neurips.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Europe\, city TBA
+URL:https://neurips.cc/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: NeurIPS 2027: Main track & position papers · pap
+ er deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: NeurIPS 2027: Main track & position papers · pape
+ r deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aies-2027-abs--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270514
+DTEND;VALUE=DATE:20270515
+SUMMARY:AIES 2027: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Malmö\, Swede
+ n.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Malmö\, Sweden
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: AIES 2027: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: AIES 2027: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aies-2027-paper--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:AIES 2027: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Malmö\, Swede
+ n.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Malmö\, Sweden
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: AIES 2027: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: AIES 2027: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aies-2027-poster-phd-student-program-poster-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:AIES 2027: PhD Student Program poster
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Malmö\, Swede
+ n.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Malmö\, Sweden
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: AIES 2027: PhD Student Program poster
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: AIES 2027: PhD Student Program poster
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aies-2027-rev-papers-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270716
+DTEND;VALUE=DATE:20270717
+SUMMARY:AIES 2027: Papers · decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Malmö\, Sweden.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Malmö\, Sweden
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-28-abs--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270721
+DTEND;VALUE=DATE:20270722
+SUMMARY:AAAI-28: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: AAAI-28: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: AAAI-28: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips-2027-rev-round-1-reviews-out-discussion-2027@conference-deadlin
+ es
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270722
+DTEND;VALUE=DATE:20270723
+SUMMARY:NeurIPS 2027: Round 1 reviews out (discussion)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Europe\, city TBA\, 2026
+  was Sydney\, Atlanta & Paris.\nhttps://neurips.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Europe\, city TBA
+URL:https://neurips.cc/
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-28-paper--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270728
+DTEND;VALUE=DATE:20270729
+SUMMARY:AAAI-28: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: AAAI-28: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: AAAI-28: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips-financial-assistance-fund-opens-for-neurips-2027-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270907
+DTEND;VALUE=DATE:20270908
+SUMMARY:NeurIPS Financial Assistance: Opens · for NeurIPS 2027
+DESCRIPTION:Applications open.\nPlaceholder based on the 2026 date. Confirm
+  on the official call.\nFinancial assistance for attending NeurIPS.\nhttps
+ ://neurips.cc/Conferences/2026/FinancialAssistance
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://neurips.cc/Conferences/2026/FinancialAssistance
+END:VEVENT
+BEGIN:VEVENT
+UID:iclr-2028-abs--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270918
+DTEND;VALUE=DATE:20270919
+SUMMARY:ICLR 2028: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Rio de Janeiro
+ \, Brazil\, ICLR 2027 city TBA.\nhttps://iclr.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Rio de Janeiro\, Brazil
+URL:https://iclr.cc/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ICLR 2028: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ICLR 2028: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-28-rev-round-1-phase-1-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270924
+DTEND;VALUE=DATE:20270925
+SUMMARY:AAAI-28: Round 1 phase 1 decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Montréal\, Canada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips-2027-rev-round-2-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270924
+DTEND;VALUE=DATE:20270925
+SUMMARY:NeurIPS 2027: Round 2 decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Europe\, city TBA\, 2026
+  was Sydney\, Atlanta & Paris.\nhttps://neurips.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Europe\, city TBA
+URL:https://neurips.cc/
+END:VEVENT
+BEGIN:VEVENT
+UID:iclr-2028-paper--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270925
+DTEND;VALUE=DATE:20270926
+SUMMARY:ICLR 2028: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Rio de Janeiro
+ \, Brazil\, ICLR 2027 city TBA.\nhttps://iclr.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Rio de Janeiro\, Brazil
+URL:https://iclr.cc/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ICLR 2028: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ICLR 2028: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips-financial-assistance-fund-closes-for-neurips-2027-2027@conferen
+ ce-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271006
+DTEND;VALUE=DATE:20271007
+SUMMARY:NeurIPS Financial Assistance: Closes · for NeurIPS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nFinancial assistance for a
+ ttending NeurIPS.\nhttps://neurips.cc/Conferences/2026/FinancialAssistance
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://neurips.cc/Conferences/2026/FinancialAssistance
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: NeurIPS Financial Assistance: Closes · for NeurI
+ PS 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: NeurIPS Financial Assistance: Closes · for NeurIP
+ S 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips-volunteers-vol-closes-for-neurips-2027-2027@conference-deadline
+ s
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271006
+DTEND;VALUE=DATE:20271007
+SUMMARY:NeurIPS Volunteers: Closes · for NeurIPS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nVolunteer applications for
+  NeurIPS.\nhttps://blog.neurips.cc/2026/09/16/join-us-at-neurips-2026-fina
+ ncial-assistance-and-volunteer-applications-are-now-open/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://blog.neurips.cc/2026/09/16/join-us-at-neurips-2026-financial-as
+ sistance-and-volunteer-applications-are-now-open/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: NeurIPS Volunteers: Closes · for NeurIPS 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: NeurIPS Volunteers: Closes · for NeurIPS 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-28-rev-reviews-out-author-feedback-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271024
+DTEND;VALUE=DATE:20271025
+SUMMARY:AAAI-28: Reviews out (author feedback)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Montréal\, Canada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+END:VEVENT
+BEGIN:VEVENT
+UID:facct-2028-abs--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271027
+DTEND;VALUE=DATE:20271028
+SUMMARY:FAccT 2028: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Porto\, Portug
+ al.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: FAccT 2028: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: FAccT 2028: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:facct-2028-paper--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271103
+DTEND;VALUE=DATE:20271104
+SUMMARY:FAccT 2028: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Porto\, Portug
+ al.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: FAccT 2028: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: FAccT 2028: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iclr-2028-rev-round-1-reviews-out-discussion-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271105
+DTEND;VALUE=DATE:20271106
+SUMMARY:ICLR 2028: Round 1 reviews out (discussion)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Rio de Janeiro\, Brazil\
+ , ICLR 2027 city TBA.\nhttps://iclr.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Rio de Janeiro\, Brazil
+URL:https://iclr.cc/
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-student-scholar-and-volunteer-program-vol-opens-for-aaai-28-2027@c
+ onference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271130
+DTEND;VALUE=DATE:20271201
+SUMMARY:AAAI Student Scholar & Volunteer Program: Opens · for AAAI-28
+DESCRIPTION:Applications open.\nPlaceholder based on the 2026 date. Confirm
+  on the official call.\nComplimentary registration for student volunteers 
+ at AAAI.\nhttps://aaai.org/conference/aaai/aaai-27/student-scholar-volunte
+ er-program/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://aaai.org/conference/aaai/aaai-27/student-scholar-volunteer-prog
+ ram/
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-28-rev-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271130
+DTEND;VALUE=DATE:20271201
+SUMMARY:AAAI-28: Round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Montréal\, Canada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-student-scholar-and-volunteer-program-vol-closes-for-aaai-28-2027@
+ conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271204
+DTEND;VALUE=DATE:20271205
+SUMMARY:AAAI Student Scholar & Volunteer Program: Closes · for AAAI-28
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nComplimentary registration
+  for student volunteers at AAAI.\nhttps://aaai.org/conference/aaai/aaai-27
+ /student-scholar-volunteer-program/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://aaai.org/conference/aaai/aaai-27/student-scholar-volunteer-prog
+ ram/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: AAAI Student Scholar & Volunteer Program: Closes 
+ · for AAAI-28
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: AAAI Student Scholar & Volunteer Program: Closes 
+ · for AAAI-28
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iclr-2028-rev-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271216
+DTEND;VALUE=DATE:20271217
+SUMMARY:ICLR 2028: Round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Rio de Janeiro\, Brazil\
+ , ICLR 2027 city TBA.\nhttps://iclr.cc/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Rio de Janeiro\, Brazil
+URL:https://iclr.cc/
+END:VEVENT
+BEGIN:VEVENT
+UID:facct-2028-rev-round-1-reviews-and-first-decisions-2027@conference-dead
+ lines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271222
+DTEND;VALUE=DATE:20271223
+SUMMARY:FAccT 2028: Round 1 reviews & first decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Porto\, Portugal.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+END:VEVENT
+END:VCALENDAR

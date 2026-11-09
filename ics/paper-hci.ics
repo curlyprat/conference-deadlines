@@ -1,0 +1,195 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Conference deadlines (filtered)
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:dis-2027-abs-papers-and-pictorials-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:DIS 2027: Papers & pictorials · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Stockho
+ lm\, Sweden\, Jun 28 – Jul 2\, 2027.\nhttps://dis.acm.org/2027/
+TRANSP:TRANSPARENT
+LOCATION:Stockholm\, Sweden
+URL:https://dis.acm.org/2027/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: DIS 2027: Papers & pictorials · abstract / regis
+ tration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: DIS 2027: Papers & pictorials · abstract / regist
+ ration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dis-2027-paper-papers-and-pictorials-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:DIS 2027: Papers & pictorials · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Stockho
+ lm\, Sweden\, Jun 28 – Jul 2\, 2027.\nhttps://dis.acm.org/2027/
+TRANSP:TRANSPARENT
+LOCATION:Stockholm\, Sweden
+URL:https://dis.acm.org/2027/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: DIS 2027: Papers & pictorials · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: DIS 2027: Papers & pictorials · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-abs--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270324
+DTEND;VALUE=DATE:20270325
+SUMMARY:UIST 2027: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Detroit\, USA.
+ \nhttps://uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: UIST 2027: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: UIST 2027: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-paper--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:UIST 2027: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Detroit\, USA.
+ \nhttps://uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: UIST 2027: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: UIST 2027: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-2027-paper--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270422
+DTEND;VALUE=DATE:20270423
+SUMMARY:ASSETS 2027: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Porto\, Portug
+ al.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ASSETS 2027: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ASSETS 2027: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-abs--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270813
+DTEND;VALUE=DATE:20270814
+SUMMARY:IUI 2028: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Helsinki\, Fin
+ land.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IUI 2028: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IUI 2028: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-paper--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270820
+DTEND;VALUE=DATE:20270821
+SUMMARY:IUI 2028: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Helsinki\, Fin
+ land.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IUI 2028: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IUI 2028: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2028-paper--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270910
+DTEND;VALUE=DATE:20270911
+SUMMARY:CHI 2028: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Pittsburgh\, U
+ SA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Pittsburgh\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CHI 2028: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CHI 2028: paper deadline
+END:VALARM
+END:VEVENT
+END:VCALENDAR

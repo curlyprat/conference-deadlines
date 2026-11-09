@@ -9,7 +9,7 @@ X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
 UID:chi-student-volunteers-vol-lottery-opens-for-chi-2027-2026@conference-d
  eadlines
-DTSTAMP:20261109T233704Z
+DTSTAMP:20261109T234559Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:CHI Student Volunteers: Lottery opens · for CHI 2027
@@ -21,7 +21,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:chi-student-volunteers-vol-lottery-closes-for-chi-2027-2027@conference-
  deadlines
-DTSTAMP:20261109T233704Z
+DTSTAMP:20261109T234559Z
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270202
 SUMMARY:CHI Student Volunteers: Lottery closes · for CHI 2027

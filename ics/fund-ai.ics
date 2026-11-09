@@ -1,0 +1,74 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Conference deadlines (filtered)
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:facct-financial-support-fund-closes-for-facct-2027-2027@conference-dead
+ lines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270427
+DTEND;VALUE=DATE:20270428
+SUMMARY:FAccT Financial Support: Closes · for FAccT 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nRegistration waivers and s
+ upport through FAccT's participant support form.\nhttps://facctconference.
+ org/2026/cfv.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://facctconference.org/2026/cfv.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: FAccT Financial Support: Closes · for FAccT 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: FAccT Financial Support: Closes · for FAccT 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips-financial-assistance-fund-opens-for-neurips-2027-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270907
+DTEND;VALUE=DATE:20270908
+SUMMARY:NeurIPS Financial Assistance: Opens · for NeurIPS 2027
+DESCRIPTION:Applications open.\nPlaceholder based on the 2026 date. Confirm
+  on the official call.\nFinancial assistance for attending NeurIPS.\nhttps
+ ://neurips.cc/Conferences/2026/FinancialAssistance
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://neurips.cc/Conferences/2026/FinancialAssistance
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips-financial-assistance-fund-closes-for-neurips-2027-2027@conferen
+ ce-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20271006
+DTEND;VALUE=DATE:20271007
+SUMMARY:NeurIPS Financial Assistance: Closes · for NeurIPS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nFinancial assistance for a
+ ttending NeurIPS.\nhttps://neurips.cc/Conferences/2026/FinancialAssistance
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://neurips.cc/Conferences/2026/FinancialAssistance
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: NeurIPS Financial Assistance: Closes · for NeurI
+ PS 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: NeurIPS Financial Assistance: Closes · for NeurIP
+ S 2027
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,173 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Conference deadlines (filtered)
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:chi-student-volunteers-vol-lottery-opens-for-chi-2027-2026@conference-d
+ eadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:CHI Student Volunteers: Lottery opens · for CHI 2027
+DESCRIPTION:Applications open.\nLottery on new.chisv.org\; results February
+  8\, 2027.\nhttps://chi2027.acm.org/2026/11/07/call-for-svs/
+TRANSP:TRANSPARENT
+URL:https://chi2027.acm.org/2026/11/07/call-for-svs/
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-student-volunteers-vol-opens-for-iui-2027-2026@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:IUI Student Volunteers: Opens · for IUI 2027
+DESCRIPTION:Applications open.\nPlaceholder based on the 2026 date. Confirm
+  on the official call.\nStudent volunteer call for IUI.\nhttps://iui.acm.o
+ rg/2026/student-volunteers/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://iui.acm.org/2026/student-volunteers/
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-student-volunteers-vol-closes-for-iui-2027-2027@conference-deadline
+ s
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270129
+SUMMARY:IUI Student Volunteers: Closes · for IUI 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent volunteer call for
+  IUI.\nhttps://iui.acm.org/2026/student-volunteers/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://iui.acm.org/2026/student-volunteers/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IUI Student Volunteers: Closes · for IUI 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IUI Student Volunteers: Closes · for IUI 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-student-volunteers-vol-lottery-closes-for-chi-2027-2027@conference-
+ deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:CHI Student Volunteers: Lottery closes · for CHI 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nLottery on new.chis
+ v.org\; results February 8\, 2027.\nhttps://chi2027.acm.org/2026/11/07/cal
+ l-for-svs/
+TRANSP:TRANSPARENT
+URL:https://chi2027.acm.org/2026/11/07/call-for-svs/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CHI Student Volunteers: Lottery closes · for CHI
+  2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CHI Student Volunteers: Lottery closes · for CHI 
+ 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cscw-student-volunteers-vol-closes-for-cscw-2027-2027@conference-deadli
+ nes
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270602
+SUMMARY:CSCW Student Volunteers: Closes · for CSCW 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent volunteer call for
+  CSCW.\nhttps://cscw.acm.org/2026/sv.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://cscw.acm.org/2026/sv.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CSCW Student Volunteers: Closes · for CSCW 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CSCW Student Volunteers: Closes · for CSCW 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-student-volunteers-vol-lottery-opens-for-uist-2027-2027@conference
+ -deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270620
+DTEND;VALUE=DATE:20270621
+SUMMARY:UIST Student Volunteers: Lottery opens · for UIST 2027
+DESCRIPTION:Applications open.\nPlaceholder based on the 2026 date. Confirm
+  on the official call.\nStudent volunteers for UIST are chosen by lottery.
+ \nhttps://uist.acm.org/2026/cfp
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://uist.acm.org/2026/cfp
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-student-volunteers-vol-closes-for-assets-2027-2027@conference-de
+ adlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270716
+DTEND;VALUE=DATE:20270717
+SUMMARY:ASSETS Student Volunteers: Closes · for ASSETS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent volunteer call for
+  ASSETS.\nhttps://assets26.sigaccess.org/volunteer.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://assets26.sigaccess.org/volunteer.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ASSETS Student Volunteers: Closes · for ASSETS 2
+ 027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ASSETS Student Volunteers: Closes · for ASSETS 20
+ 27
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-student-volunteers-vol-lottery-closes-for-uist-2027-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270801
+DTEND;VALUE=DATE:20270802
+SUMMARY:UIST Student Volunteers: Lottery closes · for UIST 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent volunteers for UIS
+ T are chosen by lottery.\nhttps://uist.acm.org/2026/cfp
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://uist.acm.org/2026/cfp
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: UIST Student Volunteers: Lottery closes · for UI
+ ST 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: UIST Student Volunteers: Lottery closes · for UIS
+ T 2027
+END:VALARM
+END:VEVENT
+END:VCALENDAR

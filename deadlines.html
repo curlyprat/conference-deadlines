@@ -108,7 +108,7 @@ header { display: grid; gap: 6px; }
   color: var(--ink); background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow);
 }
 .calbtn.wide:hover, .calbtn.wide[aria-expanded="true"] { background: var(--surface-2); }
-.export .calmenu-pop { min-width: 270px; max-width: calc(100vw - 32px); }
+.calx .calmenu-pop { min-width: 270px; max-width: calc(100vw - 32px); }
 .sheet-tools .calmenu-pop { min-width: 250px; max-width: calc(100vw - 40px); }
 .calmenu-pop.flip { left: 0; right: auto; }
 .menu-note { margin: 4px 12px 6px; font-size: 0.76rem; color: var(--muted); }
@@ -223,6 +223,11 @@ h1 {
 }
 .calmenu-pop a:hover, .calmenu-pop button:hover, .calmenu-pop a:focus-visible, .calmenu-pop button:focus-visible { background: var(--surface-2); }
 .no-dl .dl-only { display: none !important; }
+.no-dl.ics-off .calx { display: none !important; }
+.calbtn .chev { margin-left: -2px; opacity: 0.7; }
+.calmenu-pop a[aria-disabled="true"] { color: var(--muted); cursor: default; background: transparent; }
+.calmenu-pop .menu-note { margin: 0 12px 6px; }
+.calx-filter .calbtn.wide { padding: 7px 14px; font-size: 0.84rem; box-shadow: none; }
 .toast {
   position: fixed; left: 50%; transform: translateX(-50%); z-index: 30;
   bottom: calc(env(safe-area-inset-bottom, 0px) + 20px);
@@ -491,7 +496,7 @@ h1 {
   <header>
     <div class="head-row">
       <h1>Conference Deadline Calendar</h1>
-      <button type="button" class="calbtn wide dl-only" id="export-btn" data-export="csv" data-scope="view" title="Saves a .csv file that Google Calendar imports"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/></svg>Export to Google Calendar</button>
+      <span id="export-slot"></span>
     </div>
     <p class="aoe">Deadlines are 11:59 pm AoE (Anywhere on Earth) unless a venue says otherwise. That's 6:59 am Central the next morning.</p>
   </header>
@@ -539,6 +544,7 @@ h1 {
         <span><i class="sw rev-c"></i>Review dates: I = round 1, II = round 2</span>
       </div>
       <div class="row" style="gap:6px 14px">
+        <span id="filter-cal-slot"></span>
         <button type="button" class="linkbtn" id="reset" hidden>Clear filters</button>
       </div>
     </div>
@@ -861,6 +867,35 @@ const DEFAULTS = { type: "all", field: "all", est: "all", starred: "off", q: "" 
 const state = { ...DEFAULTS, view: "calendar" };
 let stars = new Set();
 
+const ICS_BASE = "https://curlyprat.github.io/conference-deadlines/ics/";
+const ICS_LIVE = false;   // flip to true once the GitHub Pages feed is published
+const CHEV = '<svg class="chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
+function calMenuHTML(scope, label, opts = {}) {
+  const { series = "", cls = "", id = "", wrap = "" } = opts;
+  return `<span class="calpop calx ${wrap}"><button type="button" class="calbtn wide ${cls}"${id ? ` id="${id}"` : ""} aria-haspopup="menu" aria-expanded="false" data-cal-scope="${scope}"${series ? ` data-series="${esc(series)}"` : ""}>${ICON.cal}${label}${CHEV}</button><div class="calmenu-pop" role="menu" hidden>
+    <a role="menuitem" class="ics-item" target="_blank" rel="noopener">Apple Calendar &amp; Outlook (.ics)</a>
+    <p class="menu-note ics-note" hidden></p>
+    <button type="button" role="menuitem" class="dl-only" data-export="csv" data-scope="${scope}"${series ? ` data-series="${esc(series)}"` : ""}>Google Calendar (.csv)</button>
+    <p class="menu-note dl-only">Google: import the saved file under Settings, then Import &amp; export.</p>
+  </div></span>`;
+}
+function icsFile(scope, series) {
+  if (scope === "all") return "all.ics";
+  if (scope === "series") return slugOf(series) + ".ics";
+  if (state.starred === "on" || state.q) return null;
+  if (state.type === "all" && state.field === "all") return "all.ics";
+  return `${state.type}-${state.field}.ics`;
+}
+function prepCalMenu(btn) {
+  const menu = btn.nextElementSibling, a = menu.querySelector(".ics-item"), note = menu.querySelector(".ics-note");
+  const file = icsFile(btn.dataset.calScope, btn.dataset.series);
+  let why = "";
+  if (!ICS_LIVE) why = "Coming soon.";
+  else if (!file) why = "Not available with My venues or search. Use Google, or clear those filters.";
+  if (why) { a.removeAttribute("href"); a.setAttribute("aria-disabled", "true"); }
+  else { a.href = ICS_BASE + file; a.removeAttribute("aria-disabled"); }
+  note.textContent = why; note.hidden = !why;
+}
 const ICON = {
   star: '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg>',
   starO: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg>',
@@ -1279,7 +1314,7 @@ function openConf(series) {
     </div>
     <div class="sheet-tools">
       <button type="button" class="chip" id="sheet-star" data-series="${esc(series)}" aria-pressed="${starred}">${starred ? ICON.star : ICON.starO}${starred ? "In my venues" : "Add to my venues"}</button>
-      <button type="button" class="chip calbtn wide dl-only" data-export="csv" data-scope="series" data-series="${esc(series)}" title="Saves a .csv file with every upcoming ${esc(series)} date">${ICON.cal}Add to Google Calendar</button>
+      ${evs.length ? calMenuHTML("series", "Add to calendar", { series, cls: "chip" }) : ""}
     </div>
     <div class="eds">${eds}</div>
     <div><p class="eyebrow" style="margin-bottom:6px">Every date</p>${items ? `<ol class="tl">${items}</ol>` : `<p class="none">No dates in this calendar's window. Check the volunteer and grant pages for related dates.</p>`}</div>
@@ -1399,7 +1434,9 @@ document.addEventListener("click", ev => {
 document.addEventListener("click", ev => {
   const ex = ev.target.closest("[data-export]");
   if (ex) {
-    if (ex.dataset.scope === "series") {
+    if (ex.dataset.scope === "all") {
+      exportFile(ex.dataset.export, EVENTS, "conference-deadlines", "Conference deadlines");
+    } else if (ex.dataset.scope === "series") {
       const s = ex.dataset.series;
       exportFile(ex.dataset.export, EVENTS.filter(e => e.series === s), `${s} dates`, `${s} dates`);
     } else {
@@ -1422,6 +1459,7 @@ document.addEventListener("click", ev => {
     closeCalMenus(btn);
     btn.setAttribute("aria-expanded", String(open));
     const menu = btn.nextElementSibling;
+    if (open) prepCalMenu(btn);
     menu.hidden = !open;
     if (open) {
       // keep the menu on screen: open toward whichever side has room
@@ -1431,7 +1469,8 @@ document.addEventListener("click", ev => {
     if (open) { const first = btn.nextElementSibling.querySelector("a, button:not([hidden])"); if (first) first.focus({ preventScroll: true }); }
     return;
   }
-  if (ev.target.closest(".calmenu-pop a, .calmenu-pop button")) { setTimeout(() => closeCalMenus(), 0); return; }
+  const item = ev.target.closest(".calmenu-pop a, .calmenu-pop button");
+  if (item) { if (item.getAttribute("aria-disabled") === "true") { ev.preventDefault(); return; } setTimeout(() => closeCalMenus(), 0); return; }
   if (!ev.target.closest(".calmenu-pop")) closeCalMenus();
 }, true);
 document.addEventListener("keydown", ev => {
@@ -1440,6 +1479,9 @@ document.addEventListener("keydown", ev => {
     closeCalMenus(); open.focus(); ev.stopImmediatePropagation();
   }
 }, true);
+document.getElementById("export-slot").outerHTML = calMenuHTML("all", "Export to calendar", { id: "export-btn", wrap: "calx-head" });
+document.getElementById("filter-cal-slot").outerHTML = calMenuHTML("view", "Add filtered dates to calendar", { id: "filter-cal-btn", wrap: "calx-filter" });
+if (!ICS_LIVE) document.documentElement.classList.add("ics-off");
 // file exports appear only where this view can save files
 document.documentElement.classList.add("no-dl");
 if (window.claude && typeof window.claude.use === "function") {

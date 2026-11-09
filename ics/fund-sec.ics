@@ -1,0 +1,87 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Conference deadlines (filtered)
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:ieee-sandp-student-travel-grant-fund-closes-for-ieee-sandp-2027-2027@co
+ nference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270402
+DTEND;VALUE=DATE:20270403
+SUMMARY:IEEE S&P Student Travel Grant: Closes · for IEEE S&P 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent travel grants for 
+ the IEEE Symposium on Security and Privacy.\nhttps://sp2026.ieee-security.
+ org/travel_grants.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://sp2026.ieee-security.org/travel_grants.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P Student Travel Grant: Closes · for IEEE
+  S&P 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P Student Travel Grant: Closes · for IEEE 
+ S&P 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-student-grant-fund-closes-for-usenix-security-2027-2027
+ @conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270706
+DTEND;VALUE=DATE:20270707
+SUMMARY:USENIX Security Student Grant: Closes · for USENIX Security 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nUSENIX student grants for 
+ USENIX Security.\nhttps://www.usenix.org/node/319912
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://www.usenix.org/node/319912
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security Student Grant: Closes · for USEN
+ IX Security 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security Student Grant: Closes · for USENI
+ X Security 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-student-travel-grant-fund-closes-for-ccs-2027-2027@conference-deadl
+ ines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270914
+DTEND;VALUE=DATE:20270915
+SUMMARY:CCS Student Travel Grant: Closes · for CCS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent travel grants for 
+ ACM CCS.\nhttps://www.sigsac.org/ccs/CCS2026/attending/conference-grants.h
+ tml
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://www.sigsac.org/ccs/CCS2026/attending/conference-grants.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CCS Student Travel Grant: Closes · for CCS 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CCS Student Travel Grant: Closes · for CCS 2027
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,104 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Conference deadlines (filtered)
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:ieee-sandp-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:IEEE S&P 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada\, May 17–20\, 2027.\nhttps://sp2027.ieee-security.org/cfpapers.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+URL:https://sp2027.ieee-security.org/cfpapers.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:soups-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270611
+DTEND;VALUE=DATE:20270612
+SUMMARY:SOUPS 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Denver\, USA\,
+  Aug 8–10\, 2027.\nhttps://www.usenix.org/conferences/bytopic/security
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/conferences/bytopic/security
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: SOUPS 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: SOUPS 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270710
+DTEND;VALUE=DATE:20270711
+SUMMARY:USENIX Security 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Denver\, USA\,
+  Aug 11–13\, 2027.\nhttps://www.usenix.org/node/315301
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/node/315301
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-poster-posters-both-cycles-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270723
+DTEND;VALUE=DATE:20270724
+SUMMARY:CCS 2027: Posters (both cycles)
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Atlanta\, USA\
+ , Oct 11–15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CCS 2027: Posters (both cycles)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CCS 2027: Posters (both cycles)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Conference deadlines (filtered)
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:aies-2027-poster-phd-student-program-poster-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:AIES 2027: PhD Student Program poster
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Malmö\, Swede
+ n.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Malmö\, Sweden
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: AIES 2027: PhD Student Program poster
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: AIES 2027: PhD Student Program poster
+END:VALARM
+END:VEVENT
+END:VCALENDAR

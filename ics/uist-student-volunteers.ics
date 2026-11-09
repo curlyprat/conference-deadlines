@@ -9,7 +9,7 @@ X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
 UID:uist-student-volunteers-vol-lottery-opens-for-uist-2027-2027@conference
  -deadlines
-DTSTAMP:20261109T233704Z
+DTSTAMP:20261109T234559Z
 DTSTART;VALUE=DATE:20270620
 DTEND;VALUE=DATE:20270621
 SUMMARY:UIST Student Volunteers: Lottery opens · for UIST 2027
@@ -23,7 +23,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:uist-student-volunteers-vol-lottery-closes-for-uist-2027-2027@conferenc
  e-deadlines
-DTSTAMP:20261109T233704Z
+DTSTAMP:20261109T234559Z
 DTSTART;VALUE=DATE:20270801
 DTEND;VALUE=DATE:20270802
 SUMMARY:UIST Student Volunteers: Lottery closes · for UIST 2027

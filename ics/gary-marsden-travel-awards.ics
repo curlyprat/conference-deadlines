@@ -9,7 +9,7 @@ X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
 UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-iui-2027-20
  26@conference-deadlines
-DTSTAMP:20261109T233704Z
+DTSTAMP:20261109T234559Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 SUMMARY:Gary Marsden Travel Awards: Round closes · last round for IUI 2027
@@ -34,7 +34,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gary-marsden-travel-awards-fund-round-closes-2027@conference-deadlines
-DTSTAMP:20261109T233704Z
+DTSTAMP:20261109T234559Z
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270110
 SUMMARY:Gary Marsden Travel Awards: Round closes
@@ -57,7 +57,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:xgary-marsden-travel-awards-fund-round-closes-2027@conference-deadlines
-DTSTAMP:20261109T233704Z
+DTSTAMP:20261109T234559Z
 DTSTART;VALUE=DATE:20270209
 DTEND;VALUE=DATE:20270210
 SUMMARY:Gary Marsden Travel Awards: Round closes
@@ -81,7 +81,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-chi-2027-20
  27@conference-deadlines
-DTSTAMP:20261109T233704Z
+DTSTAMP:20261109T234559Z
 DTSTART;VALUE=DATE:20270309
 DTEND;VALUE=DATE:20270310
 SUMMARY:Gary Marsden Travel Awards: Round closes · last round for CHI 2027
@@ -107,7 +107,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-dis-2027-20
  27@conference-deadlines
-DTSTAMP:20261109T233704Z
+DTSTAMP:20261109T234559Z
 DTSTART;VALUE=DATE:20270509
 DTEND;VALUE=DATE:20270510
 SUMMARY:Gary Marsden Travel Awards: Round closes · last round for DIS 2027
@@ -133,7 +133,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:xxgary-marsden-travel-awards-fund-round-closes-2027@conference-deadline
  s
-DTSTAMP:20261109T233704Z
+DTSTAMP:20261109T234559Z
 DTSTART;VALUE=DATE:20270709
 DTEND;VALUE=DATE:20270710
 SUMMARY:Gary Marsden Travel Awards: Round closes
@@ -157,7 +157,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-uist-2027-2
  027@conference-deadlines
-DTSTAMP:20261109T233704Z
+DTSTAMP:20261109T234559Z
 DTSTART;VALUE=DATE:20270909
 DTEND;VALUE=DATE:20270910
 SUMMARY:Gary Marsden Travel Awards: Round closes · last round for UIST 202
@@ -184,7 +184,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:xxxgary-marsden-travel-awards-fund-round-closes-2027@conference-deadlin
  es
-DTSTAMP:20261109T233704Z
+DTSTAMP:20261109T234559Z
 DTSTART;VALUE=DATE:20271109
 DTEND;VALUE=DATE:20271110
 SUMMARY:Gary Marsden Travel Awards: Round closes

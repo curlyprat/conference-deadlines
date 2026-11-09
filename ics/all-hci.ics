@@ -1,0 +1,889 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Conference deadlines (filtered)
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-iui-2027-20
+ 26@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Gary Marsden Travel Awards: Round closes · last round for IUI 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes · last 
+ round for IUI 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes · last r
+ ound for IUI 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2027-poster-posters-and-demos-2026@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:IUI 2027: Posters & Demos
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Helsink
+ i\, Finland\, Feb 8–11\, 2027.\nhttps://iui.acm.org/2027/?p=244208
+TRANSP:TRANSPARENT
+LOCATION:Helsinki\, Finland
+URL:https://iui.acm.org/2027/?p=244208
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IUI 2027: Posters & Demos
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IUI 2027: Posters & Demos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-student-volunteers-vol-lottery-opens-for-chi-2027-2026@conference-d
+ eadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:CHI Student Volunteers: Lottery opens · for CHI 2027
+DESCRIPTION:Applications open.\nLottery on new.chisv.org\; results February
+  8\, 2027.\nhttps://chi2027.acm.org/2026/11/07/call-for-svs/
+TRANSP:TRANSPARENT
+URL:https://chi2027.acm.org/2026/11/07/call-for-svs/
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-student-volunteers-vol-opens-for-iui-2027-2026@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:IUI Student Volunteers: Opens · for IUI 2027
+DESCRIPTION:Applications open.\nPlaceholder based on the 2026 date. Confirm
+  on the official call.\nStudent volunteer call for IUI.\nhttps://iui.acm.o
+ rg/2026/student-volunteers/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://iui.acm.org/2026/student-volunteers/
+END:VEVENT
+BEGIN:VEVENT
+UID:gary-marsden-travel-awards-fund-round-closes-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270110
+SUMMARY:Gary Marsden Travel Awards: Round closes
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dis-2027-abs-papers-and-pictorials-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:DIS 2027: Papers & pictorials · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Stockho
+ lm\, Sweden\, Jun 28 – Jul 2\, 2027.\nhttps://dis.acm.org/2027/
+TRANSP:TRANSPARENT
+LOCATION:Stockholm\, Sweden
+URL:https://dis.acm.org/2027/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: DIS 2027: Papers & pictorials · abstract / regis
+ tration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: DIS 2027: Papers & pictorials · abstract / regist
+ ration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dis-2027-paper-papers-and-pictorials-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:DIS 2027: Papers & pictorials · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Stockho
+ lm\, Sweden\, Jun 28 – Jul 2\, 2027.\nhttps://dis.acm.org/2027/
+TRANSP:TRANSPARENT
+LOCATION:Stockholm\, Sweden
+URL:https://dis.acm.org/2027/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: DIS 2027: Papers & pictorials · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: DIS 2027: Papers & pictorials · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:CHI 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Pittsbu
+ rgh\, USA\, May 10–14\, 2027.\nhttps://chi2027.acm.org/
+TRANSP:TRANSPARENT
+LOCATION:Pittsburgh\, USA
+URL:https://chi2027.acm.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CHI 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CHI 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-student-volunteers-vol-closes-for-iui-2027-2027@conference-deadline
+ s
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270129
+SUMMARY:IUI Student Volunteers: Closes · for IUI 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent volunteer call for
+  IUI.\nhttps://iui.acm.org/2026/student-volunteers/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://iui.acm.org/2026/student-volunteers/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IUI Student Volunteers: Closes · for IUI 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IUI Student Volunteers: Closes · for IUI 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-student-volunteers-vol-lottery-closes-for-chi-2027-2027@conference-
+ deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:CHI Student Volunteers: Lottery closes · for CHI 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nLottery on new.chis
+ v.org\; results February 8\, 2027.\nhttps://chi2027.acm.org/2026/11/07/cal
+ l-for-svs/
+TRANSP:TRANSPARENT
+URL:https://chi2027.acm.org/2026/11/07/call-for-svs/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CHI Student Volunteers: Lottery closes · for CHI
+  2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CHI Student Volunteers: Lottery closes · for CHI 
+ 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:xgary-marsden-travel-awards-fund-round-closes-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270209
+DTEND;VALUE=DATE:20270210
+SUMMARY:Gary Marsden Travel Awards: Round closes
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dis-2027-poster-provocations-and-works-in-progress-2027@conference-dead
+ lines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:DIS 2027: Provocations & Works-in-Progress
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Stockholm\, Sw
+ eden\, Jun 28 – Jul 2\, 2027.\nhttps://dis.acm.org/2027/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Stockholm\, Sweden
+URL:https://dis.acm.org/2027/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: DIS 2027: Provocations & Works-in-Progress
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: DIS 2027: Provocations & Works-in-Progress
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2027-rev-posters-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:CHI 2027: Posters · decisions
+DESCRIPTION:Expected review / decision date.\nConference: Pittsburgh\, USA\
+ , May 10–14\, 2027.\nhttps://chi2027.acm.org/
+TRANSP:TRANSPARENT
+LOCATION:Pittsburgh\, USA
+URL:https://chi2027.acm.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-chi-2027-20
+ 27@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270309
+DTEND;VALUE=DATE:20270310
+SUMMARY:Gary Marsden Travel Awards: Round closes · last round for CHI 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes · last 
+ round for CHI 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes · last r
+ ound for CHI 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dis-2027-rev-papers-and-pictorials-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+SUMMARY:DIS 2027: Papers & pictorials · decisions
+DESCRIPTION:Expected review / decision date.\nConference: Stockholm\, Swede
+ n\, Jun 28 – Jul 2\, 2027.\nhttps://dis.acm.org/2027/
+TRANSP:TRANSPARENT
+LOCATION:Stockholm\, Sweden
+URL:https://dis.acm.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-abs--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270324
+DTEND;VALUE=DATE:20270325
+SUMMARY:UIST 2027: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Detroit\, USA.
+ \nhttps://uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: UIST 2027: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: UIST 2027: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-paper--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:UIST 2027: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Detroit\, USA.
+ \nhttps://uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: UIST 2027: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: UIST 2027: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-2027-paper--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270422
+DTEND;VALUE=DATE:20270423
+SUMMARY:ASSETS 2027: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Porto\, Portug
+ al.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ASSETS 2027: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ASSETS 2027: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-dis-2027-20
+ 27@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:Gary Marsden Travel Awards: Round closes · last round for DIS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes · last 
+ round for DIS 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes · last r
+ ound for DIS 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-rev-papers-round-1-reviews-out-rebuttal-2027@conference-deadl
+ ines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270528
+DTEND;VALUE=DATE:20270529
+SUMMARY:UIST 2027: Papers · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Detroit\, USA.\nhttps://
+ uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:cscw-student-volunteers-vol-closes-for-cscw-2027-2027@conference-deadli
+ nes
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270602
+SUMMARY:CSCW Student Volunteers: Closes · for CSCW 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent volunteer call for
+  CSCW.\nhttps://cscw.acm.org/2026/sv.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://cscw.acm.org/2026/sv.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CSCW Student Volunteers: Closes · for CSCW 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CSCW Student Volunteers: Closes · for CSCW 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-2027-rev-papers-round-1-reviews-out-rebuttal-2027@conference-dea
+ dlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270603
+DTEND;VALUE=DATE:20270604
+SUMMARY:ASSETS 2027: Papers · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Porto\, Portugal.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-student-volunteers-vol-lottery-opens-for-uist-2027-2027@conference
+ -deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270620
+DTEND;VALUE=DATE:20270621
+SUMMARY:UIST Student Volunteers: Lottery opens · for UIST 2027
+DESCRIPTION:Applications open.\nPlaceholder based on the 2026 date. Confirm
+  on the official call.\nStudent volunteers for UIST are chosen by lottery.
+ \nhttps://uist.acm.org/2026/cfp
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://uist.acm.org/2026/cfp
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-2027-rev-papers-round-2-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270624
+DTEND;VALUE=DATE:20270625
+SUMMARY:ASSETS 2027: Papers · round 2 decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Porto\, Portugal.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-2027-poster-posters-and-demonstrations-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270702
+SUMMARY:ASSETS 2027: Posters & Demonstrations
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Porto\, Portug
+ al.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ASSETS 2027: Posters & Demonstrations
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ASSETS 2027: Posters & Demonstrations
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:xxgary-marsden-travel-awards-fund-round-closes-2027@conference-deadline
+ s
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270709
+DTEND;VALUE=DATE:20270710
+SUMMARY:Gary Marsden Travel Awards: Round closes
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-poster-posters-and-demos-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270710
+DTEND;VALUE=DATE:20270711
+SUMMARY:UIST 2027: Posters & Demos
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Detroit\, USA.
+ \nhttps://uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: UIST 2027: Posters & Demos
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: UIST 2027: Posters & Demos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-student-volunteers-vol-closes-for-assets-2027-2027@conference-de
+ adlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270716
+DTEND;VALUE=DATE:20270717
+SUMMARY:ASSETS Student Volunteers: Closes · for ASSETS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent volunteer call for
+  ASSETS.\nhttps://assets26.sigaccess.org/volunteer.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://assets26.sigaccess.org/volunteer.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ASSETS Student Volunteers: Closes · for ASSETS 2
+ 027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ASSETS Student Volunteers: Closes · for ASSETS 20
+ 27
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sigaccess-travel-scholarship-fund-closes-for-assets-2027-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270720
+DTEND;VALUE=DATE:20270721
+SUMMARY:SIGACCESS Travel Scholarship: Closes · for ASSETS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nACM SIGACCESS travel suppo
+ rt for students attending ASSETS.\nhttps://www.sigaccess.org/awards/sigacc
+ ess-scholarship/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://www.sigaccess.org/awards/sigaccess-scholarship/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: SIGACCESS Travel Scholarship: Closes · for ASSET
+ S 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: SIGACCESS Travel Scholarship: Closes · for ASSETS
+  2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-student-volunteers-vol-lottery-closes-for-uist-2027-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270801
+DTEND;VALUE=DATE:20270802
+SUMMARY:UIST Student Volunteers: Lottery closes · for UIST 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nStudent volunteers for UIS
+ T are chosen by lottery.\nhttps://uist.acm.org/2026/cfp
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://uist.acm.org/2026/cfp
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: UIST Student Volunteers: Lottery closes · for UI
+ ST 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: UIST Student Volunteers: Lottery closes · for UIS
+ T 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-rev-papers-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270807
+DTEND;VALUE=DATE:20270808
+SUMMARY:UIST 2027: Papers · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Detroit\, USA.\nhttps://
+ uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-2027-rev-posters-and-demos-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270812
+DTEND;VALUE=DATE:20270813
+SUMMARY:ASSETS 2027: Posters & Demos · decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Porto\, Portugal.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-abs--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270813
+DTEND;VALUE=DATE:20270814
+SUMMARY:IUI 2028: abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Helsinki\, Fin
+ land.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IUI 2028: abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IUI 2028: abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-rev-posters-and-demos-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270814
+DTEND;VALUE=DATE:20270815
+SUMMARY:UIST 2027: Posters & Demos · decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Detroit\, USA.\nhttps://
+ uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-paper--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270820
+DTEND;VALUE=DATE:20270821
+SUMMARY:IUI 2028: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Helsinki\, Fin
+ land.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IUI 2028: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IUI 2028: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-uist-2027-2
+ 027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270909
+DTEND;VALUE=DATE:20270910
+SUMMARY:Gary Marsden Travel Awards: Round closes · last round for UIST 202
+ 7
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes · last 
+ round for UIST 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes · last r
+ ound for UIST 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2028-paper--2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270910
+DTEND;VALUE=DATE:20270911
+SUMMARY:CHI 2028: paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Pittsburgh\, U
+ SA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Pittsburgh\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CHI 2028: paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CHI 2028: paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-rev-papers-round-1-initial-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271029
+DTEND;VALUE=DATE:20271030
+SUMMARY:IUI 2028: Papers · round 1 initial decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Helsinki\, Finland.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2028-rev-papers-round-1-reviews-and-revise-and-re-2027@conference-d
+ eadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271105
+DTEND;VALUE=DATE:20271106
+SUMMARY:CHI 2028: Papers · round 1 reviews & revise-and-resubmit decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Pittsburgh\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Pittsburgh\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:xxxgary-marsden-travel-awards-fund-round-closes-2027@conference-deadlin
+ es
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271109
+DTEND;VALUE=DATE:20271110
+SUMMARY:Gary Marsden Travel Awards: Round closes
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-poster-posters-and-demos-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271110
+DTEND;VALUE=DATE:20271111
+SUMMARY:IUI 2028: Posters & Demos
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Helsinki\, Fin
+ land.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IUI 2028: Posters & Demos
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IUI 2028: Posters & Demos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-rev-papers-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271123
+DTEND;VALUE=DATE:20271124
+SUMMARY:IUI 2028: Papers · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Helsinki\, Finland.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-rev-posters-and-demos-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271214
+DTEND;VALUE=DATE:20271215
+SUMMARY:IUI 2028: Posters & Demos · decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Helsinki\, Finland.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2028-rev-papers-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271217
+DTEND;VALUE=DATE:20271218
+SUMMARY:CHI 2028: Papers · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Pittsburgh\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Pittsburgh\, USA
+END:VEVENT
+END:VCALENDAR

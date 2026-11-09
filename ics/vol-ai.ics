@@ -1,0 +1,144 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Conference deadlines (filtered)
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:aaai-student-scholar-and-volunteer-program-vol-opens-for-aaai-27-2026@c
+ onference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:AAAI Student Scholar & Volunteer Program: Opens · for AAAI-27
+DESCRIPTION:Applications open.\nComplimentary registration for student volu
+ nteers at AAAI.\nhttps://aaai.org/conference/aaai/aaai-27/student-scholar-
+ volunteer-program/
+TRANSP:TRANSPARENT
+URL:https://aaai.org/conference/aaai/aaai-27/student-scholar-volunteer-prog
+ ram/
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-student-scholar-and-volunteer-program-vol-closes-for-aaai-27-2026@
+ conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:AAAI Student Scholar & Volunteer Program: Closes · for AAAI-27
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nComplimentary regis
+ tration for student volunteers at AAAI.\nhttps://aaai.org/conference/aaai/
+ aaai-27/student-scholar-volunteer-program/
+TRANSP:TRANSPARENT
+URL:https://aaai.org/conference/aaai/aaai-27/student-scholar-volunteer-prog
+ ram/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: AAAI Student Scholar & Volunteer Program: Closes 
+ · for AAAI-27
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: AAAI Student Scholar & Volunteer Program: Closes 
+ · for AAAI-27
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:facct-student-volunteers-vol-closes-for-facct-2027-2027@conference-dead
+ lines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270427
+DTEND;VALUE=DATE:20270428
+SUMMARY:FAccT Student Volunteers: Closes · for FAccT 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nApplied through FAccT's pa
+ rticipant support form.\nhttps://facctconference.org/2026/cfv.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://facctconference.org/2026/cfv.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: FAccT Student Volunteers: Closes · for FAccT 202
+ 7
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: FAccT Student Volunteers: Closes · for FAccT 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips-volunteers-vol-closes-for-neurips-2027-2027@conference-deadline
+ s
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20271006
+DTEND;VALUE=DATE:20271007
+SUMMARY:NeurIPS Volunteers: Closes · for NeurIPS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nVolunteer applications for
+  NeurIPS.\nhttps://blog.neurips.cc/2026/09/16/join-us-at-neurips-2026-fina
+ ncial-assistance-and-volunteer-applications-are-now-open/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://blog.neurips.cc/2026/09/16/join-us-at-neurips-2026-financial-as
+ sistance-and-volunteer-applications-are-now-open/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: NeurIPS Volunteers: Closes · for NeurIPS 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: NeurIPS Volunteers: Closes · for NeurIPS 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-student-scholar-and-volunteer-program-vol-opens-for-aaai-28-2027@c
+ onference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20271130
+DTEND;VALUE=DATE:20271201
+SUMMARY:AAAI Student Scholar & Volunteer Program: Opens · for AAAI-28
+DESCRIPTION:Applications open.\nPlaceholder based on the 2026 date. Confirm
+  on the official call.\nComplimentary registration for student volunteers 
+ at AAAI.\nhttps://aaai.org/conference/aaai/aaai-27/student-scholar-volunte
+ er-program/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://aaai.org/conference/aaai/aaai-27/student-scholar-volunteer-prog
+ ram/
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-student-scholar-and-volunteer-program-vol-closes-for-aaai-28-2027@
+ conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20271204
+DTEND;VALUE=DATE:20271205
+SUMMARY:AAAI Student Scholar & Volunteer Program: Closes · for AAAI-28
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nComplimentary registration
+  for student volunteers at AAAI.\nhttps://aaai.org/conference/aaai/aaai-27
+ /student-scholar-volunteer-program/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://aaai.org/conference/aaai/aaai-27/student-scholar-volunteer-prog
+ ram/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: AAAI Student Scholar & Volunteer Program: Closes 
+ · for AAAI-28
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: AAAI Student Scholar & Volunteer Program: Closes 
+ · for AAAI-28
+END:VALARM
+END:VEVENT
+END:VCALENDAR

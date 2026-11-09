@@ -1,0 +1,313 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Conference deadlines (filtered)
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:iui-2027-poster-posters-and-demos-2026@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:IUI 2027: Posters & Demos
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Helsink
+ i\, Finland\, Feb 8–11\, 2027.\nhttps://iui.acm.org/2027/?p=244208
+TRANSP:TRANSPARENT
+LOCATION:Helsinki\, Finland
+URL:https://iui.acm.org/2027/?p=244208
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IUI 2027: Posters & Demos
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IUI 2027: Posters & Demos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:CHI 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Pittsbu
+ rgh\, USA\, May 10–14\, 2027.\nhttps://chi2027.acm.org/
+TRANSP:TRANSPARENT
+LOCATION:Pittsburgh\, USA
+URL:https://chi2027.acm.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CHI 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CHI 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dis-2027-poster-provocations-and-works-in-progress-2027@conference-dead
+ lines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:DIS 2027: Provocations & Works-in-Progress
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Stockholm\, Sw
+ eden\, Jun 28 – Jul 2\, 2027.\nhttps://dis.acm.org/2027/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Stockholm\, Sweden
+URL:https://dis.acm.org/2027/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: DIS 2027: Provocations & Works-in-Progress
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: DIS 2027: Provocations & Works-in-Progress
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:IEEE S&P 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada\, May 17–20\, 2027.\nhttps://sp2027.ieee-security.org/cfpapers.html
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+URL:https://sp2027.ieee-security.org/cfpapers.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aies-2027-poster-phd-student-program-poster-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:AIES 2027: PhD Student Program poster
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Malmö\, Swede
+ n.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Malmö\, Sweden
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: AIES 2027: PhD Student Program poster
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: AIES 2027: PhD Student Program poster
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:asisandt-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:ASIS&T 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Vancouver\, Ca
+ nada\, Nov 19–23\, 2027.\nhttps://www.asist.org/am/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Vancouver\, Canada
+URL:https://www.asist.org/am/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ASIS&T 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ASIS&T 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:soups-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270611
+DTEND;VALUE=DATE:20270612
+SUMMARY:SOUPS 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Denver\, USA\,
+  Aug 8–10\, 2027.\nhttps://www.usenix.org/conferences/bytopic/security
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/conferences/bytopic/security
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: SOUPS 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: SOUPS 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-2027-poster-posters-and-demonstrations-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270702
+SUMMARY:ASSETS 2027: Posters & Demonstrations
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Porto\, Portug
+ al.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ASSETS 2027: Posters & Demonstrations
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ASSETS 2027: Posters & Demonstrations
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-poster-posters-and-demos-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270710
+DTEND;VALUE=DATE:20270711
+SUMMARY:UIST 2027: Posters & Demos
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Detroit\, USA.
+ \nhttps://uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: UIST 2027: Posters & Demos
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: UIST 2027: Posters & Demos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270710
+DTEND;VALUE=DATE:20270711
+SUMMARY:USENIX Security 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Denver\, USA\,
+  Aug 11–13\, 2027.\nhttps://www.usenix.org/node/315301
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/node/315301
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-poster-posters-both-cycles-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270723
+DTEND;VALUE=DATE:20270724
+SUMMARY:CCS 2027: Posters (both cycles)
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Atlanta\, USA\
+ , Oct 11–15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CCS 2027: Posters (both cycles)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CCS 2027: Posters (both cycles)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iconference-2028-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270915
+DTEND;VALUE=DATE:20270916
+SUMMARY:iConference 2028: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Wellington\, N
+ ew Zealand.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Wellington\, New Zealand
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: iConference 2028: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: iConference 2028: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-poster-posters-and-demos-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271110
+DTEND;VALUE=DATE:20271111
+SUMMARY:IUI 2028: Posters & Demos
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Helsinki\, Fin
+ land.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IUI 2028: Posters & Demos
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IUI 2028: Posters & Demos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,381 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Conference deadlines (filtered)
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:ieee-sandp-2027-abs-cycle-2-2026@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:IEEE S&P 2027: Cycle 2 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Montré
+ al\, Canada\, May 17–20\, 2027.\nhttps://sp2027.ieee-security.org/cfpape
+ rs.html
+TRANSP:TRANSPARENT
+LOCATION:Montréal\, Canada
+URL:https://sp2027.ieee-security.org/cfpapers.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2027: Cycle 2 · abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2027: Cycle 2 · abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2027-paper-cycle-2-2026@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:IEEE S&P 2027: Cycle 2 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Montré
+ al\, Canada\, May 17–20\, 2027.\nhttps://sp2027.ieee-security.org/cfpape
+ rs.html
+TRANSP:TRANSPARENT
+LOCATION:Montréal\, Canada
+URL:https://sp2027.ieee-security.org/cfpapers.html
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2027: Cycle 2 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2027: Cycle 2 · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-abs-cycle-1-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270108
+SUMMARY:CCS 2027: Cycle 1 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Atlanta\, USA\
+ , Oct 11–15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CCS 2027: Cycle 1 · abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CCS 2027: Cycle 1 · abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-paper-cycle-1-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:CCS 2027: Cycle 1 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Atlanta\, USA\
+ , Oct 11–15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CCS 2027: Cycle 1 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CCS 2027: Cycle 1 · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2027-abs-cycle-2-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270120
+SUMMARY:USENIX Security 2027: Cycle 2 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Denver\
+ , USA\, Aug 11–13\, 2027.\nhttps://www.usenix.org/node/315301
+TRANSP:TRANSPARENT
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/node/315301
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security 2027: Cycle 2 · abstract / regis
+ tration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security 2027: Cycle 2 · abstract / regist
+ ration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2027-paper-cycle-2-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:USENIX Security 2027: Cycle 2 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Denver\
+ , USA\, Aug 11–13\, 2027.\nhttps://www.usenix.org/node/315301
+TRANSP:TRANSPARENT
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/node/315301
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security 2027: Cycle 2 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security 2027: Cycle 2 · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:soups-2027-abs-technical-papers-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:SOUPS 2027: Technical Papers · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Denver\, USA\,
+  Aug 8–10\, 2027.\nhttps://www.usenix.org/conferences/bytopic/security
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/conferences/bytopic/security
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: SOUPS 2027: Technical Papers · abstract / regist
+ ration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: SOUPS 2027: Technical Papers · abstract / registr
+ ation
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:soups-2027-paper-technical-papers-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270219
+DTEND;VALUE=DATE:20270220
+SUMMARY:SOUPS 2027: Technical Papers · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Denver\, USA\,
+  Aug 8–10\, 2027.\nhttps://www.usenix.org/conferences/bytopic/security
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/conferences/bytopic/security
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: SOUPS 2027: Technical Papers · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: SOUPS 2027: Technical Papers · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-abs-cycle-2-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270422
+DTEND;VALUE=DATE:20270423
+SUMMARY:CCS 2027: Cycle 2 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Atlanta\, USA\
+ , Oct 11–15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CCS 2027: Cycle 2 · abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CCS 2027: Cycle 2 · abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-paper-cycle-2-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270430
+SUMMARY:CCS 2027: Cycle 2 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Atlanta\, USA\
+ , Oct 11–15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CCS 2027: Cycle 2 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CCS 2027: Cycle 2 · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2028-abs-cycle-1-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:IEEE S&P 2028: Cycle 1 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2028: Cycle 1 · abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2028: Cycle 1 · abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2028-paper-cycle-1-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270611
+DTEND;VALUE=DATE:20270612
+SUMMARY:IEEE S&P 2028: Cycle 1 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2028: Cycle 1 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2028: Cycle 1 · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2028-abs-cycle-1-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270818
+DTEND;VALUE=DATE:20270819
+SUMMARY:USENIX Security 2028: Cycle 1 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Denver\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security 2028: Cycle 1 · abstract / regis
+ tration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security 2028: Cycle 1 · abstract / regist
+ ration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2028-paper-cycle-1-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270825
+DTEND;VALUE=DATE:20270826
+SUMMARY:USENIX Security 2028: Cycle 1 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Denver\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: USENIX Security 2028: Cycle 1 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: USENIX Security 2028: Cycle 1 · paper deadline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2028-abs-cycle-2-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271110
+DTEND;VALUE=DATE:20271111
+SUMMARY:IEEE S&P 2028: Cycle 2 · abstract / registration
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2028: Cycle 2 · abstract / registration
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2028: Cycle 2 · abstract / registration
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2028-paper-cycle-2-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271117
+DTEND;VALUE=DATE:20271118
+SUMMARY:IEEE S&P 2028: Cycle 2 · paper deadline
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Montréal\, Ca
+ nada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IEEE S&P 2028: Cycle 2 · paper deadline
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IEEE S&P 2028: Cycle 2 · paper deadline
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -9,7 +9,7 @@ X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
 UID:aaai-student-scholar-and-volunteer-program-vol-opens-for-aaai-27-2026@c
  onference-deadlines
-DTSTAMP:20261109T233704Z
+DTSTAMP:20261109T234559Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
 SUMMARY:AAAI Student Scholar & Volunteer Program: Opens · for AAAI-27
@@ -23,7 +23,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:aaai-student-scholar-and-volunteer-program-vol-closes-for-aaai-27-2026@
  conference-deadlines
-DTSTAMP:20261109T233704Z
+DTSTAMP:20261109T234559Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:AAAI Student Scholar & Volunteer Program: Closes · for AAAI-27
@@ -49,7 +49,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:aaai-student-scholar-and-volunteer-program-vol-opens-for-aaai-28-2027@c
  onference-deadlines
-DTSTAMP:20261109T233704Z
+DTSTAMP:20261109T234559Z
 DTSTART;VALUE=DATE:20271130
 DTEND;VALUE=DATE:20271201
 SUMMARY:AAAI Student Scholar & Volunteer Program: Opens · for AAAI-28
@@ -65,7 +65,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:aaai-student-scholar-and-volunteer-program-vol-closes-for-aaai-28-2027@
  conference-deadlines
-DTSTAMP:20261109T233704Z
+DTSTAMP:20261109T234559Z
 DTSTART;VALUE=DATE:20271204
 DTEND;VALUE=DATE:20271205
 SUMMARY:AAAI Student Scholar & Volunteer Program: Closes · for AAAI-28

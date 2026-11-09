@@ -1,0 +1,148 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Conference deadlines (filtered)
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:iui-2027-poster-posters-and-demos-2026@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:IUI 2027: Posters & Demos
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Helsink
+ i\, Finland\, Feb 8–11\, 2027.\nhttps://iui.acm.org/2027/?p=244208
+TRANSP:TRANSPARENT
+LOCATION:Helsinki\, Finland
+URL:https://iui.acm.org/2027/?p=244208
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IUI 2027: Posters & Demos
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IUI 2027: Posters & Demos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2027-poster-posters-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:CHI 2027: Posters
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Pittsbu
+ rgh\, USA\, May 10–14\, 2027.\nhttps://chi2027.acm.org/
+TRANSP:TRANSPARENT
+LOCATION:Pittsburgh\, USA
+URL:https://chi2027.acm.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: CHI 2027: Posters
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: CHI 2027: Posters
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dis-2027-poster-provocations-and-works-in-progress-2027@conference-dead
+ lines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:DIS 2027: Provocations & Works-in-Progress
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Stockholm\, Sw
+ eden\, Jun 28 – Jul 2\, 2027.\nhttps://dis.acm.org/2027/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Stockholm\, Sweden
+URL:https://dis.acm.org/2027/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: DIS 2027: Provocations & Works-in-Progress
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: DIS 2027: Provocations & Works-in-Progress
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-2027-poster-posters-and-demonstrations-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270702
+SUMMARY:ASSETS 2027: Posters & Demonstrations
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Porto\, Portug
+ al.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: ASSETS 2027: Posters & Demonstrations
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: ASSETS 2027: Posters & Demonstrations
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-poster-posters-and-demos-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20270710
+DTEND;VALUE=DATE:20270711
+SUMMARY:UIST 2027: Posters & Demos
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Detroit\, USA.
+ \nhttps://uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: UIST 2027: Posters & Demos
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: UIST 2027: Posters & Demos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-poster-posters-and-demos-2027@conference-deadlines
+DTSTAMP:20261109T234559Z
+DTSTART;VALUE=DATE:20271110
+DTEND;VALUE=DATE:20271111
+SUMMARY:IUI 2028: Posters & Demos
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nConference: Helsinki\, Fin
+ land.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: IUI 2028: Posters & Demos
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: IUI 2028: Posters & Demos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

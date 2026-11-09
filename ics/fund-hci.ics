@@ -1,0 +1,235 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Conference deadlines (filtered)
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-iui-2027-20
+ 26@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Gary Marsden Travel Awards: Round closes · last round for IUI 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes · last 
+ round for IUI 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes · last r
+ ound for IUI 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gary-marsden-travel-awards-fund-round-closes-2027@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270110
+SUMMARY:Gary Marsden Travel Awards: Round closes
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:xgary-marsden-travel-awards-fund-round-closes-2027@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270209
+DTEND;VALUE=DATE:20270210
+SUMMARY:Gary Marsden Travel Awards: Round closes
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-chi-2027-20
+ 27@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270309
+DTEND;VALUE=DATE:20270310
+SUMMARY:Gary Marsden Travel Awards: Round closes · last round for CHI 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes · last 
+ round for CHI 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes · last r
+ ound for CHI 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-dis-2027-20
+ 27@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:Gary Marsden Travel Awards: Round closes · last round for DIS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes · last 
+ round for DIS 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes · last r
+ ound for DIS 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:xxgary-marsden-travel-awards-fund-round-closes-2027@conference-deadline
+ s
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270709
+DTEND;VALUE=DATE:20270710
+SUMMARY:Gary Marsden Travel Awards: Round closes
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sigaccess-travel-scholarship-fund-closes-for-assets-2027-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270720
+DTEND;VALUE=DATE:20270721
+SUMMARY:SIGACCESS Travel Scholarship: Closes · for ASSETS 2027
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
+ n the 2026 date. Confirm on the official call.\nACM SIGACCESS travel suppo
+ rt for students attending ASSETS.\nhttps://www.sigaccess.org/awards/sigacc
+ ess-scholarship/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+URL:https://www.sigaccess.org/awards/sigaccess-scholarship/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: SIGACCESS Travel Scholarship: Closes · for ASSET
+ S 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: SIGACCESS Travel Scholarship: Closes · for ASSETS
+  2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-uist-2027-2
+ 027@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270909
+DTEND;VALUE=DATE:20270910
+SUMMARY:Gary Marsden Travel Awards: Round closes · last round for UIST 202
+ 7
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes · last 
+ round for UIST 2027
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes · last r
+ ound for UIST 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:xxxgary-marsden-travel-awards-fund-round-closes-2027@conference-deadlin
+ es
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20271109
+DTEND;VALUE=DATE:20271110
+SUMMARY:Gary Marsden Travel Awards: Round closes
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nSIGCHI travel fund 
+ for all SIGCHI conferences · Rolling: rounds close on the 9th of Jan\, Fe
+ b\, Mar\, May\, Jul\, Sep\, Nov\nhttps://sigchi.org/resources/gary-marsden
+ -travel-awards
+TRANSP:TRANSPARENT
+URL:https://sigchi.org/resources/gary-marsden-travel-awards
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P7D
+DESCRIPTION:1 week to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:1 day to go: Gary Marsden Travel Awards: Round closes
+END:VALARM
+END:VEVENT
+END:VCALENDAR

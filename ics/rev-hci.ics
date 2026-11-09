@@ -1,0 +1,174 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Conference deadlines (filtered)
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:chi-2027-rev-posters-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:CHI 2027: Posters · decisions
+DESCRIPTION:Expected review / decision date.\nConference: Pittsburgh\, USA\
+ , May 10–14\, 2027.\nhttps://chi2027.acm.org/
+TRANSP:TRANSPARENT
+LOCATION:Pittsburgh\, USA
+URL:https://chi2027.acm.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:dis-2027-rev-papers-and-pictorials-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+SUMMARY:DIS 2027: Papers & pictorials · decisions
+DESCRIPTION:Expected review / decision date.\nConference: Stockholm\, Swede
+ n\, Jun 28 – Jul 2\, 2027.\nhttps://dis.acm.org/2027/
+TRANSP:TRANSPARENT
+LOCATION:Stockholm\, Sweden
+URL:https://dis.acm.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-rev-papers-round-1-reviews-out-rebuttal-2027@conference-deadl
+ ines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270528
+DTEND;VALUE=DATE:20270529
+SUMMARY:UIST 2027: Papers · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Detroit\, USA.\nhttps://
+ uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-2027-rev-papers-round-1-reviews-out-rebuttal-2027@conference-dea
+ dlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270603
+DTEND;VALUE=DATE:20270604
+SUMMARY:ASSETS 2027: Papers · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Porto\, Portugal.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-2027-rev-papers-round-2-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270624
+DTEND;VALUE=DATE:20270625
+SUMMARY:ASSETS 2027: Papers · round 2 decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Porto\, Portugal.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-rev-papers-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270807
+DTEND;VALUE=DATE:20270808
+SUMMARY:UIST 2027: Papers · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Detroit\, USA.\nhttps://
+ uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-2027-rev-posters-and-demos-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270812
+DTEND;VALUE=DATE:20270813
+SUMMARY:ASSETS 2027: Posters & Demos · decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Porto\, Portugal.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Porto\, Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-2027-rev-posters-and-demos-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270814
+DTEND;VALUE=DATE:20270815
+SUMMARY:UIST 2027: Posters & Demos · decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Detroit\, USA.\nhttps://
+ uist.acm.org/
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Detroit\, USA
+URL:https://uist.acm.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-rev-papers-round-1-initial-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20271029
+DTEND;VALUE=DATE:20271030
+SUMMARY:IUI 2028: Papers · round 1 initial decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Helsinki\, Finland.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2028-rev-papers-round-1-reviews-and-revise-and-re-2027@conference-d
+ eadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20271105
+DTEND;VALUE=DATE:20271106
+SUMMARY:CHI 2028: Papers · round 1 reviews & revise-and-resubmit decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Pittsburgh\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Pittsburgh\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-rev-papers-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20271123
+DTEND;VALUE=DATE:20271124
+SUMMARY:IUI 2028: Papers · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Helsinki\, Finland.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-2028-rev-posters-and-demos-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20271214
+DTEND;VALUE=DATE:20271215
+SUMMARY:IUI 2028: Posters & Demos · decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Helsinki\, Finland.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Helsinki\, Finland
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-2028-rev-papers-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20271217
+DTEND;VALUE=DATE:20271218
+SUMMARY:CHI 2028: Papers · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Pittsburgh\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Pittsburgh\, USA
+END:VEVENT
+END:VCALENDAR

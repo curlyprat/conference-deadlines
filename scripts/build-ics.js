@@ -9,8 +9,8 @@ const html = fs.readFileSync(pagePath, "utf8");
 const js = html.match(/<script>([\s\S]*)<\/script>/)[1];
 const lib = js.slice(js.indexOf("const RAW"), js.indexOf("/* ---------- renderers ---------- */"));
 global.window = { matchMedia: () => ({ matches: false }) }; global.matchMedia = global.window.matchMedia;
-const { EVENTS, VENUES, SITE, calText, ymd, slugOf } =
-  new Function(lib + "; return { EVENTS, VENUES, SITE, calText, ymd, slugOf };")();
+const { EVENTS, VENUES, SITE, COLOR, calText, ymd, slugOf } =
+  new Function(lib + "; return { EVENTS, VENUES, SITE, COLOR, calText, ymd, slugOf };")();
 
 const esc = t => String(t).replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n");
 function fold(line) {
@@ -55,4 +55,12 @@ const write = (name, evs, cal) => fs.writeFileSync(path.join(outDir, name), buil
 write("all.ics", EVENTS, "Conference deadlines");
 const series = [...new Set(EVENTS.map(e => e.series))];
 for (const s of series) write(`${slugOf(s)}.ics`, EVENTS.filter(e => e.series === s), `${s} dates`);
-console.log(`wrote ${1 + series.length} calendars (${EVENTS.length} events) to ${outDir}`);
+// One feed per filter combination the page offers (type x field), named <type>-<field>.ics
+const TYPES = ["all", "paper", "poster", "vol", "fund", "rev"], FIELDS = ["all", "sec", "hci", "info", "ai"];
+let combos = 0;
+for (const t of TYPES) for (const f of FIELDS) {
+  if (t === "all" && f === "all") continue;
+  const evs = EVENTS.filter(e => (t === "all" || COLOR[e.type] === t) && (f === "all" || e.field === f));
+  write(`${t}-${f}.ics`, evs, "Conference deadlines (filtered)"); combos++;
+}
+console.log(`wrote ${1 + series.length + combos} calendars (${EVENTS.length} events) to ${outDir}`);

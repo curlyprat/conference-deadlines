@@ -1,0 +1,181 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Conference Deadline Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Conference deadlines (filtered)
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:ieee-sandp-2027-rev-cycle-2-round-1-reviews-out-rebuttal-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:IEEE S&P 2027: Cycle 2 · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nConference: Montréal\, Canad
+ a\, May 17–20\, 2027.\nhttps://sp2027.ieee-security.org/cfpapers.html
+TRANSP:TRANSPARENT
+LOCATION:Montréal\, Canada
+URL:https://sp2027.ieee-security.org/cfpapers.html
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2027-rev-cycle-2-round-2-final-decisions-2027@conference-dea
+ dlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270306
+SUMMARY:IEEE S&P 2027: Cycle 2 · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nConference: Montréal\, Canad
+ a\, May 17–20\, 2027.\nhttps://sp2027.ieee-security.org/cfpapers.html
+TRANSP:TRANSPARENT
+LOCATION:Montréal\, Canada
+URL:https://sp2027.ieee-security.org/cfpapers.html
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-rev-cycle-1-round-1-reviews-out-rebuttal-2027@conference-deadl
+ ines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270318
+SUMMARY:CCS 2027: Cycle 1 · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Atlanta\, USA\, Oct 11
+ –15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2027-rev-cycle-2-round-1-reviews-out-rebuttal-2027@conf
+ erence-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270408
+DTEND;VALUE=DATE:20270409
+SUMMARY:USENIX Security 2027: Cycle 2 · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nConference: Denver\, USA\, Au
+ g 11–13\, 2027.\nhttps://www.usenix.org/node/315301
+TRANSP:TRANSPARENT
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/node/315301
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-rev-cycle-1-round-2-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270409
+DTEND;VALUE=DATE:20270410
+SUMMARY:CCS 2027: Cycle 1 · round 2 decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Atlanta\, USA\, Oct 11
+ –15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2027-rev-cycle-2-round-2-final-decisions-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270506
+DTEND;VALUE=DATE:20270507
+SUMMARY:USENIX Security 2027: Cycle 2 · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nConference: Denver\, USA\, Au
+ g 11–13\, 2027.\nhttps://www.usenix.org/node/315301
+TRANSP:TRANSPARENT
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/node/315301
+END:VEVENT
+BEGIN:VEVENT
+UID:soups-2027-rev-papers-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270519
+DTEND;VALUE=DATE:20270520
+SUMMARY:SOUPS 2027: Papers · decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Denver\, USA\, Aug 8–1
+ 0\, 2027.\nhttps://www.usenix.org/conferences/bytopic/security
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+URL:https://www.usenix.org/conferences/bytopic/security
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-rev-cycle-2-round-1-reviews-out-rebuttal-2027@conference-deadl
+ ines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270629
+DTEND;VALUE=DATE:20270630
+SUMMARY:CCS 2027: Cycle 2 · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Atlanta\, USA\, Oct 11
+ –15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-2027-rev-cycle-2-round-2-decisions-2027@conference-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270717
+DTEND;VALUE=DATE:20270718
+SUMMARY:CCS 2027: Cycle 2 · round 2 decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Atlanta\, USA\, Oct 11
+ –15\, 2027 · not yet official.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Atlanta\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2028-rev-cycle-1-round-1-reviews-out-rebuttal-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270820
+DTEND;VALUE=DATE:20270821
+SUMMARY:IEEE S&P 2028: Cycle 1 · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Montréal\, Canada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+END:VEVENT
+BEGIN:VEVENT
+UID:ieee-sandp-2028-rev-cycle-1-round-2-final-decisions-2027@conference-dea
+ dlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20270911
+DTEND;VALUE=DATE:20270912
+SUMMARY:IEEE S&P 2028: Cycle 1 · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Montréal\, Canada.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Montréal\, Canada
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2028-rev-cycle-1-round-1-reviews-out-rebuttal-2027@conf
+ erence-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20271105
+DTEND;VALUE=DATE:20271106
+SUMMARY:USENIX Security 2028: Cycle 1 · round 1 reviews out (rebuttal)
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Denver\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-2028-rev-cycle-1-round-2-final-decisions-2027@conferenc
+ e-deadlines
+DTSTAMP:20261109T234600Z
+DTSTART;VALUE=DATE:20271203
+DTEND;VALUE=DATE:20271204
+SUMMARY:USENIX Security 2028: Cycle 1 · round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
+  date. Confirm on the official call.\nConference: Denver\, USA.
+TRANSP:TRANSPARENT
+STATUS:TENTATIVE
+LOCATION:Denver\, USA
+END:VEVENT
+END:VCALENDAR
