@@ -868,7 +868,7 @@ const state = { ...DEFAULTS, view: "calendar" };
 let stars = new Set();
 
 const ICS_BASE = "https://curlyprat.github.io/conference-deadlines/ics/";
-const ICS_LIVE = false;   // flip to true once the GitHub Pages feed is published
+const ICS_LIVE = true;    // feeds served from GitHub Pages (curlyprat/conference-deadlines)
 const CHEV = '<svg class="chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
 function calMenuHTML(scope, label, opts = {}) {
   const { series = "", cls = "", id = "", wrap = "" } = opts;
