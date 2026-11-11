@@ -9,7 +9,7 @@ X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
 UID:neurips-financial-assistance-fund-opens-for-neurips-2027-2027@conferenc
  e-deadlines
-DTSTAMP:20261109T234559Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270907
 DTEND;VALUE=DATE:20270908
 SUMMARY:NeurIPS Financial Assistance: Opens · for NeurIPS 2027
@@ -23,7 +23,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:neurips-financial-assistance-fund-closes-for-neurips-2027-2027@conferen
  ce-deadlines
-DTSTAMP:20261109T234559Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20271006
 DTEND;VALUE=DATE:20271007
 SUMMARY:NeurIPS Financial Assistance: Closes · for NeurIPS 2027

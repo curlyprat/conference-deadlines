@@ -1,5 +1,7 @@
 # Conference deadlines
 
+Live calendar: https://curlyprat.github.io/conference-deadlines/
+
 Calendar feeds for paper, poster, volunteer, travel-grant and review dates across security & privacy, HCI, information science and AI/ML conferences (Nov 2026 – Dec 2027).
 
 Dates marked tentative are placeholders carried over from the 2026 cycle. Confirm them on the official call. Deadlines are 11:59 pm AoE unless a venue says otherwise.
@@ -21,7 +23,7 @@ To import once instead of subscribing, download any `.ics` file from the `ics` f
 
 ## How it's built
 
-`deadlines.html` is the calendar page's source and holds the data. `scripts/build-ics.js` reads it and writes the feeds:
+`deadlines.html` is the calendar page's source and holds the data. `scripts/build-ics.js` reads it and writes the feeds plus `index.html`, the standalone page served by GitHub Pages:
 
 ```sh
 node scripts/build-ics.js deadlines.html ics

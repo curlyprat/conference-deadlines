@@ -9,7 +9,7 @@ X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
 UID:usenix-security-student-grant-fund-closes-for-usenix-security-2027-2027
  @conference-deadlines
-DTSTAMP:20261109T234559Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270706
 DTEND;VALUE=DATE:20270707
 SUMMARY:USENIX Security Student Grant: Closes · for USENIX Security 2027

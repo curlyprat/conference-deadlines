@@ -9,7 +9,7 @@ X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
 UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-iui-2027-20
  26@conference-deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 SUMMARY:Gary Marsden Travel Awards: Round closes · last round for IUI 2027
@@ -34,7 +34,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gary-marsden-travel-awards-fund-round-closes-2027@conference-deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270110
 SUMMARY:Gary Marsden Travel Awards: Round closes
@@ -57,7 +57,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:xgary-marsden-travel-awards-fund-round-closes-2027@conference-deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270209
 DTEND;VALUE=DATE:20270210
 SUMMARY:Gary Marsden Travel Awards: Round closes
@@ -81,7 +81,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-chi-2027-20
  27@conference-deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270309
 DTEND;VALUE=DATE:20270310
 SUMMARY:Gary Marsden Travel Awards: Round closes · last round for CHI 2027
@@ -107,7 +107,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ieee-sandp-student-travel-grant-fund-closes-for-ieee-sandp-2027-2027@co
  nference-deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270402
 DTEND;VALUE=DATE:20270403
 SUMMARY:IEEE S&P Student Travel Grant: Closes · for IEEE S&P 2027
@@ -134,7 +134,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:facct-financial-support-fund-closes-for-facct-2027-2027@conference-dead
  lines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270427
 DTEND;VALUE=DATE:20270428
 SUMMARY:FAccT Financial Support: Closes · for FAccT 2027
@@ -159,7 +159,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-dis-2027-20
  27@conference-deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270509
 DTEND;VALUE=DATE:20270510
 SUMMARY:Gary Marsden Travel Awards: Round closes · last round for DIS 2027
@@ -185,7 +185,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:usenix-security-student-grant-fund-closes-for-usenix-security-2027-2027
  @conference-deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270706
 DTEND;VALUE=DATE:20270707
 SUMMARY:USENIX Security Student Grant: Closes · for USENIX Security 2027
@@ -211,7 +211,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:xxgary-marsden-travel-awards-fund-round-closes-2027@conference-deadline
  s
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270709
 DTEND;VALUE=DATE:20270710
 SUMMARY:Gary Marsden Travel Awards: Round closes
@@ -235,7 +235,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sigaccess-travel-scholarship-fund-closes-for-assets-2027-2027@conferenc
  e-deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270720
 DTEND;VALUE=DATE:20270721
 SUMMARY:SIGACCESS Travel Scholarship: Closes · for ASSETS 2027
@@ -262,7 +262,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:neurips-financial-assistance-fund-opens-for-neurips-2027-2027@conferenc
  e-deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270907
 DTEND;VALUE=DATE:20270908
 SUMMARY:NeurIPS Financial Assistance: Opens · for NeurIPS 2027
@@ -276,7 +276,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:gary-marsden-travel-awards-fund-round-closes-last-round-for-uist-2027-2
  027@conference-deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270909
 DTEND;VALUE=DATE:20270910
 SUMMARY:Gary Marsden Travel Awards: Round closes · last round for UIST 202
@@ -303,7 +303,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ccs-student-travel-grant-fund-closes-for-ccs-2027-2027@conference-deadl
  ines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270914
 DTEND;VALUE=DATE:20270915
 SUMMARY:CCS Student Travel Grant: Closes · for CCS 2027
@@ -328,7 +328,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:neurips-financial-assistance-fund-closes-for-neurips-2027-2027@conferen
  ce-deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20271006
 DTEND;VALUE=DATE:20271007
 SUMMARY:NeurIPS Financial Assistance: Closes · for NeurIPS 2027
@@ -354,7 +354,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:xxxgary-marsden-travel-awards-fund-round-closes-2027@conference-deadlin
  es
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20271109
 DTEND;VALUE=DATE:20271110
 SUMMARY:Gary Marsden Travel Awards: Round closes

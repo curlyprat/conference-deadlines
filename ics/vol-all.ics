@@ -9,7 +9,7 @@ X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
 UID:chi-student-volunteers-vol-lottery-opens-for-chi-2027-2026@conference-d
  eadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:CHI Student Volunteers: Lottery opens · for CHI 2027
@@ -21,7 +21,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:aaai-student-scholar-and-volunteer-program-vol-opens-for-aaai-27-2026@c
  onference-deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
 SUMMARY:AAAI Student Scholar & Volunteer Program: Opens · for AAAI-27
@@ -35,7 +35,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:aaai-student-scholar-and-volunteer-program-vol-closes-for-aaai-27-2026@
  conference-deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:AAAI Student Scholar & Volunteer Program: Closes · for AAAI-27
@@ -60,7 +60,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:iui-student-volunteers-vol-opens-for-iui-2027-2026@conference-deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:IUI Student Volunteers: Opens · for IUI 2027
@@ -74,7 +74,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:iui-student-volunteers-vol-closes-for-iui-2027-2027@conference-deadline
  s
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270128
 DTEND;VALUE=DATE:20270129
 SUMMARY:IUI Student Volunteers: Closes · for IUI 2027
@@ -98,7 +98,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:chi-student-volunteers-vol-lottery-closes-for-chi-2027-2027@conference-
  deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270202
 SUMMARY:CHI Student Volunteers: Lottery closes · for CHI 2027
@@ -123,7 +123,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:facct-student-volunteers-vol-closes-for-facct-2027-2027@conference-dead
  lines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270427
 DTEND;VALUE=DATE:20270428
 SUMMARY:FAccT Student Volunteers: Closes · for FAccT 2027
@@ -148,7 +148,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:cscw-student-volunteers-vol-closes-for-cscw-2027-2027@conference-deadli
  nes
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270601
 DTEND;VALUE=DATE:20270602
 SUMMARY:CSCW Student Volunteers: Closes · for CSCW 2027
@@ -172,7 +172,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:uist-student-volunteers-vol-lottery-opens-for-uist-2027-2027@conference
  -deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270620
 DTEND;VALUE=DATE:20270621
 SUMMARY:UIST Student Volunteers: Lottery opens · for UIST 2027
@@ -186,7 +186,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:assets-student-volunteers-vol-closes-for-assets-2027-2027@conference-de
  adlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270716
 DTEND;VALUE=DATE:20270717
 SUMMARY:ASSETS Student Volunteers: Closes · for ASSETS 2027
@@ -212,7 +212,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:uist-student-volunteers-vol-lottery-closes-for-uist-2027-2027@conferenc
  e-deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270801
 DTEND;VALUE=DATE:20270802
 SUMMARY:UIST Student Volunteers: Lottery closes · for UIST 2027
@@ -238,7 +238,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:neurips-volunteers-vol-closes-for-neurips-2027-2027@conference-deadline
  s
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20271006
 DTEND;VALUE=DATE:20271007
 SUMMARY:NeurIPS Volunteers: Closes · for NeurIPS 2027
@@ -264,7 +264,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:aaai-student-scholar-and-volunteer-program-vol-opens-for-aaai-28-2027@c
  onference-deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20271130
 DTEND;VALUE=DATE:20271201
 SUMMARY:AAAI Student Scholar & Volunteer Program: Opens · for AAAI-28
@@ -280,7 +280,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:aaai-student-scholar-and-volunteer-program-vol-closes-for-aaai-28-2027@
  conference-deadlines
-DTSTAMP:20261109T234600Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20271204
 DTEND;VALUE=DATE:20271205
 SUMMARY:AAAI Student Scholar & Volunteer Program: Closes · for AAAI-28

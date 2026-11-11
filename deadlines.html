@@ -1488,6 +1488,16 @@ if (window.claude && typeof window.claude.use === "function") {
   window.claude.use("downloads").then(api => {
     if (api) { downloadsApi = api; document.documentElement.classList.remove("no-dl"); }
   }).catch(() => {});
+} else {
+  // standalone copy (e.g. GitHub Pages or embedded on a website): save through the browser
+  downloadsApi = { save: async ({ filename, data }) => {
+    const url = URL.createObjectURL(new Blob([data], { type: "text/csv;charset=utf-8" }));
+    const a = Object.assign(document.createElement("a"), { href: url, download: filename });
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
+    return { status: "saved" };
+  } };
+  document.documentElement.classList.remove("no-dl");
 }
 
 /* ---------- boot ---------- */

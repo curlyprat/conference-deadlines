@@ -9,7 +9,7 @@ X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
 UID:neurips-2027-abs-main-track-and-position-papers-2027@conference-deadlin
  es
-DTSTAMP:20261109T234559Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270504
 DTEND;VALUE=DATE:20270505
 SUMMARY:NeurIPS 2027: Main track & position papers · abstract / registrati
@@ -37,7 +37,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:neurips-2027-paper-main-track-and-position-papers-2027@conference-deadl
  ines
-DTSTAMP:20261109T234559Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270506
 DTEND;VALUE=DATE:20270507
 SUMMARY:NeurIPS 2027: Main track & position papers · paper deadline
@@ -64,7 +64,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:neurips-2027-rev-round-1-reviews-out-discussion-2027@conference-deadlin
  es
-DTSTAMP:20261109T234559Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270722
 DTEND;VALUE=DATE:20270723
 SUMMARY:NeurIPS 2027: Round 1 reviews out (discussion)
@@ -78,7 +78,7 @@ URL:https://neurips.cc/
 END:VEVENT
 BEGIN:VEVENT
 UID:neurips-2027-rev-round-2-decisions-2027@conference-deadlines
-DTSTAMP:20261109T234559Z
+DTSTAMP:20261111T012804Z
 DTSTART;VALUE=DATE:20270924
 DTEND;VALUE=DATE:20270925
 SUMMARY:NeurIPS 2027: Round 2 decisions

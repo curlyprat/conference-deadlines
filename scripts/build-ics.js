@@ -64,3 +64,8 @@ for (const t of TYPES) for (const f of FIELDS) {
   write(`${t}-${f}.ics`, evs, "Conference deadlines (filtered)"); combos++;
 }
 console.log(`wrote ${1 + series.length + combos} calendars (${EVENTS.length} events) to ${outDir}`);
+
+// Standalone copy of the page for GitHub Pages / embedding on a website (index.html next to the ics folder).
+const skeleton = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style></head><body>`;
+fs.writeFileSync(path.join(path.dirname(path.resolve(outDir)), "index.html"), skeleton + html + "\n</body></html>\n");
+console.log("wrote index.html");
