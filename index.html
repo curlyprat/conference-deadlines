@@ -633,14 +633,14 @@ const RAW = [
   ["2027-02-13", "DIS 2027", "Provocations & Works-in-Progress", "poster", "p", "hci"],
 
   ["2026-11-10", "IUI 2027", "Posters & Demos", "poster", "c", "hci"],
-  ["2026-12-12", "IUI Student Volunteers", "Opens · for IUI 2027", "vol", "p", "hci"],
-  ["2027-01-28", "IUI Student Volunteers", "Closes · for IUI 2027", "vol", "p", "hci"],
+  ["2026-11-23", "IUI Student Volunteers", "Opens · for IUI 2027", "vol", "c", "hci"],
+  ["2026-12-16", "IUI Student Volunteers", "Closes · for IUI 2027", "vol", "c", "hci", null, "Notifications December 31, 2026."],
   ["2027-08-13", "IUI 2028", "", "abs", "p", "hci"],
   ["2027-08-20", "IUI 2028", "", "paper", "p", "hci"],
   ["2027-11-10", "IUI 2028", "Posters & Demos", "poster", "p", "hci"],
 
-  ["2027-03-24", "UIST 2027", "", "abs", "p", "hci"],
-  ["2027-03-31", "UIST 2027", "", "paper", "p", "hci"],
+  ["2027-03-31", "UIST 2027", "", "abs", "c", "hci"],
+  ["2027-04-07", "UIST 2027", "", "paper", "c", "hci", null, "Supplementary materials due April 9, 2027."],
   ["2027-07-10", "UIST 2027", "Posters & Demos", "poster", "p", "hci"],
   ["2027-06-20", "UIST Student Volunteers", "Lottery opens · for UIST 2027", "vol", "p", "hci"],
   ["2027-08-01", "UIST Student Volunteers", "Lottery closes · for UIST 2027", "vol", "p", "hci"],
@@ -660,7 +660,7 @@ const RAW = [
   ["2027-03-09", "Gary Marsden Travel Awards", "Round closes · last round for CHI 2027", "fund", "c", "hci", null, "Also fits DIS, UIST & CSCW 2027."],
   ["2027-05-09", "Gary Marsden Travel Awards", "Round closes · last round for DIS 2027", "fund", "c", "hci", null, "Also fits UIST & CSCW 2027."],
   ["2027-07-09", "Gary Marsden Travel Awards", "Round closes", "fund", "c", "hci", null, "Fits UIST & CSCW 2027."],
-  ["2027-09-09", "Gary Marsden Travel Awards", "Round closes · last round for UIST 2027", "fund", "c", "hci", null, "Also fits CHI 2028; check CSCW 2027's dates (apply more than a month before it starts)."],
+  ["2027-09-09", "Gary Marsden Travel Awards", "Round closes · last round for UIST & CSCW 2027", "fund", "c", "hci", null, "Also fits CHI 2028."],
   ["2027-11-09", "Gary Marsden Travel Awards", "Round closes", "fund", "c", "hci", null, "Fits CHI 2028."],
 
   ["2027-04-09", "ASIS&T 2027", "Papers, panels & workshops", "paper", "p", "info"],
@@ -689,8 +689,8 @@ const RAW = [
   ["2027-09-18", "ICLR 2028", "", "abs", "p", "ai"],
   ["2027-09-25", "ICLR 2028", "", "paper", "p", "ai"],
 
-  ["2027-01-23", "ICML 2027", "", "abs", "p", "ai"],
-  ["2027-01-28", "ICML 2027", "", "paper", "p", "ai"],
+  ["2027-01-14", "ICML 2027", "", "abs", "c", "ai", "https://icml.cc/Conferences/2027/CallForPapers", "Submission site opens January 8, 2027."],
+  ["2027-01-22", "ICML 2027", "", "paper", "c", "ai", "https://icml.cc/Conferences/2027/CallForPapers"],
 
   ["2026-11-30", "AAAI Student Scholar & Volunteer Program", "Opens · for AAAI-27", "vol", "c", "ai"],
   ["2026-12-04", "AAAI Student Scholar & Volunteer Program", "Closes · for AAAI-27", "vol", "c", "ai"],
@@ -748,8 +748,8 @@ const RAW = [
   ["2027-07-22", "NeurIPS 2027", "Round 1 reviews out (discussion)", "rev", "p", "ai"],
   ["2027-09-24", "NeurIPS 2027", "Round 2 decisions", "rev", "p", "ai"],
 
-  ["2027-03-24", "ICML 2027", "Round 1 reviews out (rebuttal)", "rev", "p", "ai"],
-  ["2027-04-30", "ICML 2027", "Round 2 decisions", "rev", "p", "ai"],
+  ["2027-02-23", "ICML 2027", "Round 1 first-stage rejections", "rev", "c", "ai", "https://icml.cc/Conferences/2027/CallForPapers", "Reviewing period runs February 24 to March 16, 2027."],
+  ["2027-05-03", "ICML 2027", "Round 2 final decisions", "rev", "c", "ai", "https://icml.cc/Conferences/2027/CallForPapers"],
 
   ["2027-11-05", "ICLR 2028", "Round 1 reviews out (discussion)", "rev", "p", "ai"],
   ["2027-12-16", "ICLR 2028", "Round 2 final decisions", "rev", "p", "ai"],
@@ -776,13 +776,13 @@ const VENUES = {
   "DIS 2027": { loc: "Stockholm, Sweden", dates: "Jun 28 – Jul 2, 2027" },
   "IUI 2027": { loc: "Helsinki, Finland", dates: "Feb 8–11, 2027" },
   "IUI 2028": { loc: "Helsinki, Finland", prev: true },
-  "UIST 2027": { loc: "Detroit, USA", prev: true },
+  "UIST 2027": { loc: "Vienna, Austria", dates: "Oct 26–29, 2027" },
   "ASSETS 2027": { loc: "Porto, Portugal", prev: true },
-  "CSCW 2027": { loc: "Philadelphia, USA", dates: "Oct 2027", field: "hci" },
+  "CSCW 2027": { loc: "Philadelphia, USA", dates: "Oct 16–20, 2027", field: "hci" },
   "ASIS&T 2027": { loc: "Vancouver, Canada", dates: "Nov 19–23, 2027" },
   "iConference 2027": { loc: "Wellington, New Zealand", dates: "Apr 5–9, 2027 (online Mar 22–25)", field: "info" },
   "CHI Student Volunteers": { loc: "", vol: true, blurb: "Lottery on new.chisv.org; results February 8, 2027.", note: "Student volunteers help run CHI in exchange for free registration. For CHI 2027 the lottery opens November 12, 2026 on the CHISV site (new.chisv.org), recommendation forms are due January 15, 2027, the lottery closes February 1, 2027, and results come out February 8, 2027." },
-  "IUI Student Volunteers": { loc: "", vol: true, blurb: "Student volunteer call for IUI.", note: "Student volunteers for IUI. In 2026 applications opened December 12, 2025 and closed January 28, 2026, with notification on February 6. The 2027 dates shown are TBA placeholders." },
+  "IUI Student Volunteers": { loc: "", vol: true, blurb: "Student volunteer call for IUI.", note: "Student volunteers for IUI. For IUI 2027 (Helsinki, Feb 8–11, 2027) applications open November 23 and close December 16, 2026, with notifications on December 31. In 2026 applications opened December 12, 2025 and closed January 28, 2026." },
   "UIST Student Volunteers": { loc: "", vol: true, blurb: "Student volunteers for UIST are chosen by lottery.", note: "Student volunteers for UIST are chosen by lottery. In 2026 the lottery opened June 20 and closed August 1, with acceptances on August 7. The 2027 dates shown are TBA placeholders." },
   "ASSETS Student Volunteers": { loc: "", vol: true, blurb: "Student volunteer call for ASSETS.", note: "Student volunteers for ASSETS. In 2026 applications closed July 16, with notifications on July 30. The 2027 date shown is a TBA placeholder." },
   "CSCW Student Volunteers": { loc: "", vol: true, blurb: "Student volunteer call for CSCW.", note: "Student volunteers for CSCW. In 2026 applications closed June 1, with notifications around June 15. The 2027 date shown is a TBA placeholder." },
@@ -802,7 +802,7 @@ const VENUES = {
   "AIES 2027": { loc: "Malmö, Sweden", prev: true },
   "NeurIPS 2027": { loc: "Europe, city TBA", dates: "2026 was Sydney, Atlanta & Paris" },
   "ICML 2027": { loc: "Rio de Janeiro, Brazil", dates: "Jul 31 – Aug 6, 2027" },
-  "ICLR 2028": { loc: "Rio de Janeiro, Brazil", prev: true, dates: "ICLR 2027 city TBA" },
+  "ICLR 2028": { loc: "California, USA", prev: true, dates: "ICLR 2027 was Apr 26–30, 2027" },
   "AAAI-27": { loc: "Montréal, Canada", dates: "Feb 16–23, 2027", field: "ai" },
   "AAAI-28": { loc: "Montréal, Canada", prev: true },
   "IJCAI 2027": { loc: "Kyoto, Japan", dates: "Aug 7–13, 2027" },
@@ -816,14 +816,14 @@ const SITE = {
   "CHI 2027": "https://chi2027.acm.org/",
   "DIS 2027": "https://dis.acm.org/2027/",
   "IUI 2027": "https://iui.acm.org/2027/?p=244208",
-  "UIST 2027": "https://uist.acm.org/",
-  "CSCW 2027": "https://cscw.acm.org/",
+  "UIST 2027": "https://uist.acm.org/2027/",
+  "CSCW 2027": "https://cscw.acm.org/2027/",
   "ASIS&T 2027": "https://www.asist.org/am/",
   "iConference 2027": "https://www.ischools.org/post/iconference-2027-call-for-papers",
   "Gary Marsden Travel Awards": "https://sigchi.org/resources/gary-marsden-travel-awards",
   "SIGACCESS Travel Scholarship": "https://www.sigaccess.org/awards/sigaccess-scholarship/",
   "CHI Student Volunteers": "https://chi2027.acm.org/2026/11/07/call-for-svs/",
-  "IUI Student Volunteers": "https://iui.acm.org/2026/student-volunteers/",
+  "IUI Student Volunteers": "https://iui.acm.org/2027/call-for-student-volunteers/",
   "UIST Student Volunteers": "https://uist.acm.org/2026/cfp",
   "ASSETS Student Volunteers": "https://assets26.sigaccess.org/volunteer.html",
   "CSCW Student Volunteers": "https://cscw.acm.org/2026/sv.html",
@@ -838,7 +838,7 @@ const SITE = {
   "FAccT 2027": "https://facctconference.org/2027/cfp.html",
   "NeurIPS 2027": "https://neurips.cc/",
   "ICLR 2028": "https://iclr.cc/",
-  "ICML 2027": "https://icml.cc/",
+  "ICML 2027": "https://icml.cc/Conferences/2027/CallForPapers",
   "AAAI-27": "https://aaai.org/conference/aaai/aaai-27/student-scholar-volunteer-program/",
   "IJCAI 2027": "https://2027.ijcai.org/",
 };
@@ -1517,5 +1517,6 @@ if (h === "list" || h === "calendar") state.view = h;
 else if (window.matchMedia && matchMedia("(max-width: 480px)").matches) state.view = "list";
 render();
 </script>
+
 
 </body></html>

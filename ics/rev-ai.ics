@@ -7,8 +7,21 @@ X-WR-CALNAME:Conference deadlines (filtered)
 REFRESH-INTERVAL;VALUE=DURATION:P1D
 X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
+UID:icml-2027-rev-round-1-first-stage-rejections-2027@conference-deadlines
+DTSTAMP:20261116T174756Z
+DTSTART;VALUE=DATE:20270223
+DTEND;VALUE=DATE:20270224
+SUMMARY:ICML 2027: Round 1 first-stage rejections
+DESCRIPTION:Expected review / decision date.\nConference: Rio de Janeiro\, 
+ Brazil\, Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/Conferences/2027/CallFo
+ rPapers
+TRANSP:TRANSPARENT
+LOCATION:Rio de Janeiro\, Brazil
+URL:https://icml.cc/Conferences/2027/CallForPapers
+END:VEVENT
+BEGIN:VEVENT
 UID:facct-2027-rev-round-2-final-decisions-2027@conference-deadlines
-DTSTAMP:20261111T012804Z
+DTSTAMP:20261116T174756Z
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
 SUMMARY:FAccT 2027: Round 2 final decisions
@@ -19,22 +32,8 @@ LOCATION:Porto\, Portugal
 URL:https://facctconference.org/2027/cfp.html
 END:VEVENT
 BEGIN:VEVENT
-UID:icml-2027-rev-round-1-reviews-out-rebuttal-2027@conference-deadlines
-DTSTAMP:20261111T012804Z
-DTSTART;VALUE=DATE:20270324
-DTEND;VALUE=DATE:20270325
-SUMMARY:ICML 2027: Round 1 reviews out (rebuttal)
-DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
-  date. Confirm on the official call.\nConference: Rio de Janeiro\, Brazil\
- , Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/
-TRANSP:TRANSPARENT
-STATUS:TENTATIVE
-LOCATION:Rio de Janeiro\, Brazil
-URL:https://icml.cc/
-END:VEVENT
-BEGIN:VEVENT
 UID:ijcai-2027-rev-papers-decisions-2027@conference-deadlines
-DTSTAMP:20261111T012804Z
+DTSTAMP:20261116T174756Z
 DTSTART;VALUE=DATE:20270421
 DTEND;VALUE=DATE:20270422
 SUMMARY:IJCAI 2027: Papers · decisions
@@ -45,22 +44,21 @@ LOCATION:Kyoto\, Japan
 URL:https://2027.ijcai.org/
 END:VEVENT
 BEGIN:VEVENT
-UID:icml-2027-rev-round-2-decisions-2027@conference-deadlines
-DTSTAMP:20261111T012804Z
-DTSTART;VALUE=DATE:20270430
-DTEND;VALUE=DATE:20270501
-SUMMARY:ICML 2027: Round 2 decisions
-DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
-  date. Confirm on the official call.\nConference: Rio de Janeiro\, Brazil\
- , Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/
+UID:icml-2027-rev-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261116T174756Z
+DTSTART;VALUE=DATE:20270503
+DTEND;VALUE=DATE:20270504
+SUMMARY:ICML 2027: Round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nConference: Rio de Janeiro\, 
+ Brazil\, Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/Conferences/2027/CallFo
+ rPapers
 TRANSP:TRANSPARENT
-STATUS:TENTATIVE
 LOCATION:Rio de Janeiro\, Brazil
-URL:https://icml.cc/
+URL:https://icml.cc/Conferences/2027/CallForPapers
 END:VEVENT
 BEGIN:VEVENT
 UID:aies-2027-rev-papers-decisions-2027@conference-deadlines
-DTSTAMP:20261111T012804Z
+DTSTAMP:20261116T174756Z
 DTSTART;VALUE=DATE:20270716
 DTEND;VALUE=DATE:20270717
 SUMMARY:AIES 2027: Papers · decisions
@@ -73,7 +71,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:neurips-2027-rev-round-1-reviews-out-discussion-2027@conference-deadlin
  es
-DTSTAMP:20261111T012804Z
+DTSTAMP:20261116T174756Z
 DTSTART;VALUE=DATE:20270722
 DTEND;VALUE=DATE:20270723
 SUMMARY:NeurIPS 2027: Round 1 reviews out (discussion)
@@ -87,7 +85,7 @@ URL:https://neurips.cc/
 END:VEVENT
 BEGIN:VEVENT
 UID:aaai-28-rev-round-1-phase-1-decisions-2027@conference-deadlines
-DTSTAMP:20261111T012804Z
+DTSTAMP:20261116T174756Z
 DTSTART;VALUE=DATE:20270924
 DTEND;VALUE=DATE:20270925
 SUMMARY:AAAI-28: Round 1 phase 1 decisions
@@ -99,7 +97,7 @@ LOCATION:Montréal\, Canada
 END:VEVENT
 BEGIN:VEVENT
 UID:neurips-2027-rev-round-2-decisions-2027@conference-deadlines
-DTSTAMP:20261111T012804Z
+DTSTAMP:20261116T174756Z
 DTSTART;VALUE=DATE:20270924
 DTEND;VALUE=DATE:20270925
 SUMMARY:NeurIPS 2027: Round 2 decisions
@@ -113,7 +111,7 @@ URL:https://neurips.cc/
 END:VEVENT
 BEGIN:VEVENT
 UID:aaai-28-rev-reviews-out-author-feedback-2027@conference-deadlines
-DTSTAMP:20261111T012804Z
+DTSTAMP:20261116T174756Z
 DTSTART;VALUE=DATE:20271024
 DTEND;VALUE=DATE:20271025
 SUMMARY:AAAI-28: Reviews out (author feedback)
@@ -125,21 +123,21 @@ LOCATION:Montréal\, Canada
 END:VEVENT
 BEGIN:VEVENT
 UID:iclr-2028-rev-round-1-reviews-out-discussion-2027@conference-deadlines
-DTSTAMP:20261111T012804Z
+DTSTAMP:20261116T174756Z
 DTSTART;VALUE=DATE:20271105
 DTEND;VALUE=DATE:20271106
 SUMMARY:ICLR 2028: Round 1 reviews out (discussion)
 DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
-  date. Confirm on the official call.\nConference: Rio de Janeiro\, Brazil\
- , ICLR 2027 city TBA.\nhttps://iclr.cc/
+  date. Confirm on the official call.\nConference: California\, USA\, ICLR 
+ 2027 was Apr 26–30\, 2027.\nhttps://iclr.cc/
 TRANSP:TRANSPARENT
 STATUS:TENTATIVE
-LOCATION:Rio de Janeiro\, Brazil
+LOCATION:California\, USA
 URL:https://iclr.cc/
 END:VEVENT
 BEGIN:VEVENT
 UID:aaai-28-rev-round-2-final-decisions-2027@conference-deadlines
-DTSTAMP:20261111T012804Z
+DTSTAMP:20261116T174756Z
 DTSTART;VALUE=DATE:20271130
 DTEND;VALUE=DATE:20271201
 SUMMARY:AAAI-28: Round 2 final decisions
@@ -151,22 +149,22 @@ LOCATION:Montréal\, Canada
 END:VEVENT
 BEGIN:VEVENT
 UID:iclr-2028-rev-round-2-final-decisions-2027@conference-deadlines
-DTSTAMP:20261111T012804Z
+DTSTAMP:20261116T174756Z
 DTSTART;VALUE=DATE:20271216
 DTEND;VALUE=DATE:20271217
 SUMMARY:ICLR 2028: Round 2 final decisions
 DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
-  date. Confirm on the official call.\nConference: Rio de Janeiro\, Brazil\
- , ICLR 2027 city TBA.\nhttps://iclr.cc/
+  date. Confirm on the official call.\nConference: California\, USA\, ICLR 
+ 2027 was Apr 26–30\, 2027.\nhttps://iclr.cc/
 TRANSP:TRANSPARENT
 STATUS:TENTATIVE
-LOCATION:Rio de Janeiro\, Brazil
+LOCATION:California\, USA
 URL:https://iclr.cc/
 END:VEVENT
 BEGIN:VEVENT
 UID:facct-2028-rev-round-1-reviews-and-first-decisions-2027@conference-dead
  lines
-DTSTAMP:20261111T012804Z
+DTSTAMP:20261116T174756Z
 DTSTART;VALUE=DATE:20271222
 DTEND;VALUE=DATE:20271223
 SUMMARY:FAccT 2028: Round 1 reviews & first decisions

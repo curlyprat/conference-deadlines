@@ -8,17 +8,16 @@ REFRESH-INTERVAL;VALUE=DURATION:P1D
 X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
 UID:icml-2027-abs--2027@conference-deadlines
-DTSTAMP:20261111T012804Z
-DTSTART;VALUE=DATE:20270123
-DTEND;VALUE=DATE:20270124
+DTSTAMP:20261116T174756Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
 SUMMARY:ICML 2027: abstract / registration
-DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
- n the 2026 date. Confirm on the official call.\nConference: Rio de Janeiro
- \, Brazil\, Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Rio de 
+ Janeiro\, Brazil\, Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/Conferences/2
+ 027/CallForPapers
 TRANSP:TRANSPARENT
-STATUS:TENTATIVE
 LOCATION:Rio de Janeiro\, Brazil
-URL:https://icml.cc/
+URL:https://icml.cc/Conferences/2027/CallForPapers
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P7D
@@ -32,17 +31,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:icml-2027-paper--2027@conference-deadlines
-DTSTAMP:20261111T012804Z
-DTSTART;VALUE=DATE:20270128
-DTEND;VALUE=DATE:20270129
+DTSTAMP:20261116T174756Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
 SUMMARY:ICML 2027: paper deadline
-DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nPlaceholder based o
- n the 2026 date. Confirm on the official call.\nConference: Rio de Janeiro
- \, Brazil\, Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/
+DESCRIPTION:Deadline 11:59 pm AoE (Anywhere on Earth).\nConference: Rio de 
+ Janeiro\, Brazil\, Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/Conferences/2
+ 027/CallForPapers
 TRANSP:TRANSPARENT
-STATUS:TENTATIVE
 LOCATION:Rio de Janeiro\, Brazil
-URL:https://icml.cc/
+URL:https://icml.cc/Conferences/2027/CallForPapers
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P7D
@@ -55,31 +53,29 @@ DESCRIPTION:1 day to go: ICML 2027: paper deadline
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:icml-2027-rev-round-1-reviews-out-rebuttal-2027@conference-deadlines
-DTSTAMP:20261111T012804Z
-DTSTART;VALUE=DATE:20270324
-DTEND;VALUE=DATE:20270325
-SUMMARY:ICML 2027: Round 1 reviews out (rebuttal)
-DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
-  date. Confirm on the official call.\nConference: Rio de Janeiro\, Brazil\
- , Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/
+UID:icml-2027-rev-round-1-first-stage-rejections-2027@conference-deadlines
+DTSTAMP:20261116T174756Z
+DTSTART;VALUE=DATE:20270223
+DTEND;VALUE=DATE:20270224
+SUMMARY:ICML 2027: Round 1 first-stage rejections
+DESCRIPTION:Expected review / decision date.\nConference: Rio de Janeiro\, 
+ Brazil\, Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/Conferences/2027/CallFo
+ rPapers
 TRANSP:TRANSPARENT
-STATUS:TENTATIVE
 LOCATION:Rio de Janeiro\, Brazil
-URL:https://icml.cc/
+URL:https://icml.cc/Conferences/2027/CallForPapers
 END:VEVENT
 BEGIN:VEVENT
-UID:icml-2027-rev-round-2-decisions-2027@conference-deadlines
-DTSTAMP:20261111T012804Z
-DTSTART;VALUE=DATE:20270430
-DTEND;VALUE=DATE:20270501
-SUMMARY:ICML 2027: Round 2 decisions
-DESCRIPTION:Expected review / decision date.\nPlaceholder based on the 2026
-  date. Confirm on the official call.\nConference: Rio de Janeiro\, Brazil\
- , Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/
+UID:icml-2027-rev-round-2-final-decisions-2027@conference-deadlines
+DTSTAMP:20261116T174756Z
+DTSTART;VALUE=DATE:20270503
+DTEND;VALUE=DATE:20270504
+SUMMARY:ICML 2027: Round 2 final decisions
+DESCRIPTION:Expected review / decision date.\nConference: Rio de Janeiro\, 
+ Brazil\, Jul 31 – Aug 6\, 2027.\nhttps://icml.cc/Conferences/2027/CallFo
+ rPapers
 TRANSP:TRANSPARENT
-STATUS:TENTATIVE
 LOCATION:Rio de Janeiro\, Brazil
-URL:https://icml.cc/
+URL:https://icml.cc/Conferences/2027/CallForPapers
 END:VEVENT
 END:VCALENDAR
