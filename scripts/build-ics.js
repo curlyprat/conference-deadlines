@@ -5,7 +5,13 @@
 const fs = require("fs"), path = require("path");
 const [, , pagePath, outDir] = process.argv;
 if (!pagePath || !outDir) { console.error("usage: node scripts/build-ics.js <deadlines.html> <outDir>"); process.exit(1); }
-const html = fs.readFileSync(pagePath, "utf8");
+let html = fs.readFileSync(pagePath, "utf8");
+// Accept either the page as authored (starting with <title>) or a copy saved from the artifact
+// that still has the viewer's <!doctype …><body> wrapper; keep only the page content.
+if (/^\s*<!doctype/i.test(html) && /<body[^>]*>/i.test(html)) {
+  html = html.slice(html.search(/<body[^>]*>/i)).replace(/^<body[^>]*>\s*/i, "").replace(/\s*<\/body>\s*<\/html>\s*$/i, "\n");
+  fs.writeFileSync(pagePath, html);
+}
 const js = html.match(/<script>([\s\S]*)<\/script>/)[1];
 const lib = js.slice(js.indexOf("const RAW"), js.indexOf("/* ---------- renderers ---------- */"));
 global.window = { matchMedia: () => ({ matches: false }) }; global.matchMedia = global.window.matchMedia;
